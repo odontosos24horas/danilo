@@ -1,0 +1,15 @@
+.DS_Store
+.next
+# dotenv environment variables file (build for Zeit Now)
+.env.build
+.env.local
+.env
+# Dependency directories
+node_modules/
+node_modules
+# Logs
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+yarn.lock
+package-lock.json
