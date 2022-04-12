@@ -1,15 +1,7 @@
 const colors = {
-  'next-primary': '#007100',
-  'next-light': '#E5E5E5',
-  'next-green': '#85F2C9',
-  'next-dark': '#18352B',
-  'next-gray': '#5C5959',
-  'next-dark-green': '#18352B',
-  dark: '#17171B',
-  blue: {
-    200: '#4882F8',
-    900: '#2D426D'
-  }
+  'next-primary': '#1950AE',
+  'next-gray': '#E5E5E5',
+  'next-gray-dark': '#F2F2F2'
 }
 
 export default colors

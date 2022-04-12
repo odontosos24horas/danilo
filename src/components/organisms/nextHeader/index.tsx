@@ -67,20 +67,32 @@ interface NavItem {
 
 const NAV_ITEMS: Array<NavItem> = [
   {
-    label: 'QUEM SOMOS',
-    href: '#quemsomos'
+    label: 'HOME',
+    href: '/'
   },
   {
-    label: 'COMO CHEGAR',
-    href: '#comochegar'
+    label: 'QUEM SOMOS',
+    href: '/quemsomos'
+  },
+  {
+    label: 'ESPECIALIDADES',
+    href: '/especialidades'
   },
   {
     label: 'CONVÊNIOS',
-    href: '#convenios'
+    href: '/convenios'
   },
   {
-    label: 'TRABALHE CONOSCO',
-    href: '#trabalheconosco'
+    label: 'TRATAMENTOS',
+    href: '/tratamentos'
+  },
+  {
+    label: 'VÍDEOS',
+    href: '/videos'
+  },
+  {
+    label: 'URGÊNCIA',
+    href: 'https://www.odontosos.com.br/'
   }
 ]
 
@@ -206,38 +218,23 @@ const NextHeader = () => {
   const { isOpen, onToggle } = useDisclosure()
 
   return (
-    <Box py={{ base: 0, md: 4 }}>
+    <Box>
       <Container maxW="container.xl">
         <Flex
           color={'gray.600'}
           minH={'70px'}
           align={'center'}>
-          <Flex flex={{ base: 1 }} justify={{ base: 'center' }}>
+          <Flex>
             <Image
-              src="/images/logos/logo_sos_header.png"
-              alt="OdontoSOS Logo"
-              width={278}
-              height={40}
+              src="/images/logos/logo_header.svg"
+              alt="Logo Danilo Antunes"
+              width={153}
+              height={26}
               layout="fixed"
             />
           </Flex>
           <Flex display={{ base: 'none', md: 'flex' }}>
             <DesktopNav />
-          </Flex>
-
-          <Flex flex={{ base: 1 }}justify={{ base: 'center' }}>
-            <Box display={{ base: 'none', md: 'block' }}>
-              <NextLink href={'tel:3135860900'}>
-                <a>
-                  <Heading color="next-primary" size="lg">
-                    (31) 3586-0900
-                  </Heading>
-                </a>
-              </NextLink>
-              <Text color="next-primary" fontSize="sm">
-                R. Cláudio Manoel, 223 - Funcionários
-              </Text>
-            </Box>
           </Flex>
 
           <Flex

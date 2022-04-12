@@ -94,107 +94,107 @@ export const nextFeatureItems = [
 
 export const nextTechnologyItems = [
   {
-    image: '/images/logos/logo_amil.png',
+    image: '/images/logos/convenios/logo_amil.png',
     width: 138,
     height: 99
   },
   {
-    image: '/images/logos/logo_bradesco.png',
+    image: '/images/logos/convenios/logo_bradesco.png',
     width: 168,
     height: 105
   },
   {
-    image: '/images/logos/logo_copass.png',
+    image: '/images/logos/convenios/logo_copass.png',
     width: 202,
     height: 234
   },
   {
-    image: '/images/logos/logo_geap.png',
+    image: '/images/logos/convenios/logo_geap.png',
     width: 233,
     height: 123
   },
   {
-    image: '/images/logos/logo_inpao.png',
+    image: '/images/logos/convenios/logo_inpao.png',
     width: 309,
     height: 130
   },
   {
-    image: '/images/logos/logo_ipsm.png',
+    image: '/images/logos/convenios/logo_ipsm.png',
     width: 194,
     height: 203
   },
   {
-    image: '/images/logos/logo_metlife.png',
+    image: '/images/logos/convenios/logo_metlife.png',
     width: 371,
     height: 110
   },
   {
-    image: '/images/logos/logo_odontoprev.png',
+    image: '/images/logos/convenios/logo_odontoprev.png',
     width: 294,
     height: 158
   },
   {
-    image: '/images/logos/logo_plan_assiste.png',
+    image: '/images/logos/convenios/logo_plan_assiste.png',
     width: 368,
     height: 117
   },
   {
-    image: '/images/logos/logo_porto_saude.png',
+    image: '/images/logos/convenios/logo_porto_saude.png',
     width: 160,
     height: 84
   },
   {
-    image: '/images/logos/logo_rede_odonto.png',
+    image: '/images/logos/convenios/logo_rede_odonto.png',
     width: 183,
     height: 238
   },
   {
-    image: '/images/logos/logo_saude_caixa.png',
+    image: '/images/logos/convenios/logo_saude_caixa.png',
     width: 366,
     height: 151
   },
   {
-    image: '/images/logos/logo_unna.png',
+    image: '/images/logos/convenios/logo_unna.png',
     width: 198,
     height: 189
   },
   {
-    image: '/images/logos/logo_bacen.png',
+    image: '/images/logos/convenios/logo_bacen.png',
     width: 300,
     height: 200
   },
   {
-    image: '/images/logos/logo_hapvida.png',
+    image: '/images/logos/convenios/logo_hapvida.png',
     width: 227,
     height: 152
   },
   {
-    image: '/images/logos/logo_interodonto.png',
+    image: '/images/logos/convenios/logo_interodonto.png',
     width: 300,
     height: 170
   },
   {
-    image: '/images/logos/logo_unimedodonto.png',
+    image: '/images/logos/convenios/logo_unimedodonto.png',
     width: 300,
     height: 143
   },
   {
-    image: '/images/logos/logo_primavida.png',
+    image: '/images/logos/convenios/logo_primavida.png',
     width: 263,
     height: 187
   },
   {
-    image: '/images/logos/logo_sulamericaodonto.png',
+    image: '/images/logos/convenios/logo_sulamericaodonto.png',
     width: 305,
     height: 160
   },
   {
-    image: '/images/logos/logo_goldencross.png',
+    image: '/images/logos/convenios/logo_goldencross.png',
     width: 300,
     height: 90
   },
   {
-    image: '/images/logos/logo_trt.png',
+    image: '/images/logos/convenios/logo_trt.png',
     width: 300,
     height: 106
   }
