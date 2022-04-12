@@ -1,6 +1,6 @@
 import React from 'react'
 
-type Props = {
+export interface Props {
   label: string
 }
 
