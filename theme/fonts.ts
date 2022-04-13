@@ -1,6 +1,6 @@
 const fonts = {
-  heading: 'Roboto',
-  body: 'Roboto'
+  heading: 'Red Hat Display',
+  body: 'Red Hat Display'
 }
 
 export default fonts

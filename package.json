@@ -23,7 +23,7 @@
     "@emotion/styled": "^11",
     "@fontsource/open-sans": "^4.5.1",
     "@fontsource/rajdhani": "^4.5.0",
-    "@fontsource/roboto": "^4.5.1",
+    "@fontsource/red-hat-display": "^4.5.6",
     "@sendgrid/mail": "^7.6.0",
     "formik": "^2.2.9",
     "framer-motion": "^4",
