@@ -97,24 +97,28 @@ const NAV_ITEMS: Array<NavItem> = [
 ]
 
 const DesktopNav = () => {
-  const linkColor = 'next-dark'
-  const linkHoverColor = 'next-primary'
+  const linkColor = 'next-primary'
+  const linkHoverColor = 'white'
   const popoverContentBgColor = 'gray.800'
 
   return (
-    <Stack direction={'row'} spacing={4}>
+    <Stack direction={'row'} spacing={0}>
       {NAV_ITEMS.map((navItem) => (
         <Box key={navItem.label}>
           <Popover trigger={'hover'} placement={'bottom-start'}>
             <PopoverTrigger>
               <Link
                 href={navItem.href ?? '#'}
-                fontSize={'md'}
+                fontSize={'lg'}
                 fontWeight={500}
                 color={linkColor}
+                minH="80px"
+                px={4}
+                py={'28px'}
                 _hover={{
                   textDecoration: 'none',
-                  color: linkHoverColor
+                  color: linkHoverColor,
+                  bgColor: 'next-secondary'
                 }}>
                 {navItem.label}
               </Link>
@@ -154,12 +158,16 @@ const MobileNavItem = ({ label, children, href }: NavItem) => {
         justify={'space-between'}
         align={'center'}
         _hover={{
-          textDecoration: 'none'
+          textDecoration: 'none',
+          bgColor: 'next-secondary'
         }}>
         <Text
           fontWeight={600}
-          color={'white'}
-          _hover={{ color: 'next-primary' }}
+          color={'next-primary'}
+          _hover={{
+            textDecoration: 'none',
+            color: 'white'
+          }}
         >
           {label}
         </Text>
@@ -173,7 +181,6 @@ const MobileNavItem = ({ label, children, href }: NavItem) => {
           />
         )}
       </Flex>
-
       <Collapse in={isOpen} animateOpacity style={{ marginTop: '0!important' }}>
         <Stack
           mt={2}
@@ -222,21 +229,24 @@ const NextHeader = () => {
       <Container maxW="container.xl">
         <Flex
           color={'gray.600'}
-          minH={'70px'}
+          minH='80px'
           align={'center'}>
-          <Flex>
-            <Image
-              src="/images/logos/logo_header.svg"
-              alt="Logo Danilo Antunes"
-              width={153}
-              height={26}
-              layout="fixed"
-            />
+          <Flex pe={4}>
+            <NextLink href={'/'}>
+              <a>
+                <Image
+                  src="/images/logos/logo_header.svg"
+                  alt="Logo Danilo Antunes"
+                  width={153}
+                  height={26}
+                  layout="fixed"
+                />
+              </a>
+            </NextLink>
           </Flex>
           <Flex display={{ base: 'none', md: 'flex' }}>
             <DesktopNav />
           </Flex>
-
           <Flex
             flex={{ base: 1 }}
             display={{ base: 'flex', md: 'none' }}>
@@ -251,7 +261,6 @@ const NextHeader = () => {
             />
           </Flex>
         </Flex>
-
         <Collapse in={isOpen} animateOpacity>
           <MobileNav />
         </Collapse>
