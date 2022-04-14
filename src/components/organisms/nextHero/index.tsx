@@ -1,12 +1,10 @@
 import React from 'react'
 import {
-  Button,
   Flex,
   Heading,
   Image,
   Stack,
-  Text,
-  useBreakpointValue
+  Text
 } from '@chakra-ui/react'
 
 export default function SplitScreen() {
