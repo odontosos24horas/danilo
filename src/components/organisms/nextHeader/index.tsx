@@ -158,12 +158,16 @@ const MobileNavItem = ({ label, children, href }: NavItem) => {
         justify={'space-between'}
         align={'center'}
         _hover={{
-          textDecoration: 'none'
+          textDecoration: 'none',
+          bgColor: 'next-secondary'
         }}>
         <Text
           fontWeight={600}
-          color={'white'}
-          _hover={{ color: 'next-primary' }}
+          color={'next-primary'}
+          _hover={{
+            textDecoration: 'none',
+            color: 'white'
+          }}
         >
           {label}
         </Text>

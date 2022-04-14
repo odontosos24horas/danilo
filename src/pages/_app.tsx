@@ -1,6 +1,7 @@
 import React from 'react'
 import '@fontsource/red-hat-display'
 import '@fontsource/red-hat-display/500.css'
+import '@fontsource/red-hat-display/900.css'
 import type { AppProps } from 'next/app'
 import { ChakraProvider } from '@chakra-ui/react'
 
