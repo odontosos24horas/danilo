@@ -12,23 +12,27 @@ const NextMap = React.lazy(() => import('../../atoms/nextMap'))
 
 export interface NextCallToActionProps {
   bgButton?: 'next-primary' | 'next-dark' | 'white' | 'dark' | undefined
-  background?: boolean;
-  title: string;
-  text: string;
-  textButton?: string;
-  image: string;
+  background?: string
+  title: string
+  titleColor?: string
+  bgGradient?: string
+  text: string
+  textButton?: string
+  image: string
   url: string
   width: string
   height: string
-  directionMd?: 'row' | 'column' | 'row-reverse' | 'column-reverse';
-  directionBase?: 'row' | 'column' | 'row-reverse' | 'column-reverse';
-  content: 'image' | 'map' | 'form';
-  id: string;
+  directionMd?: 'row' | 'column' | 'row-reverse' | 'column-reverse'
+  directionBase?: 'row' | 'column' | 'row-reverse' | 'column-reverse'
+  content: 'image' | 'map' | 'form'
+  id: string
 }
 
 const NextCallToAction = ({
   background,
   title,
+  titleColor,
+  bgGradient,
   text,
   image,
   url,
@@ -51,11 +55,13 @@ const NextCallToAction = ({
   }, [])
   if (!isFront) return null
   return (
-    <Stack id={id} bg={background ? 'next-primary' : ''} direction={{ base: directionBase, md: directionMd }}>
-      <Flex px={{ base: 10 }} pt={content === 'form' ? 20 : 0} pb={{ base: 20, md: 0 }} flex={1} align={'center'} justify={'center'}>
+    <Stack id={id} bg={background} direction={{ base: directionBase, md: directionMd }}>
+      <Flex px={{ base: 10 }} pt={content === 'form' ? 20 : [12, 0]} pb={{ base: 6, md: 0 }} flex={1} align={'center'} justify={'center'}>
         <Stack spacing={6} w={'full'} maxW={'lg'}>
           <Text
-            color={background ? 'white' : 'next-primary'}
+            color={titleColor}
+            bgGradient={bgGradient}
+            bgClip={bgGradient ? 'text' : undefined}
             fontWeight={700}
             fontSize={{ base: '3xl', md: '4xl', lg: '5xl' }}
           >
@@ -78,7 +84,7 @@ const NextCallToAction = ({
           )}
         </Stack>
       </Flex>
-      <Flex flex={1} justify={'end'}>
+      <Flex flex={1} pt={[0, 12]}>
         {(content === 'image' || content === 'form') && (
           <Image
             alt={title}

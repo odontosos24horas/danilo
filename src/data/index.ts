@@ -19,13 +19,13 @@ export const nextHeroItem = {
 
 export const nextCallToActionItems = [
   {
-    title: 'QUEM SOMOS',
-    text: 'Somos um grupo de profissionais da odontologia altamente capacitados com o intuito de oferecer a você e sua família um atendimento de urgência de alta qualidade e segurança. Localizados num dos pontos mais nobres e acessíveis de Belo Horizonte. Estamos abertos 24 horas te esperando quando mais você precisar.',
-    image: '/images/home/tattoo_pop.jpeg',
-    textButton: 'VEJA COMO CHEGAR',
-    url: '#comochegar',
-    width: 720,
-    height: 493,
+    title: 'Odontologia Digital (Cerec)',
+    titleColor: 'next-tertiary',
+    text: 'O Sistema Cerec pode solucionar sua situação clínica em apenas 1 dia. Esse sistema oferece precisão e rapidez em trabalhos com Prótese Dentária em porcelana(coroas e facetas) eliminando etapas do processo tradicional da confecção como moldagens e até mesmo a utilização de provisórios.',
+    background: 'next-primary',
+    image: '/images/home/teeth.svg',
+    width: 450,
+    height: 442,
     content: 'image'
   },
   {
@@ -36,7 +36,6 @@ export const nextCallToActionItems = [
     url: '#comochegar',
     width: 720,
     height: 535,
-    directionMd: 'row-reverse',
     content: 'image'
   },
   {
