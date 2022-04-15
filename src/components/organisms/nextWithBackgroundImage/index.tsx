@@ -10,7 +10,7 @@ import {
 export default function NextWithBackgroundImage() {
   return (
     <Flex
-      minH={'505px'}
+      minH={['350px', '505px']}
       w={'full'}
       backgroundImage={
         'url(/images/home/background.jpg)'

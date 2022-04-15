@@ -1,6 +1,6 @@
 import React, { ReactNode } from 'react'
 import Image from 'next/image'
-import Link from 'next/link'
+import packageInfo from '../../../../package.json'
 
 import {
   Box,
@@ -9,8 +9,11 @@ import {
   SimpleGrid,
   Stack,
   Text,
-  useColorModeValue
+  Link
 } from '@chakra-ui/react'
+import NextimeSvg from '../../atoms/nextimeSvg'
+const version = packageInfo.version
+const NeXTIMEColor = '#202F4F'
 
 const ListHeader = ({ children }: { children: ReactNode }) => {
   return (
@@ -28,50 +31,62 @@ const NextFooter = () => {
   return (
     <footer>
       <Box
-        bg={useColorModeValue('gray.50', 'gray.900')}
-        color={useColorModeValue('gray.700', 'gray.200')}>
+        bg={'white'}
+        color={'next-primary'}>
         <Container as={Stack} maxW={'6xl'} py={10}>
           <SimpleGrid
             templateColumns={{ sm: '1fr 1fr', md: '2fr 1fr 1fr 2fr' }}
             spacing={8}>
             <Stack spacing={6}>
               <Box>
-                <Image src="/images/logos/logo_nextime.svg" alt="Odonto S.O.S Logo" width={261} height={48} />
+                <Image src="/images/logos/logo_header.svg" alt="Logo Dr Danilo Antunes" width={261} height={48} />
               </Box>
               <Text fontSize={'sm'}>
-              © 2021 Odonto SOS. Todos os direitos reservados.
+              © {new Date().getFullYear()} Dr. Danilo Antunes. Todos os direitos reservados.
               </Text>
               <Text>
                 Desenvolvido por:
-                <Link href={'https://nextime.com.br/'}>
+                <Link
+                  href="https://nextime.com.br"
+                  _hover={{
+                    transition: '0.3s',
+                    fill: NeXTIMEColor
+                  }}
+                  transition="0.3s"
+                  fill="next-primary"
+                >
                   <a>
-                    <Text color="next-primary" fontWeight="bold">
-                        NeXTIME
-                    </Text>
+                    <NextimeSvg />
                   </a>
                 </Link>
+              </Text>
+              <Text>
+                v{version}
               </Text>
             </Stack>
             <Stack align={'flex-start'}>
               <ListHeader>Menu</ListHeader>
-              <Link href={'#quemsomos'}>Quem Somos</Link>
-              <Link href={'#comochegar'}>Como Chegar</Link>
-              <Link href={'#convenios'}>Convênios</Link>
-              <Link href={'#trabalheconosco'}>Trabalhe Conosco</Link>
+              <Link href={'/'}>Home</Link>
+              <Link href={'/quemsomos'}>Quem Somos</Link>
+              <Link href={'/especialidades'}>Especialidades</Link>
+              <Link href={'/convenios'}>Convênios</Link>
+              <Link href={'/tratamentos'}>Tratamentos</Link>
+              <Link href={'/videos'}>Vídeos</Link>
+              <Link href={'https://odontosos.com.br/'}>Urgência</Link>
             </Stack>
             <Stack align={'flex-start'}>
               <ListHeader>Contatos</ListHeader>
               <Link href={'mailto:odontosos@odontosos.com.br'}>E-mail</Link>
-              <Link href={'https://instagram.com/clinicaodontososbh'}>Instagram</Link>
+              <Link href={'https://www.instagram.com/dr.daniloantunes'}>Instagram</Link>
             </Stack>
             <Stack align={'flex-start'}>
-              <Link href={'tel:3135860900'}>
+              <Link href={'tel:3133188718'}>
                 <Heading color="next-primary" size="lg">
-                  (31) 3586-0900
+                  (31) 3318-8718
                 </Heading>
               </Link>
               <Text color="next-primary" fontSize="sm">
-                R. Cláudio Manoel, 223 - Funcionários
+                Rua Gonçalves Dias, 82 | Sala 902 - Bairro Funcionários - Cep 30140-190
               </Text>
             </Stack>
           </SimpleGrid>
