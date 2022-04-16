@@ -8,6 +8,7 @@ import NextButton from '../../atoms/nextButton'
 import Link from 'next/link'
 import Image from 'next/image'
 import NextContactUs from '../nextContactUs'
+import NextCarousel from '../nextCarousel'
 const NextMap = React.lazy(() => import('../../atoms/nextMap'))
 
 export interface NextCallToActionProps {
@@ -17,6 +18,7 @@ export interface NextCallToActionProps {
   titleColor?: string
   bgGradient?: string
   text: string
+  textColor?: string
   textButton?: string
   image: string
   url: string
@@ -24,16 +26,18 @@ export interface NextCallToActionProps {
   height: string
   directionMd?: 'row' | 'column' | 'row-reverse' | 'column-reverse'
   directionBase?: 'row' | 'column' | 'row-reverse' | 'column-reverse'
-  content: 'image' | 'map' | 'form'
-  id: string
+  content: 'image' | 'map' | 'form' | 'carousel'
+  id: string,
+  rightItemJustify?: 'end'
 }
 
 const NextCallToAction = ({
   background,
   title,
   titleColor,
-  bgGradient,
+  bgGradient = 'linear(to-b, next-tertiary, next-quintenary)',
   text,
+  textColor = 'next-quaternary',
   image,
   url,
   width,
@@ -43,7 +47,8 @@ const NextCallToAction = ({
   directionBase = 'column',
   bgButton,
   content,
-  id
+  id,
+  rightItemJustify
 }: NextCallToActionProps) => {
   const [isFront, setIsFront] = useState(false)
   useEffect(() => {
@@ -70,7 +75,7 @@ const NextCallToAction = ({
           {content === 'form' && (
             <NextContactUs />
           )}
-          <Text fontSize={{ base: 'md', lg: 'lg' }} color={'next-gray'}>
+          <Text fontSize={{ base: 'md', lg: 'lg' }} color={textColor}>
             {text}
           </Text>
           {textButton && (
@@ -84,7 +89,7 @@ const NextCallToAction = ({
           )}
         </Stack>
       </Flex>
-      <Flex flex={1} pt={[0, 12]}>
+      <Flex flex={1} pt={[0, 12]} justify={rightItemJustify}>
         {(content === 'image' || content === 'form') && (
           <Image
             alt={title}
@@ -97,6 +102,9 @@ const NextCallToAction = ({
           <Suspense fallback={() => 'loading'}>
             <NextMap />
           </Suspense>
+        )}
+        {content === 'carousel' && (
+          <NextCarousel />
         )}
       </Flex>
     </Stack>

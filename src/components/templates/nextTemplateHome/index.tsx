@@ -23,6 +23,7 @@ const NextTemplateHome = ({
         title={nextCallToActionItems[0].title}
         titleColor={nextCallToActionItems[0].titleColor}
         text={nextCallToActionItems[0].text}
+        textColor={nextCallToActionItems[0].textColor}
         background={nextCallToActionItems[0].background}
         image={nextCallToActionItems[0].image}
         textButton={nextCallToActionItems[0].textButton}

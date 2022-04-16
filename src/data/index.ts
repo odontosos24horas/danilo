@@ -22,6 +22,7 @@ export const nextCallToActionItems = [
     title: 'Odontologia Digital (Cerec)',
     titleColor: 'next-tertiary',
     text: 'O Sistema Cerec pode solucionar sua situação clínica em apenas 1 dia. Esse sistema oferece precisão e rapidez em trabalhos com Prótese Dentária em porcelana(coroas e facetas) eliminando etapas do processo tradicional da confecção como moldagens e até mesmo a utilização de provisórios.',
+    textColor: 'white',
     background: 'next-primary',
     image: '/images/home/teeth.svg',
     width: 450,
@@ -29,32 +30,21 @@ export const nextCallToActionItems = [
     content: 'image'
   },
   {
-    title: 'URGÊNCIAS ODONTOLÓGICAS',
-    text: 'O QUE VEM A SER URGÊNCIA ODONTOLÓGICA? É todo aquele procedimento que necessita de atendimento imediato para minimizar o sofrimento do paciente. Para posteriormente, em um adequado momento, procurar o seu dentista e solucionar o problema em definitivo.',
+    title: 'Quem somos',
+    text: 'Com um consultório amplo e agradável, localizado em um dos pontos nobres de Belo Horizonte, realizamos atendimentos especializados em Implantodontia e Periodontia através de tratamentos personalizados, com a qualidade que você merece. Aqui você se sentirá seguro de que todos os processos de higienização e esterilização de equipamentos são realizados adequadamente, além do cumprimento de todos os cuidados necessários para lhe proporcionar tranquilidade e conforto e a segurança de um tratamento muito bem feito. Seja muito bem-vindo (a) ao nosso site e conheça nele um pouco sobre o que fazemos.',
     image: '/images/home/urgencias.jpg',
-    textButton: 'VEJA COMO CHEGAR',
-    url: '#comochegar',
     width: 720,
     height: 535,
-    content: 'image'
+    content: 'carousel'
   },
   {
-    title: 'TRABALHE CONOSCO',
-    width: 595,
-    height: 528,
-    image: '/images/home/image_left.png',
-    directionMd: 'row-reverse',
-    content: 'form'
-  },
-  {
-    title: 'VEJA COMO CHEGAR',
-    text: 'Estamos localizados na rua Cláudio Manoel, 223 - Funcionários - Belo Horizonte - Minas Gerais.  Confira nossa localização no mapa e calcule sua rota.',
-    textButton: '(31) 3586-0900',
-    url: 'tel:3135860900',
-    width: 595,
-    height: 528,
-    image: '/images/home/image_left.png',
-    content: 'map'
+    title: 'Dr. Danilo',
+    text: 'Formado em 2000 pela UEMG- Lavras, o Dr. Danilo Antunes ao longo desses anos fez vários cursos de aperfeiçoamento e especialização nas áreas de Implantodontia e Periodontia. - 2001 aperfeiçoamento em Implantodontia- CEO-IPSEMG; - 2002 especialização em Periodontia, finalizada em agosto/2003- CEO-IPSEMG; - 2005 pós em Implantodontia pela ABO-MG; - 2006 pós em cirurgias avançadas em Implantodontia pela ABO-MG; - 2007 especialização em Implantodontia finalizada em agosto de 2009 pela ABCD_MG; - 2010 pós em cirurgia avançada em Implantodontia pelo Núcleo; - 2011 Palestra da Técnica de Implante com cirurgia Guiada( o famoso implante sem corte).',
+    image: '/images/profile.jpg',
+    width: 488,
+    height: 566,
+    content: 'image',
+    background: 'next-gray-dark'
   }
 ] as unknown as Array<NextCallToActionProps>
 
