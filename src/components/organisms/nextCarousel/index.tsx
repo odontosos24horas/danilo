@@ -1,7 +1,7 @@
 import React from 'react'
 import { Box, IconButton, useBreakpointValue } from '@chakra-ui/react'
 // Here we have used react-icons package for the icons
-import { BiLeftArrowAlt, BiRightArrowAlt } from 'react-icons/bi'
+import { FaChevronLeft, FaChevronRight } from 'react-icons/fa'
 // And react-slick as our Carousel Lib
 import Slider from 'react-slick'
 
@@ -38,8 +38,8 @@ export default function Carousel() {
   return (
     <Box
       position={'relative'}
-      height={'600px'}
-      width={'full'}
+      height={'441px'}
+      width={'662px'}
       overflow={'hidden'}>
       {/* CSS files for react-slick */}
       <link
@@ -56,35 +56,39 @@ export default function Carousel() {
       {/* Left Icon */}
       <IconButton
         aria-label="left-arrow"
-        colorScheme="messenger"
+        colorScheme="facebook"
         borderRadius="full"
         position="absolute"
+        size="lg"
+        fontSize='29px'
         left={side}
         top={top}
         transform={'translate(0%, -50%)'}
         zIndex={2}
         onClick={() => slider?.slickPrev()}>
-        <BiLeftArrowAlt />
+        <FaChevronLeft />
       </IconButton>
       {/* Right Icon */}
       <IconButton
         aria-label="right-arrow"
-        colorScheme="messenger"
+        colorScheme="facebook"
         borderRadius="full"
         position="absolute"
+        size="lg"
+        fontSize='29px'
         right={side}
         top={top}
         transform={'translate(0%, -50%)'}
         zIndex={2}
         onClick={() => slider?.slickNext()}>
-        <BiRightArrowAlt />
+        <FaChevronRight />
       </IconButton>
       {/* Slider */}
       <Slider {...settings} ref={(slider) => setSlider(slider)}>
         {cards.map((url, index) => (
           <Box
             key={index}
-            height={'6xl'}
+            height={'441px'}
             position="relative"
             backgroundPosition="center"
             backgroundRepeat="no-repeat"

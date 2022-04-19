@@ -3,6 +3,7 @@ import { NextFeatureProps } from '../../molecules/nextFeature'
 import NextCallToAction, { NextCallToActionProps } from '../../organisms/nextCallToAction'
 import NextLayout from '../nextLayout'
 import NextHeroPage from '../../organisms/nextHeropage'
+import { Box } from '@chakra-ui/react'
 
 export type NextTemplateAboutUs = {
   nextFeatureItems: Array<NextFeatureProps>
@@ -17,19 +18,21 @@ const NextTemplateAboutUs = ({
   return (
     <NextLayout>
       <NextHeroPage />
-      <NextCallToAction
-        id={'quemsomos'}
-        title={nextCallToActionItems[1].title}
-        text={nextCallToActionItems[1].text}
-        image={nextCallToActionItems[1].image}
-        textButton={nextCallToActionItems[1].textButton}
-        directionMd={nextCallToActionItems[1].directionMd}
-        width={nextCallToActionItems[1].width}
-        height={nextCallToActionItems[1].height}
-        url={nextCallToActionItems[1].url}
-        content={nextCallToActionItems[1].content}
-        rightItemJustify={'end'}
-      />
+      <Box py={[0, 20]}>
+        <NextCallToAction
+          id={'quemsomos'}
+          title={nextCallToActionItems[1].title}
+          text={nextCallToActionItems[1].text}
+          image={nextCallToActionItems[1].image}
+          textButton={nextCallToActionItems[1].textButton}
+          directionMd={nextCallToActionItems[1].directionMd}
+          width={nextCallToActionItems[1].width}
+          height={nextCallToActionItems[1].height}
+          url={nextCallToActionItems[1].url}
+          content={nextCallToActionItems[1].content}
+          rightItemJustify={'end'}
+        />
+      </Box>
       <NextCallToAction
         id={'profile'}
         title={nextCallToActionItems[2].title}
