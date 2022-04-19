@@ -65,8 +65,8 @@ const NextCallToAction = ({
         <Stack spacing={6} w={'full'} maxW={'lg'}>
           <Text
             color={titleColor}
-            bgGradient={bgGradient}
-            bgClip={bgGradient ? 'text' : undefined}
+            bgGradient={titleColor ? undefined : bgGradient}
+            bgClip={!titleColor ? 'text' : undefined}
             fontWeight={700}
             fontSize={{ base: '3xl', md: '4xl', lg: '5xl' }}
           >

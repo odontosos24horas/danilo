@@ -19,7 +19,7 @@ export const nextHeroItem = {
 
 export const nextCallToActionItems = [
   {
-    title: 'Odontologia Digital (Cerec)',
+    title: 'Odontologia Digital',
     titleColor: 'next-tertiary',
     text: 'O Sistema Cerec pode solucionar sua situação clínica em apenas 1 dia. Esse sistema oferece precisão e rapidez em trabalhos com Prótese Dentária em porcelana(coroas e facetas) eliminando etapas do processo tradicional da confecção como moldagens e até mesmo a utilização de provisórios.',
     textColor: 'white',
