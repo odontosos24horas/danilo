@@ -1,6 +1,6 @@
 {
-  "name": "danilo",
-  "version": "0.2.0",
+  "name": "odontosos",
+  "version": "0.3.0",
   "private": true,
   "license": "MIT",
   "scripts": {
@@ -24,6 +24,7 @@
     "@fontsource/open-sans": "^4.5.1",
     "@fontsource/rajdhani": "^4.5.0",
     "@fontsource/red-hat-display": "^4.5.6",
+    "@fontsource/roboto": "^4.5.1",
     "@sendgrid/mail": "^7.6.0",
     "formik": "^2.2.9",
     "framer-motion": "^4",
@@ -31,13 +32,15 @@
     "prettier": "^2.3.2",
     "react": "^17.0.2",
     "react-dom": "^17.0.2",
-    "react-icons": "^4.3.1"
+    "react-icons": "^4.3.1",
+    "react-slick": "^0.29.0"
   },
   "devDependencies": {
     "@babel/core": "^7.15.0",
     "@commitlint/cli": "^7.2.1",
     "@commitlint/config-conventional": "^15.0.0",
     "@types/react": "^17.0.15",
+    "@types/react-slick": "^0.23.8",
     "@typescript-eslint/eslint-plugin": "^4.28.0",
     "@typescript-eslint/parser": "^4.28.0",
     "babel-plugin-inline-react-svg": "^2.0.1",

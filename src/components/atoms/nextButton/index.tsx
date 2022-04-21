@@ -30,7 +30,7 @@ const NextButton = ({
         isLoading={isLoading}
         type={type}
       >
-        { children }
+        {children}
       </Button>
     </>
   )

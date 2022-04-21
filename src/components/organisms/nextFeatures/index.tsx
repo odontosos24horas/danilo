@@ -1,9 +1,5 @@
 import React from 'react'
-import {
-  Box,
-  SimpleGrid,
-  Container
-} from '@chakra-ui/react'
+import { Box, SimpleGrid, Container } from '@chakra-ui/react'
 import NextFeature, { NextFeatureProps } from '../../molecules/nextFeature'
 
 export interface NextFeaturesProps {
@@ -11,10 +7,7 @@ export interface NextFeaturesProps {
   numberGrid?: number
 }
 
-const NextFeatures = ({
-  items,
-  numberGrid = 5
-}: NextFeaturesProps) => {
+const NextFeatures = ({ items, numberGrid = 5 }: NextFeaturesProps) => {
   return (
     <Container maxW="container.lg">
       <Box p={4}>

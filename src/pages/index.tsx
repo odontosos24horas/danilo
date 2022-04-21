@@ -1,4 +1,3 @@
-
 import React from 'react'
 import NextTemplateHome from '../components/templates/nextTemplateHome'
 import {
