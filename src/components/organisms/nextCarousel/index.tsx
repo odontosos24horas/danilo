@@ -1,10 +1,10 @@
-import React from 'react'
+import React, { useState } from 'react'
 import { Box, IconButton, useBreakpointValue } from '@chakra-ui/react'
 import { FaChevronLeft, FaChevronRight } from 'react-icons/fa'
 import Slider from 'react-slick'
 
 export default function NextCarousel() {
-  const [slider, setSlider] = React.useState<Slider | null>(null)
+  const [slider, setSlider] = useState<Slider | null>(null)
   const top = useBreakpointValue({ base: '90%', md: '50%' })
   const side = useBreakpointValue({ base: '30%', md: '10px' })
 
