@@ -12,9 +12,7 @@ export type NextTemplateAboutUs = {
   nextTeamItems: Array<Record<string, string>>
 }
 
-const NextTemplateAboutUs = ({
-  nextCallToActionItems
-}: NextTemplateAboutUs) => {
+const NextTemplateAboutUs = ({ nextCallToActionItems }: NextTemplateAboutUs) => {
   return (
     <NextLayout>
       <NextHeroPage />

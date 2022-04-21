@@ -17,12 +17,7 @@ import {
   Container,
   Heading
 } from '@chakra-ui/react'
-import {
-  HamburgerIcon,
-  CloseIcon,
-  ChevronDownIcon,
-  ChevronRightIcon
-} from '@chakra-ui/icons'
+import { HamburgerIcon, CloseIcon, ChevronDownIcon, ChevronRightIcon } from '@chakra-ui/icons'
 
 const DesktopSubNav = ({ label, href, subLabel }: NavItem) => {
   return (
@@ -32,13 +27,11 @@ const DesktopSubNav = ({ label, href, subLabel }: NavItem) => {
       display={'block'}
       p={2}
       rounded={'md'}
-      _hover={{ bg: 'gray.900' }}>
+      _hover={{ bg: 'gray.900' }}
+    >
       <Stack direction={'row'} align={'center'}>
         <Box>
-          <Text
-            transition={'all .3s ease'}
-            _groupHover={{ color: 'pink.400' }}
-            fontWeight={500}>
+          <Text transition={'all .3s ease'} _groupHover={{ color: 'pink.400' }} fontWeight={500}>
             {label}
           </Text>
           <Text fontSize={'sm'}>{subLabel}</Text>
@@ -50,7 +43,8 @@ const DesktopSubNav = ({ label, href, subLabel }: NavItem) => {
           _groupHover={{ opacity: '100%', transform: 'translateX(0)' }}
           justify={'flex-end'}
           align={'center'}
-          flex={1}>
+          flex={1}
+        >
           <Icon color={'pink.400'} w={5} h={5} as={ChevronRightIcon} />
         </Flex>
       </Stack>
@@ -103,7 +97,7 @@ const DesktopNav = () => {
 
   return (
     <Stack direction={'row'} spacing={0}>
-      {NAV_ITEMS.map((navItem) => (
+      {NAV_ITEMS.map(navItem => (
         <Box key={navItem.label}>
           <Popover trigger={'hover'} placement={'bottom-start'}>
             <PopoverTrigger>
@@ -119,7 +113,8 @@ const DesktopNav = () => {
                   textDecoration: 'none',
                   color: linkHoverColor,
                   bgColor: 'next-secondary'
-                }}>
+                }}
+              >
                 {navItem.label}
               </Link>
             </PopoverTrigger>
@@ -131,9 +126,10 @@ const DesktopNav = () => {
                 bg={popoverContentBgColor}
                 p={4}
                 rounded={'xl'}
-                minW={'sm'}>
+                minW={'sm'}
+              >
                 <Stack>
-                  {navItem.children.map((child) => (
+                  {navItem.children.map(child => (
                     <DesktopSubNav key={child.label} {...child} />
                   ))}
                 </Stack>
@@ -160,7 +156,8 @@ const MobileNavItem = ({ label, children, href }: NavItem) => {
         _hover={{
           textDecoration: 'none',
           bgColor: 'next-secondary'
-        }}>
+        }}
+      >
         <Text
           fontWeight={600}
           color={'next-primary'}
@@ -188,9 +185,10 @@ const MobileNavItem = ({ label, children, href }: NavItem) => {
           borderLeft={1}
           borderStyle={'solid'}
           borderColor={'gray.700'}
-          align={'start'}>
+          align={'start'}
+        >
           {children &&
-            children.map((child) => (
+            children.map(child => (
               <Link key={child.label} py={2} href={child.href}>
                 {child.label}
               </Link>
@@ -203,11 +201,8 @@ const MobileNavItem = ({ label, children, href }: NavItem) => {
 
 const MobileNav = () => {
   return (
-    <Stack
-      bg={'next-dark'}
-      p={4}
-      display={{ md: 'none' }}>
-      {NAV_ITEMS.map((navItem) => (
+    <Stack bg={'next-dark'} p={4} display={{ md: 'none' }}>
+      {NAV_ITEMS.map(navItem => (
         <MobileNavItem key={navItem.label} {...navItem} />
       ))}
       <NextLink href={'tel:3135860900'}>
@@ -227,10 +222,7 @@ const NextHeader = () => {
   return (
     <Box>
       <Container maxW="container.xl">
-        <Flex
-          color={'gray.600'}
-          minH='80px'
-          align={'center'}>
+        <Flex color={'gray.600'} minH="80px" align={'center'}>
           <Flex pe={4}>
             <NextLink href={'/'}>
               <a>
@@ -247,14 +239,10 @@ const NextHeader = () => {
           <Flex display={{ base: 'none', md: 'flex' }}>
             <DesktopNav />
           </Flex>
-          <Flex
-            flex={{ base: 1 }}
-            display={{ base: 'flex', md: 'none' }}>
+          <Flex flex={{ base: 1 }} display={{ base: 'flex', md: 'none' }}>
             <IconButton
               onClick={onToggle}
-              icon={
-                isOpen ? <CloseIcon w={3} h={3} /> : <HamburgerIcon w={5} h={5} />
-              }
+              icon={isOpen ? <CloseIcon w={3} h={3} /> : <HamburgerIcon w={5} h={5} />}
               bg={'transparent'}
               color={'next-primary'}
               aria-label={'Toggle Navigation'}

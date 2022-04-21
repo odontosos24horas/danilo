@@ -12,9 +12,7 @@ export type NextTemplateHomeProps = {
   nextTeamItems: Array<Record<string, string>>
 }
 
-const NextTemplateHome = ({
-  nextCallToActionItems
-}: NextTemplateHomeProps) => {
+const NextTemplateHome = ({ nextCallToActionItems }: NextTemplateHomeProps) => {
   return (
     <NextLayout>
       <NextHero />

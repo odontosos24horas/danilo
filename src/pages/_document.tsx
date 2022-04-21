@@ -5,8 +5,14 @@ export default class MyDocument extends Document {
     return (
       <Html>
         <Head>
-          <meta name="description" content="Dr. Danilo Antunes é um cirurgião dentista especializado em implantes dentários e periodontia. Atende no bairro de Lourdes, em Belo Horizonte." />
-          <meta name="keywords" content="implantes em BH, periodontia BH, implante dentário, implantes dentários BH" />
+          <meta
+            name="description"
+            content="Dr. Danilo Antunes é um cirurgião dentista especializado em implantes dentários e periodontia. Atende no bairro de Lourdes, em Belo Horizonte."
+          />
+          <meta
+            name="keywords"
+            content="implantes em BH, periodontia BH, implante dentário, implantes dentários BH"
+          />
           <link rel="icon" href="/favicon.png" />
           {/* <script async src="https://www.googletagmanager.com/gtag/js?id=GTM-PPHPCBH" />
           <script

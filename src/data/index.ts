@@ -210,17 +210,13 @@ export const nextTeamItems = [
   {
     name: 'Priscilla',
     role: 'Movie star',
-    text:
-      "Thank you for making it painless, pleasant and most of all, hassle free! I'm good to go. No matter where you go, EEZY is the coolest, most happening thing around! I love EEZY!",
-    avatar:
-      '/images/home/team/daniel.svg'
+    text: "Thank you for making it painless, pleasant and most of all, hassle free! I'm good to go. No matter where you go, EEZY is the coolest, most happening thing around! I love EEZY!",
+    avatar: '/images/home/team/daniel.svg'
   },
   {
     name: 'Luiz',
     role: 'Musician',
-    text:
-      'I am so pleased with this product. EEZY is both attractive and highly adaptable. Without EEZY, we would have gone bankrupt by now. Thank you for creating this product!',
-    avatar:
-      '/images/home/team/bruna.svg'
+    text: 'I am so pleased with this product. EEZY is both attractive and highly adaptable. Without EEZY, we would have gone bankrupt by now. Thank you for creating this product!',
+    avatar: '/images/home/team/bruna.svg'
   }
 ] as unknown as Array<Record<string, string>>

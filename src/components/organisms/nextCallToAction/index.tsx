@@ -1,9 +1,5 @@
 import React, { Suspense, useEffect, useState } from 'react'
-import {
-  Flex,
-  Stack,
-  Text
-} from '@chakra-ui/react'
+import { Flex, Stack, Text } from '@chakra-ui/react'
 import NextButton from '../../atoms/nextButton'
 import Link from 'next/link'
 import Image from 'next/image'
@@ -27,7 +23,7 @@ export interface NextCallToActionProps {
   directionMd?: 'row' | 'column' | 'row-reverse' | 'column-reverse'
   directionBase?: 'row' | 'column' | 'row-reverse' | 'column-reverse'
   content: 'image' | 'map' | 'form' | 'carousel'
-  id: string,
+  id: string
   rightItemJustify?: 'end'
 }
 
@@ -61,7 +57,14 @@ const NextCallToAction = ({
   if (!isFront) return null
   return (
     <Stack id={id} bg={background} direction={{ base: directionBase, md: directionMd }}>
-      <Flex px={{ base: 10 }} pt={content === 'form' ? 20 : [12, 0]} pb={{ base: 6, md: 0 }} flex={1} align={'center'} justify={'center'}>
+      <Flex
+        px={{ base: 10 }}
+        pt={content === 'form' ? 20 : [12, 0]}
+        pb={{ base: 6, md: 0 }}
+        flex={1}
+        align={'center'}
+        justify={'center'}
+      >
         <Stack spacing={6} w={'full'} maxW={'lg'}>
           <Text
             color={titleColor}
@@ -72,9 +75,7 @@ const NextCallToAction = ({
           >
             {title}
           </Text>
-          {content === 'form' && (
-            <NextContactUs />
-          )}
+          {content === 'form' && <NextContactUs />}
           <Text fontSize={{ base: 'md', lg: 'lg' }} color={textColor}>
             {text}
           </Text>
@@ -91,21 +92,14 @@ const NextCallToAction = ({
       </Flex>
       <Flex flex={1} pt={[0, 12]} justify={rightItemJustify}>
         {(content === 'image' || content === 'form') && (
-          <Image
-            alt={title}
-            src={image}
-            width={width}
-            height={height}
-          />
+          <Image alt={title} src={image} width={width} height={height} />
         )}
         {content === 'map' && (
           <Suspense fallback={() => 'loading'}>
             <NextMap />
           </Suspense>
         )}
-        {content === 'carousel' && (
-          <NextCarousel />
-        )}
+        {content === 'carousel' && <NextCarousel />}
       </Flex>
     </Stack>
   )

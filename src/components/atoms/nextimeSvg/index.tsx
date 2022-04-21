@@ -8,13 +8,7 @@ const NextimeSvg = ({ size = 1.5 }: Props) => {
   const height = `${size}rem`
   const width = `${4 * size}rem`
   return (
-    <svg
-      width={width}
-      height={height}
-      viewBox="0 0 105.83333 26.458334"
-      version="1.1"
-      id="svg8"
-    >
+    <svg width={width} height={height} viewBox="0 0 105.83333 26.458334" version="1.1" id="svg8">
       <defs id="defs2" />
       <g id="layer1" transform="translate(0,-270.54165)">
         <path

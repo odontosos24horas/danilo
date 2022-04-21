@@ -1,4 +1,3 @@
-
 import React from 'react'
 import Link from 'next/link'
 import {
@@ -17,11 +16,7 @@ import {
   Flex
 } from '@chakra-ui/react'
 import Image from 'next/image'
-import {
-  FaInstagram,
-  FaLinkedinIn,
-  FaYoutube
-} from 'react-icons/fa'
+import { FaInstagram, FaLinkedinIn, FaYoutube } from 'react-icons/fa'
 
 export interface NextTeamCardProps {
   name: string
@@ -59,19 +54,9 @@ const NextTeamCard = ({
         onClick={onOpen}
         cursor={'pointer'}
       >
-        <Stack
-          textAlign="left"
-        >
-          <Image
-            alt={name}
-            src={avatar}
-            width={width}
-            height={height}
-          />
-          <Text
-            fontSize="xl"
-            fontWeight={600}
-          >
+        <Stack textAlign="left">
+          <Image alt={name} src={avatar} width={width} height={height} />
+          <Text fontSize="xl" fontWeight={600}>
             {name}
           </Text>
           <Text color={'gray.200'}>{role}</Text>
@@ -79,29 +64,16 @@ const NextTeamCard = ({
       </Box>
       <Modal size={'xl'} onClose={onClose} isOpen={isOpen} isCentered>
         <ModalOverlay />
-        <ModalContent bg='dark'>
+        <ModalContent bg="dark">
           <ModalHeader>
-            <Image
-              alt={name}
-              src={avatar}
-              width={width}
-              height={height}
-            />
+            <Image alt={name} src={avatar} width={width} height={height} />
           </ModalHeader>
           <ModalCloseButton />
           <ModalBody>
-            <Text
-              fontSize="4xl"
-              fontWeight={600}
-              align={'center'}
-            >
+            <Text fontSize="4xl" fontWeight={600} align={'center'}>
               {name}
             </Text>
-            <Text
-              fontSize="lg"
-              align={'center'}
-              color={'primary-dark'}
-            >
+            <Text fontSize="lg" align={'center'} color={'primary-dark'}>
               {role}
             </Text>
             {text}
@@ -112,7 +84,7 @@ const NextTeamCard = ({
                 <Box p="4">
                   <Link href={linkedin}>
                     <a target="_blank" rel="noreferrer">
-                      <Icon color="next-primary" as={FaLinkedinIn} w={8} h={8}/>
+                      <Icon color="next-primary" as={FaLinkedinIn} w={8} h={8} />
                     </a>
                   </Link>
                 </Box>
@@ -121,7 +93,7 @@ const NextTeamCard = ({
                 <Box p="4">
                   <Link href={instagram}>
                     <a target="_blank" rel="noreferrer">
-                      <Icon color="next-primary" as={FaInstagram} w={8} h={8}/>
+                      <Icon color="next-primary" as={FaInstagram} w={8} h={8} />
                     </a>
                   </Link>
                 </Box>
@@ -130,7 +102,7 @@ const NextTeamCard = ({
                 <Box p="4">
                   <Link href={youtube}>
                     <a target="_blank" rel="noreferrer">
-                      <Icon color="next-primary" as={FaYoutube} w={8} h={8}/>
+                      <Icon color="next-primary" as={FaYoutube} w={8} h={8} />
                     </a>
                   </Link>
                 </Box>

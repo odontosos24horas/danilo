@@ -1,4 +1,3 @@
-
 import { NextApiRequest, NextApiResponse } from 'next'
 import sgMail from '@sendgrid/mail'
 
@@ -18,7 +17,7 @@ async function sendEmail(req: NextApiRequest, res: NextApiResponse) {
       console.log('Email sent')
       return res.status(200).json({ error: '' })
     })
-    .catch((error) => {
+    .catch(error => {
       console.error(error)
       return res.status(error.statusCode || 500).json({ error: error.message })
     })

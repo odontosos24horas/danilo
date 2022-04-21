@@ -2,15 +2,7 @@ import React, { ReactNode } from 'react'
 import Image from 'next/image'
 import packageInfo from '../../../../package.json'
 
-import {
-  Box,
-  Container,
-  Heading,
-  SimpleGrid,
-  Stack,
-  Text,
-  Link
-} from '@chakra-ui/react'
+import { Box, Container, Heading, SimpleGrid, Stack, Text, Link } from '@chakra-ui/react'
 import NextimeSvg from '../../atoms/nextimeSvg'
 const version = packageInfo.version
 const NeXTIMEColor = '#202F4F'
@@ -30,19 +22,20 @@ export type NextFooterProps = {
 const NextFooter = () => {
   return (
     <footer>
-      <Box
-        bg={'white'}
-        color={'next-primary'}>
+      <Box bg={'white'} color={'next-primary'}>
         <Container as={Stack} maxW={'6xl'} py={10}>
-          <SimpleGrid
-            templateColumns={{ sm: '1fr 1fr', md: '2fr 1fr 1fr 2fr' }}
-            spacing={8}>
+          <SimpleGrid templateColumns={{ sm: '1fr 1fr', md: '2fr 1fr 1fr 2fr' }} spacing={8}>
             <Stack spacing={6}>
               <Box>
-                <Image src="/images/logos/logo_header.svg" alt="Logo Dr Danilo Antunes" width={261} height={48} />
+                <Image
+                  src="/images/logos/logo_header.svg"
+                  alt="Logo Dr Danilo Antunes"
+                  width={261}
+                  height={48}
+                />
               </Box>
               <Text fontSize={'sm'}>
-              © {new Date().getFullYear()} Dr. Danilo Antunes. Todos os direitos reservados.
+                © {new Date().getFullYear()} Dr. Danilo Antunes. Todos os direitos reservados.
               </Text>
               <Text>
                 Desenvolvido por:
@@ -60,9 +53,7 @@ const NextFooter = () => {
                   </a>
                 </Link>
               </Text>
-              <Text>
-                v{version}
-              </Text>
+              <Text>v{version}</Text>
             </Stack>
             <Stack align={'flex-start'}>
               <ListHeader>Menu</ListHeader>

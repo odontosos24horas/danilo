@@ -8,18 +8,10 @@ export default function NextCarousel() {
   const top = useBreakpointValue({ base: '90%', md: '50%' })
   const side = useBreakpointValue({ base: '30%', md: '10px' })
 
-  const cards = [
-    '/images/carousel/1.jpeg',
-    '/images/carousel/2.jpeg',
-    '/images/carousel/3.jpeg'
-  ]
+  const cards = ['/images/carousel/1.jpeg', '/images/carousel/2.jpeg', '/images/carousel/3.jpeg']
 
   return (
-    <Box
-      position={'relative'}
-      height={'441px'}
-      width={'662px'}
-      overflow={'hidden'}>
+    <Box position={'relative'} height={'441px'} width={'662px'} overflow={'hidden'}>
       {/* CSS files for react-slick */}
       <link
         rel="stylesheet"
@@ -39,12 +31,13 @@ export default function NextCarousel() {
         borderRadius="full"
         position="absolute"
         size="lg"
-        fontSize='29px'
+        fontSize="29px"
         left={side}
         top={top}
         transform={'translate(0%, -50%)'}
         zIndex={2}
-        onClick={() => slider?.slickPrev()}>
+        onClick={() => slider?.slickPrev()}
+      >
         <FaChevronLeft />
       </IconButton>
       {/* Right Icon */}
@@ -54,16 +47,17 @@ export default function NextCarousel() {
         borderRadius="full"
         position="absolute"
         size="lg"
-        fontSize='29px'
+        fontSize="29px"
         right={side}
         top={top}
         transform={'translate(0%, -50%)'}
         zIndex={2}
-        onClick={() => slider?.slickNext()}>
+        onClick={() => slider?.slickNext()}
+      >
         <FaChevronRight />
       </IconButton>
       {/* Slider */}
-      <Slider ref={(slider) => setSlider(slider)}>
+      <Slider ref={slider => setSlider(slider)}>
         {cards.map((url, index) => (
           <Box
             key={index}
