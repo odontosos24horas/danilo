@@ -1,6 +1,9 @@
+/* eslint-disable prettier/prettier */
 import React from 'react'
 import { NextFeatureProps } from '../../molecules/nextFeature'
-import NextCallToAction, { NextCallToActionProps } from '../../organisms/nextCallToAction'
+import NextCallToAction, {
+  NextCallToActionProps
+} from '../../organisms/nextCallToAction'
 import NextLayout from '../nextLayout'
 import NextHeroPage from '../../organisms/nextHeropage'
 import { Box } from '@chakra-ui/react'
@@ -12,7 +15,9 @@ export type NextTemplateAboutUs = {
   nextTeamItems: Array<Record<string, string>>
 }
 
-const NextTemplateAboutUs = ({ nextCallToActionItems }: NextTemplateAboutUs) => {
+const NextTemplateAboutUs = ({
+  nextCallToActionItems
+}: NextTemplateAboutUs) => {
   return (
     <NextLayout>
       <NextHeroPage />

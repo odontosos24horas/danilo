@@ -45,6 +45,15 @@ export const nextCallToActionItems = [
     height: 566,
     content: 'image',
     background: 'next-gray-dark'
+  },
+  {
+    title: 'Especialidades',
+    text: 'Formado em 2000 pela UEMG- Lavras, o Dr. Danilo Antunes ao longo desses anos fez vários cursos de aperfeiçoamento e especialização nas áreas de Implantodontia e Periodontia. - 2001 aperfeiçoamento em Implantodontia- CEO-IPSEMG; - 2002 especialização em Periodontia, finalizada em agosto/2003- CEO-IPSEMG; - 2005 pós em Implantodontia pela ABO-MG; - 2006 pós em cirurgias avançadas em Implantodontia pela ABO-MG; - 2007 especialização em Implantodontia finalizada em agosto de 2009 pela ABCD_MG; - 2010 pós em cirurgia avançada em Implantodontia pelo Núcleo; - 2011 Palestra da Técnica de Implante com cirurgia Guiada( o famoso implante sem corte).',
+    image: '/images/profile.jpg',
+    width: 488,
+    height: 566,
+    content: 'image',
+    background: 'next-gray-dark'
   }
 ] as unknown as Array<NextCallToActionProps>
 
