@@ -11,7 +11,14 @@ export interface NextFeatureProps {
   height?: number
 }
 
-const NextFeature = ({ title, text, image, icon, width = 64, height = 64 }: NextFeatureProps) => {
+const NextFeature = ({
+  title,
+  text,
+  image,
+  icon,
+  width = 64,
+  height = 64
+}: NextFeatureProps) => {
   return (
     <Stack>
       {icon && (

@@ -1,7 +1,14 @@
 import React, { useState } from 'react'
 import { Field, Form, Formik } from 'formik'
 
-import { Box, FormControl, FormErrorMessage, FormLabel, Input, useToast } from '@chakra-ui/react'
+import {
+  Box,
+  FormControl,
+  FormErrorMessage,
+  FormLabel,
+  Input,
+  useToast
+} from '@chakra-ui/react'
 import NextButton from '../../atoms/nextButton'
 
 const NextContactUs = () => {
@@ -101,28 +108,48 @@ const NextContactUs = () => {
           </Field>
           <Field name="email" validate={handleValidationEmail}>
             {({ field, form }: any) => (
-              <FormControl mt={4} isInvalid={form.errors.email && form.touched.email}>
+              <FormControl
+                mt={4}
+                isInvalid={form.errors.email && form.touched.email}
+              >
                 <FormLabel htmlFor="email" color="white">
                   E-mail:
                 </FormLabel>
-                <Input {...field} id="email" placeholder="seu melhor e-mail" bg="white" />
+                <Input
+                  {...field}
+                  id="email"
+                  placeholder="seu melhor e-mail"
+                  bg="white"
+                />
                 <FormErrorMessage>{form.errors.email}</FormErrorMessage>
               </FormControl>
             )}
           </Field>
           <Field name="phone" validate={handleValidationPhone}>
             {({ field, form }: any) => (
-              <FormControl mt={4} isInvalid={form.errors.phone && form.touched.phone}>
+              <FormControl
+                mt={4}
+                isInvalid={form.errors.phone && form.touched.phone}
+              >
                 <FormLabel htmlFor="phone" color="white">
                   Telefone:
                 </FormLabel>
-                <Input {...field} id="phone" placeholder="(00) 00000-0000" bg="white" />
+                <Input
+                  {...field}
+                  id="phone"
+                  placeholder="(00) 00000-0000"
+                  bg="white"
+                />
                 <FormErrorMessage>{form.errors.email}</FormErrorMessage>
               </FormControl>
             )}
           </Field>
           <Box mt={4}>
-            <NextButton bg="next-dark" isLoading={props.isSubmitting} type="submit">
+            <NextButton
+              bg="next-dark"
+              isLoading={props.isSubmitting}
+              type="submit"
+            >
               {buttonText}
             </NextButton>
           </Box>

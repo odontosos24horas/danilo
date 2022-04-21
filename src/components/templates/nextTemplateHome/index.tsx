@@ -1,6 +1,8 @@
 import React from 'react'
 import { NextFeatureProps } from '../../molecules/nextFeature'
-import NextCallToAction, { NextCallToActionProps } from '../../organisms/nextCallToAction'
+import NextCallToAction, {
+  NextCallToActionProps
+} from '../../organisms/nextCallToAction'
 import NextWithBackgroundImage from '../../organisms/nextWithBackgroundImage'
 import NextHero from '../../organisms/nextHero'
 import NextLayout from '../nextLayout'

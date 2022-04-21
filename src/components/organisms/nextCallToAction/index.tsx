@@ -1,11 +1,10 @@
-import React, { Suspense, useEffect, useState } from 'react'
+import React, { useEffect, useState } from 'react'
 import { Flex, Stack, Text } from '@chakra-ui/react'
 import NextButton from '../../atoms/nextButton'
 import Link from 'next/link'
 import Image from 'next/image'
 import NextContactUs from '../nextContactUs'
 import NextCarousel from '../nextCarousel'
-const NextMap = React.lazy(() => import('../../atoms/nextMap'))
 
 export interface NextCallToActionProps {
   bgButton?: 'next-primary' | 'next-dark' | 'white' | 'dark' | undefined
@@ -56,7 +55,14 @@ const NextCallToAction = ({
   }, [])
   if (!isFront) return null
   return (
-    <Stack id={id} bg={background} direction={{ base: directionBase, md: directionMd }}>
+    <Stack
+      id={id}
+      bg={background}
+      direction={{
+        base: directionBase,
+        md: directionMd
+      }}
+    >
       <Flex
         px={{ base: 10 }}
         pt={content === 'form' ? 20 : [12, 0]}
@@ -93,11 +99,6 @@ const NextCallToAction = ({
       <Flex flex={1} pt={[0, 12]} justify={rightItemJustify}>
         {(content === 'image' || content === 'form') && (
           <Image alt={title} src={image} width={width} height={height} />
-        )}
-        {content === 'map' && (
-          <Suspense fallback={() => 'loading'}>
-            <NextMap />
-          </Suspense>
         )}
         {content === 'carousel' && <NextCarousel />}
       </Flex>

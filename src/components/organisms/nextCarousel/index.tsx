@@ -1,3 +1,4 @@
+/* eslint-disable prettier/prettier */
 import React, { useState } from 'react'
 import { Box, IconButton, useBreakpointValue } from '@chakra-ui/react'
 import { FaChevronLeft, FaChevronRight } from 'react-icons/fa'
@@ -8,7 +9,11 @@ export default function NextCarousel() {
   const top = useBreakpointValue({ base: '90%', md: '50%' })
   const side = useBreakpointValue({ base: '30%', md: '10px' })
 
-  const cards = ['/images/carousel/1.jpeg', '/images/carousel/2.jpeg', '/images/carousel/3.jpeg']
+  const cards = [
+    '/images/carousel/1.jpeg',
+    '/images/carousel/2.jpeg',
+    '/images/carousel/3.jpeg'
+  ]
 
   return (
     <Box position={'relative'} height={'441px'} width={'662px'} overflow={'hidden'}>

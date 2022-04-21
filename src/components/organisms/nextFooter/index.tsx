@@ -2,7 +2,15 @@ import React, { ReactNode } from 'react'
 import Image from 'next/image'
 import packageInfo from '../../../../package.json'
 
-import { Box, Container, Heading, SimpleGrid, Stack, Text, Link } from '@chakra-ui/react'
+import {
+  Box,
+  Container,
+  Heading,
+  SimpleGrid,
+  Stack,
+  Text,
+  Link
+} from '@chakra-ui/react'
 import NextimeSvg from '../../atoms/nextimeSvg'
 const version = packageInfo.version
 const NeXTIMEColor = '#202F4F'
@@ -24,7 +32,10 @@ const NextFooter = () => {
     <footer>
       <Box bg={'white'} color={'next-primary'}>
         <Container as={Stack} maxW={'6xl'} py={10}>
-          <SimpleGrid templateColumns={{ sm: '1fr 1fr', md: '2fr 1fr 1fr 2fr' }} spacing={8}>
+          <SimpleGrid
+            templateColumns={{ sm: '1fr 1fr', md: '2fr 1fr 1fr 2fr' }}
+            spacing={8}
+          >
             <Stack spacing={6}>
               <Box>
                 <Image
@@ -35,7 +46,8 @@ const NextFooter = () => {
                 />
               </Box>
               <Text fontSize={'sm'}>
-                © {new Date().getFullYear()} Dr. Danilo Antunes. Todos os direitos reservados.
+                © {new Date().getFullYear()} Dr. Danilo Antunes. Todos os
+                direitos reservados.
               </Text>
               <Text>
                 Desenvolvido por:
@@ -68,7 +80,9 @@ const NextFooter = () => {
             <Stack align={'flex-start'}>
               <ListHeader>Contatos</ListHeader>
               <Link href={'mailto:odontosos@odontosos.com.br'}>E-mail</Link>
-              <Link href={'https://www.instagram.com/dr.daniloantunes'}>Instagram</Link>
+              <Link href={'https://www.instagram.com/dr.daniloantunes'}>
+                Instagram
+              </Link>
             </Stack>
             <Stack align={'flex-start'}>
               <Link href={'tel:3133188718'}>
@@ -77,7 +91,8 @@ const NextFooter = () => {
                 </Heading>
               </Link>
               <Text color="next-primary" fontSize="sm">
-                Rua Gonçalves Dias, 82 | Sala 902 - Bairro Funcionários - Cep 30140-190
+                Rua Gonçalves Dias, 82 | Sala 902 - Bairro Funcionários - Cep
+                30140-190
               </Text>
             </Stack>
           </SimpleGrid>

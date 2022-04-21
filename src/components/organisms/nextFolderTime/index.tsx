@@ -20,7 +20,9 @@ const NextFolderTime = ({ bg = 'next-primary' }: NextFolderTimeProps) => {
           </GridItem>
           <GridItem colSpan={[1, 1]}>
             <Box>
-              <Heading fontWeight={600}>Faça seu bem mais precioso valer realmente a pena</Heading>
+              <Heading fontWeight={600}>
+                Faça seu bem mais precioso valer realmente a pena
+              </Heading>
             </Box>
           </GridItem>
         </Grid>

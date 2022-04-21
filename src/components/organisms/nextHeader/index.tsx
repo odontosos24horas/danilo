@@ -17,7 +17,12 @@ import {
   Container,
   Heading
 } from '@chakra-ui/react'
-import { HamburgerIcon, CloseIcon, ChevronDownIcon, ChevronRightIcon } from '@chakra-ui/icons'
+import {
+  HamburgerIcon,
+  CloseIcon,
+  ChevronDownIcon,
+  ChevronRightIcon
+} from '@chakra-ui/icons'
 
 const DesktopSubNav = ({ label, href, subLabel }: NavItem) => {
   return (
@@ -31,7 +36,11 @@ const DesktopSubNav = ({ label, href, subLabel }: NavItem) => {
     >
       <Stack direction={'row'} align={'center'}>
         <Box>
-          <Text transition={'all .3s ease'} _groupHover={{ color: 'pink.400' }} fontWeight={500}>
+          <Text
+            transition={'all .3s ease'}
+            _groupHover={{ color: 'pink.400' }}
+            fontWeight={500}
+          >
             {label}
           </Text>
           <Text fontSize={'sm'}>{subLabel}</Text>
@@ -101,22 +110,24 @@ const DesktopNav = () => {
         <Box key={navItem.label}>
           <Popover trigger={'hover'} placement={'bottom-start'}>
             <PopoverTrigger>
-              <Link
-                href={navItem.href ?? '#'}
-                fontSize={'lg'}
-                fontWeight={500}
-                color={linkColor}
-                minH="80px"
-                px={4}
-                py={'28px'}
-                _hover={{
-                  textDecoration: 'none',
-                  color: linkHoverColor,
-                  bgColor: 'next-secondary'
-                }}
-              >
-                {navItem.label}
-              </Link>
+              <Box>
+                <Link
+                  href={navItem.href ?? '#'}
+                  fontSize={'lg'}
+                  fontWeight={500}
+                  color={linkColor}
+                  minH="80px"
+                  px={4}
+                  py={'28px'}
+                  _hover={{
+                    textDecoration: 'none',
+                    color: linkHoverColor,
+                    bgColor: 'next-secondary'
+                  }}
+                >
+                  {navItem.label}
+                </Link>
+              </Box>
             </PopoverTrigger>
 
             {navItem.children && (
@@ -242,7 +253,13 @@ const NextHeader = () => {
           <Flex flex={{ base: 1 }} display={{ base: 'flex', md: 'none' }}>
             <IconButton
               onClick={onToggle}
-              icon={isOpen ? <CloseIcon w={3} h={3} /> : <HamburgerIcon w={5} h={5} />}
+              icon={
+                isOpen ? (
+                  <CloseIcon w={3} h={3} />
+                ) : (
+                  <HamburgerIcon w={5} h={5} />
+                )
+              }
               bg={'transparent'}
               color={'next-primary'}
               aria-label={'Toggle Navigation'}

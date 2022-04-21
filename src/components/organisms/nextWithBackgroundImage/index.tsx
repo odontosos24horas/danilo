@@ -1,4 +1,11 @@
-import { Stack, Flex, Button, Text, VStack, useBreakpointValue } from '@chakra-ui/react'
+import {
+  Stack,
+  Flex,
+  Button,
+  Text,
+  VStack,
+  useBreakpointValue
+} from '@chakra-ui/react'
 
 export default function NextWithBackgroundImage() {
   return (
@@ -23,9 +30,12 @@ export default function NextWithBackgroundImage() {
           >
             Especialidades
           </Text>
-          <Text color={'white'} fontSize={useBreakpointValue({ base: 'md', md: 'lg' })}>
-            Conheça as duas especialidades de implantes oferecidas por nós e escolha a ideal para
-            seu tratamento.
+          <Text
+            color={'white'}
+            fontSize={useBreakpointValue({ base: 'md', md: 'lg' })}
+          >
+            Conheça as duas especialidades de implantes oferecidas por nós e
+            escolha a ideal para seu tratamento.
           </Text>
           <Stack direction={'row'}>
             <Button

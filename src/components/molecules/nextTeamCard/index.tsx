@@ -84,7 +84,12 @@ const NextTeamCard = ({
                 <Box p="4">
                   <Link href={linkedin}>
                     <a target="_blank" rel="noreferrer">
-                      <Icon color="next-primary" as={FaLinkedinIn} w={8} h={8} />
+                      <Icon
+                        color="next-primary"
+                        as={FaLinkedinIn}
+                        w={8}
+                        h={8}
+                      />
                     </a>
                   </Link>
                 </Box>
