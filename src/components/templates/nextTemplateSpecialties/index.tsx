@@ -1,6 +1,7 @@
 import React from 'react'
 import { NextFeatureProps } from '../../molecules/nextFeature'
 import NextAccordionImage, { NextAccordionImageProps } from '../../organisms/nextAccordionImage'
+import NextGridListWithHeading from '../../organisms/nextGridListWithHeading'
 import NextLayout from '../nextLayout'
 
 export type NextTemplateAboutUs = {
@@ -26,6 +27,7 @@ const NextTemplateSpecialties = ({ nextCallToActionItems }: NextTemplateAboutUs)
         content={nextCallToActionItems[4].content}
         background={nextCallToActionItems[4].background}
       />
+      <NextGridListWithHeading title={'Como funciona?'} />
     </NextLayout>
   )
 }
