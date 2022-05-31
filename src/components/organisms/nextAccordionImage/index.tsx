@@ -15,20 +15,20 @@ import Image from 'next/image'
 export interface NextAccordionImageProps {
   bgButton?: 'next-primary' | 'next-dark' | 'white' | 'dark' | undefined
   background?: string
-  title: string
+  title?: string
   titleColor?: string
   bgGradient?: string
-  text: string
+  text?: string
   textColor?: string
   textButton?: string
   image: string
-  url: string
-  width: string
-  height: string
+  url?: string
+  width?: string
+  height?: string
   directionMd?: 'row' | 'column' | 'row-reverse' | 'column-reverse'
   directionBase?: 'row' | 'column' | 'row-reverse' | 'column-reverse'
-  content: 'image' | 'map' | 'form' | 'carousel'
-  id: string
+  content?: 'image' | 'map' | 'form' | 'carousel'
+  id?: string
   rightItemJustify?: 'end'
 }
 
@@ -37,7 +37,7 @@ const NextAccordionImage = ({
   title,
   titleColor,
   textColor = 'next-quaternary',
-  bgGradient = 'linear(to-b, next-tertiary, next-quintenary)',
+  bgGradient = 'linear(to-b, next-secondary, next-primary)',
   image,
   width,
   height,

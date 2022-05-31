@@ -47,8 +47,16 @@ export const nextCallToActionItems = [
     background: 'next-gray-dark'
   },
   {
+    title: 'Dr. Rosane',
+    text: 'A Dra. Rosane Lage conta com mais de 16 anos de experiência se destacando sempre pela seriedade, tratamentos acessíveis e excelentes resultados alcançados. A fim de diferenciar seus tratamentos e melhorar ainda mais a qualidade do atendimento de seus pacientes a Dra. Rosane Lage, utiliza o que há de mais moderno na odontologia. E uma das mais recentes novidades é a microscopia odontológica (uma tecnologia ainda rara) no tratamento endodôntico (canal). Pensando sempre no bem estar do paciente a Dra. Rosane Lage preparou um consultório moderno e bem equipado, planejado para proporcionar uma sensação de conforto e bem estar atendendo aos mais altos padrões de qualidade. Tudo isso com o  objetivo de viabilizar o melhor tratamento dentário seja qual for a necessidade.',
+    image: '/images/profile.jpg',
+    width: 488,
+    height: 566,
+    content: 'image',
+    background: 'next-gray-dark'
+  },
+  {
     title: 'Especialidades',
-    text: 'Formado em 2000 pela UEMG- Lavras, o Dr. Danilo Antunes ao longo desses anos fez vários cursos de aperfeiçoamento e especialização nas áreas de Implantodontia e Periodontia. - 2001 aperfeiçoamento em Implantodontia- CEO-IPSEMG; - 2002 especialização em Periodontia, finalizada em agosto/2003- CEO-IPSEMG; - 2005 pós em Implantodontia pela ABO-MG; - 2006 pós em cirurgias avançadas em Implantodontia pela ABO-MG; - 2007 especialização em Implantodontia finalizada em agosto de 2009 pela ABCD_MG; - 2010 pós em cirurgia avançada em Implantodontia pelo Núcleo; - 2011 Palestra da Técnica de Implante com cirurgia Guiada( o famoso implante sem corte).',
     image: '/images/profile.jpg',
     width: 488,
     height: 566,

@@ -14,17 +14,17 @@ const NextTemplateSpecialties = ({ nextCallToActionItems }: NextTemplateAboutUs)
   return (
     <NextLayout>
       <NextAccordionImage
-        id={'profile'}
-        title={nextCallToActionItems[3].title}
-        text={nextCallToActionItems[3].text}
-        image={nextCallToActionItems[3].image}
-        textButton={nextCallToActionItems[3].textButton}
-        directionMd={nextCallToActionItems[3].directionMd}
-        width={nextCallToActionItems[3].width}
-        height={nextCallToActionItems[3].height}
-        url={nextCallToActionItems[3].url}
-        content={nextCallToActionItems[3].content}
-        background={nextCallToActionItems[3].background}
+        id={'specialties'}
+        title={nextCallToActionItems[4].title}
+        text={nextCallToActionItems[4].text}
+        image={nextCallToActionItems[4].image}
+        textButton={nextCallToActionItems[4].textButton}
+        directionMd={nextCallToActionItems[4].directionMd}
+        width={nextCallToActionItems[4].width}
+        height={nextCallToActionItems[4].height}
+        url={nextCallToActionItems[4].url}
+        content={nextCallToActionItems[4].content}
+        background={nextCallToActionItems[4].background}
       />
     </NextLayout>
   )

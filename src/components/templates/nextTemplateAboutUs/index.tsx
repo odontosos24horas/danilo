@@ -37,7 +37,7 @@ const NextTemplateAboutUs = ({
         />
       </Box>
       <NextCallToAction
-        id={'profile'}
+        id={'danilo'}
         title={nextCallToActionItems[2].title}
         text={nextCallToActionItems[2].text}
         image={nextCallToActionItems[2].image}
@@ -48,6 +48,19 @@ const NextTemplateAboutUs = ({
         url={nextCallToActionItems[2].url}
         content={nextCallToActionItems[2].content}
         background={nextCallToActionItems[2].background}
+      />
+      <NextCallToAction
+        id={'rosane'}
+        title={nextCallToActionItems[3].title}
+        text={nextCallToActionItems[3].text}
+        image={nextCallToActionItems[3].image}
+        textButton={nextCallToActionItems[3].textButton}
+        directionMd={nextCallToActionItems[3].directionMd}
+        width={nextCallToActionItems[3].width}
+        height={nextCallToActionItems[3].height}
+        url={nextCallToActionItems[3].url}
+        content={nextCallToActionItems[3].content}
+        background={nextCallToActionItems[3].background}
       />
     </NextLayout>
   )

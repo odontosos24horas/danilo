@@ -31,7 +31,7 @@ const NextCallToAction = ({
   background,
   title,
   titleColor,
-  bgGradient = 'linear(to-b, next-tertiary, next-quintenary)',
+  bgGradient = 'linear(to-b, next-secondary, next-primary)',
   text,
   textColor = 'next-quaternary',
   image,
