@@ -44,8 +44,7 @@ const NextAccordionImage = ({
   directionMd = 'row',
   directionBase = 'column',
   content,
-  id,
-  rightItemJustify
+  id
 }: NextAccordionImageProps) => {
   const [isFront, setIsFront] = useState(false)
   useEffect(() => {
@@ -82,7 +81,7 @@ const NextAccordionImage = ({
                 <AccordionButton borderBottom="1px" borderColor="next-primary">
                   <Box flex="1" textAlign="left">
                     <Text
-                      color={'next-secondary'}
+                      color={'next-primary'}
                       fontWeight={500}
                       fontSize={{ base: 'md', md: 'lg', lg: 'xl' }}
                     >
@@ -113,7 +112,7 @@ const NextAccordionImage = ({
                 <AccordionButton borderBottom="1px" borderColor="next-primary">
                   <Box flex="1" textAlign="left">
                     <Text
-                      color={'next-secondary'}
+                      color={'next-primary'}
                       fontWeight={500}
                       fontSize={{ base: 'md', md: 'lg', lg: 'xl' }}
                     >
@@ -135,7 +134,7 @@ const NextAccordionImage = ({
           </Accordion>
         </Stack>
       </Flex>
-      <Flex flex={1} pt={[0, 12]} justify={rightItemJustify}>
+      <Flex flex={1}>
         <Image alt={title} src={image} width={width} height={height} />
       </Flex>
     </Stack>

@@ -57,9 +57,9 @@ export const nextCallToActionItems = [
   },
   {
     title: 'Especialidades',
-    image: '/images/profile.jpg',
-    width: 488,
-    height: 566,
+    image: '/images/specialties.jpg',
+    width: 669,
+    height: 446,
     content: 'image',
     background: 'next-gray-dark'
   }
