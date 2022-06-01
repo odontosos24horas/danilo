@@ -36,6 +36,7 @@ export default function NextGridListWithHeading({
   return (
     <Box>
       <Text
+        pb={6}
         color={titleColor}
         bgGradient={titleColor ? undefined : bgGradient}
         bgClip={!titleColor ? 'text' : undefined}
@@ -44,20 +45,28 @@ export default function NextGridListWithHeading({
       >
         {title}
       </Text>
-      <SimpleGrid columns={{ base: 1, md: 1, lg: 1 }} spacing={10}>
+      <SimpleGrid spacing={10}>
         {features.map(feature => (
           <HStack key={feature.id} align={'top'}>
-            <Box px={2}>
+            <Box px={2} display={['none', 'block']}>
               <Image
                 alt={feature.title}
                 src={feature.image}
-                width={103}
-                height={103}
+                width={70}
+                height={70}
                 layout={'fixed'}
               />
             </Box>
             <VStack align={'start'}>
-              <Text fontWeight={600}>{feature.title}</Text>
+              <Text
+                color={titleColor}
+                bgGradient={titleColor ? undefined : bgGradient}
+                bgClip={!titleColor ? 'text' : undefined}
+                fontWeight={500}
+                fontSize={{ base: 'md', md: 'lg', lg: 'xl' }}
+              >
+                {feature.title}
+              </Text>
               <Text color={'gray.600'}>{feature.text}</Text>
             </VStack>
           </HStack>

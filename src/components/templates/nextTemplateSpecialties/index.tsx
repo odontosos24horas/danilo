@@ -1,8 +1,10 @@
+import { SimpleGrid, Box, Grid, GridItem, Container } from '@chakra-ui/react'
 import React from 'react'
 import { NextFeatureProps } from '../../molecules/nextFeature'
 import NextAccordionImage, { NextAccordionImageProps } from '../../organisms/nextAccordionImage'
 import NextGridListWithHeading from '../../organisms/nextGridListWithHeading'
 import NextLayout from '../nextLayout'
+import Image from 'next/image'
 
 export type NextTemplateAboutUs = {
   nextFeatureItems: Array<NextFeatureProps>
@@ -27,7 +29,26 @@ const NextTemplateSpecialties = ({ nextCallToActionItems }: NextTemplateAboutUs)
         content={nextCallToActionItems[4].content}
         background={nextCallToActionItems[4].background}
       />
-      <NextGridListWithHeading title={'Como funciona?'} />
+      <Box pt={16}>
+        <Grid templateColumns="repeat(7, 1fr)">
+          <GridItem colSpan={2} display={['none', 'block']}>
+            <Box>
+              <Image
+                alt={'Sorriso'}
+                src={'/images/sorriso.jpg'}
+                width={551}
+                height={1014}
+                layout={'responsive'}
+              />
+            </Box>
+          </GridItem>
+          <GridItem colSpan={[7, 5]}>
+            <Container maxW="3xl">
+              <NextGridListWithHeading title={'Como funciona?'} />
+            </Container>
+          </GridItem>
+        </Grid>
+      </Box>
     </NextLayout>
   )
 }
