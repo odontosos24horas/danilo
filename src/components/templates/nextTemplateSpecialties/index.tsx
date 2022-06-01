@@ -1,4 +1,4 @@
-import { SimpleGrid, Box, Grid, GridItem, Container } from '@chakra-ui/react'
+import { Box, Grid, GridItem, Container } from '@chakra-ui/react'
 import React from 'react'
 import { NextFeatureProps } from '../../molecules/nextFeature'
 import NextAccordionImage, { NextAccordionImageProps } from '../../organisms/nextAccordionImage'
