@@ -17,7 +17,7 @@ export default function SplitScreen() {
             <Text
               fontWeight={900}
               as={'span'}
-              bgGradient="linear(to-b, #27B9F1, #2081CD)"
+              bgGradient="linear(to-b, #EACE8C, #D6BD82)"
               bgClip="text"
             >
               Cirurgias
@@ -25,7 +25,7 @@ export default function SplitScreen() {
             <Text
               fontWeight={900}
               as={'span'}
-              bgGradient="linear(to-b, #1C65BB, #152D98)"
+              bgGradient="linear(to-b, #CEB77F, #BBA676)"
               bgClip="text"
             >
               <br /> de implante

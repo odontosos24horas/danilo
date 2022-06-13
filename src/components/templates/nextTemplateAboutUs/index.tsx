@@ -1,6 +1,9 @@
+/* eslint-disable prettier/prettier */
 import React from 'react'
 import { NextFeatureProps } from '../../molecules/nextFeature'
-import NextCallToAction, { NextCallToActionProps } from '../../organisms/nextCallToAction'
+import NextCallToAction, {
+  NextCallToActionProps
+} from '../../organisms/nextCallToAction'
 import NextLayout from '../nextLayout'
 import NextHeroPage from '../../organisms/nextHeropage'
 import { Box } from '@chakra-ui/react'
@@ -12,7 +15,9 @@ export type NextTemplateAboutUs = {
   nextTeamItems: Array<Record<string, string>>
 }
 
-const NextTemplateAboutUs = ({ nextCallToActionItems }: NextTemplateAboutUs) => {
+const NextTemplateAboutUs = ({
+  nextCallToActionItems
+}: NextTemplateAboutUs) => {
   return (
     <NextLayout>
       <NextHeroPage />
@@ -32,7 +37,7 @@ const NextTemplateAboutUs = ({ nextCallToActionItems }: NextTemplateAboutUs) => 
         />
       </Box>
       <NextCallToAction
-        id={'profile'}
+        id={'danilo'}
         title={nextCallToActionItems[2].title}
         text={nextCallToActionItems[2].text}
         image={nextCallToActionItems[2].image}
@@ -43,6 +48,19 @@ const NextTemplateAboutUs = ({ nextCallToActionItems }: NextTemplateAboutUs) => 
         url={nextCallToActionItems[2].url}
         content={nextCallToActionItems[2].content}
         background={nextCallToActionItems[2].background}
+      />
+      <NextCallToAction
+        id={'rosane'}
+        title={nextCallToActionItems[3].title}
+        text={nextCallToActionItems[3].text}
+        image={nextCallToActionItems[3].image}
+        textButton={nextCallToActionItems[3].textButton}
+        directionMd={nextCallToActionItems[3].directionMd}
+        width={nextCallToActionItems[3].width}
+        height={nextCallToActionItems[3].height}
+        url={nextCallToActionItems[3].url}
+        content={nextCallToActionItems[3].content}
+        background={nextCallToActionItems[3].background}
       />
     </NextLayout>
   )

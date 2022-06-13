@@ -45,6 +45,23 @@ export const nextCallToActionItems = [
     height: 566,
     content: 'image',
     background: 'next-gray-dark'
+  },
+  {
+    title: 'Dr. Rosane',
+    text: 'A Dra. Rosane Lage conta com mais de 16 anos de experiência se destacando sempre pela seriedade, tratamentos acessíveis e excelentes resultados alcançados. A fim de diferenciar seus tratamentos e melhorar ainda mais a qualidade do atendimento de seus pacientes a Dra. Rosane Lage, utiliza o que há de mais moderno na odontologia. E uma das mais recentes novidades é a microscopia odontológica (uma tecnologia ainda rara) no tratamento endodôntico (canal). Pensando sempre no bem estar do paciente a Dra. Rosane Lage preparou um consultório moderno e bem equipado, planejado para proporcionar uma sensação de conforto e bem estar atendendo aos mais altos padrões de qualidade. Tudo isso com o  objetivo de viabilizar o melhor tratamento dentário seja qual for a necessidade.',
+    image: '/images/profile.jpg',
+    width: 488,
+    height: 566,
+    content: 'image',
+    background: 'next-gray-dark'
+  },
+  {
+    title: 'Especialidades',
+    image: '/images/specialties.jpg',
+    width: 669,
+    height: 446,
+    content: 'image',
+    background: 'next-gray-dark'
   }
 ] as unknown as Array<NextCallToActionProps>
 
@@ -83,109 +100,19 @@ export const nextFeatureItems = [
 
 export const nextTechnologyItems = [
   {
-    image: '/images/logos/convenios/logo_amil.png',
-    width: 138,
-    height: 99
-  },
-  {
-    image: '/images/logos/convenios/logo_bradesco.png',
-    width: 168,
-    height: 105
+    image: '/images/logos/convenios/logo_plan_assiste.png',
+    width: 226,
+    height: 72
   },
   {
     image: '/images/logos/convenios/logo_copass.png',
-    width: 202,
-    height: 234
-  },
-  {
-    image: '/images/logos/convenios/logo_geap.png',
-    width: 233,
-    height: 123
-  },
-  {
-    image: '/images/logos/convenios/logo_inpao.png',
-    width: 309,
-    height: 130
+    width: 116,
+    height: 128
   },
   {
     image: '/images/logos/convenios/logo_ipsm.png',
-    width: 194,
-    height: 203
-  },
-  {
-    image: '/images/logos/convenios/logo_metlife.png',
-    width: 371,
-    height: 110
-  },
-  {
-    image: '/images/logos/convenios/logo_odontoprev.png',
-    width: 294,
-    height: 158
-  },
-  {
-    image: '/images/logos/convenios/logo_plan_assiste.png',
-    width: 368,
-    height: 117
-  },
-  {
-    image: '/images/logos/convenios/logo_porto_saude.png',
-    width: 160,
-    height: 84
-  },
-  {
-    image: '/images/logos/convenios/logo_rede_odonto.png',
-    width: 183,
-    height: 238
-  },
-  {
-    image: '/images/logos/convenios/logo_saude_caixa.png',
-    width: 366,
-    height: 151
-  },
-  {
-    image: '/images/logos/convenios/logo_unna.png',
-    width: 198,
-    height: 189
-  },
-  {
-    image: '/images/logos/convenios/logo_bacen.png',
-    width: 300,
-    height: 200
-  },
-  {
-    image: '/images/logos/convenios/logo_hapvida.png',
-    width: 227,
-    height: 152
-  },
-  {
-    image: '/images/logos/convenios/logo_interodonto.png',
-    width: 300,
-    height: 170
-  },
-  {
-    image: '/images/logos/convenios/logo_unimedodonto.png',
-    width: 300,
-    height: 143
-  },
-  {
-    image: '/images/logos/convenios/logo_primavida.png',
-    width: 263,
-    height: 187
-  },
-  {
-    image: '/images/logos/convenios/logo_sulamericaodonto.png',
-    width: 305,
-    height: 160
-  },
-  {
-    image: '/images/logos/convenios/logo_goldencross.png',
-    width: 300,
-    height: 90
-  },
-  {
-    image: '/images/logos/convenios/logo_trt.png',
-    width: 300,
-    height: 106
+    width: 130,
+    height: 137
   }
 ]
 

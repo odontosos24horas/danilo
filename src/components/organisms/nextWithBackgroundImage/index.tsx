@@ -29,7 +29,7 @@ export default function NextWithBackgroundImage() {
           </Text>
           <Stack direction={'row'}>
             <Button
-              bgGradient={'linear(to-b, #28C5F8, #1950AE)'}
+              bgGradient={'linear(to-b, #EDD08D, #B6A273)'}
               rounded={'full'}
               color={'white'}
               _hover={{ bg: 'next-primary' }}

@@ -112,7 +112,7 @@ const DesktopNav = () => {
                 _hover={{
                   textDecoration: 'none',
                   color: linkHoverColor,
-                  bgColor: 'next-secondary'
+                  bgColor: 'next-primary'
                 }}
               >
                 {navItem.label}
