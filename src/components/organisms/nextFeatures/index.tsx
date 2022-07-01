@@ -20,6 +20,7 @@ const NextFeatures = ({ items, numberGrid = 5 }: NextFeaturesProps) => {
               image={item.image}
               width={item.width}
               height={item.height}
+              as={item.as}
             />
           ))}
         </SimpleGrid>
