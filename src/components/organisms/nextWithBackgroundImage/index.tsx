@@ -1,4 +1,5 @@
 import { Stack, Flex, Button, Text, VStack, useBreakpointValue } from '@chakra-ui/react'
+import Link from 'next/link'
 
 export default function NextWithBackgroundImage() {
   return (
@@ -28,14 +29,18 @@ export default function NextWithBackgroundImage() {
             seu tratamento.
           </Text>
           <Stack direction={'row'}>
-            <Button
-              bgGradient={'linear(to-b, #EDD08D, #B6A273)'}
-              rounded={'full'}
-              color={'white'}
-              _hover={{ bg: 'next-primary' }}
-            >
-              Ver especialidades
-            </Button>
+            <Link href="/especialidades">
+              <a>
+                <Button
+                  bgGradient={'linear(to-b, #EDD08D, #B6A273)'}
+                  rounded={'full'}
+                  color={'white'}
+                  _hover={{ bg: 'next-primary' }}
+                >
+                  Ver especialidades
+                </Button>
+              </a>
+            </Link>
           </Stack>
         </Stack>
       </VStack>
