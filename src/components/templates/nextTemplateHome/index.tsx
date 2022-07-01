@@ -1,15 +1,12 @@
 import React from 'react'
-import { NextFeatureProps } from '../../molecules/nextFeature'
 import NextCallToAction, { NextCallToActionProps } from '../../organisms/nextCallToAction'
 import NextWithBackgroundImage from '../../organisms/nextWithBackgroundImage'
 import NextHero from '../../organisms/nextHero'
 import NextLayout from '../nextLayout'
 
 export type NextTemplateHomeProps = {
-  nextFeatureItems: Array<NextFeatureProps>
   nextCallToActionItems: Array<NextCallToActionProps>
   nextTechnologyItems: Array<Record<string, unknown>>
-  nextTeamItems: Array<Record<string, string>>
 }
 
 const NextTemplateHome = ({ nextCallToActionItems }: NextTemplateHomeProps) => {

@@ -5,8 +5,14 @@ import { Container, Text } from '@chakra-ui/react'
 
 export type NextTemplateAgreementsProps = {
   nextTechnologyItems: Array<Record<string, unknown>>
+  title?: string
+  numberGrid?: number
 }
-const NextTemplateAgreements = ({ nextTechnologyItems }: NextTemplateAgreementsProps) => {
+const NextTemplateAgreements = ({
+  nextTechnologyItems,
+  title = 'Convênios',
+  numberGrid = 5
+}: NextTemplateAgreementsProps) => {
   return (
     <NextLayout>
       <NextHeroPage />
@@ -18,9 +24,9 @@ const NextTemplateAgreements = ({ nextTechnologyItems }: NextTemplateAgreementsP
           fontWeight={700}
           fontSize={{ base: '3xl', md: '4xl', lg: '5xl' }}
         >
-          Convênios
+          {title}
         </Text>
-        <NextFeatures items={nextTechnologyItems} numberGrid={5} />
+        <NextFeatures items={nextTechnologyItems} numberGrid={numberGrid} />
       </Container>
     </NextLayout>
   )

@@ -107,7 +107,7 @@ const DesktopNav = () => {
                 fontWeight={500}
                 color={linkColor}
                 minH="80px"
-                px={4}
+                px={2}
                 py={'28px'}
                 _hover={{
                   textDecoration: 'none',
@@ -223,7 +223,7 @@ const NextHeader = () => {
     <Box>
       <Container maxW="container.xl">
         <Flex color={'gray.600'} minH="80px" align={'center'}>
-          <Flex pe={4}>
+          <Flex>
             <NextLink href={'/'}>
               <a>
                 <Image
@@ -232,6 +232,16 @@ const NextHeader = () => {
                   width={153}
                   height={26}
                   layout="fixed"
+                />
+              </a>
+            </NextLink>
+            <NextLink href={'/'}>
+              <a>
+                <Image
+                  src="/images/logos/logo_rosane.svg"
+                  alt="Logo Dra Rosane Lage Lacerda"
+                  width={153}
+                  height={26}
                 />
               </a>
             </NextLink>
