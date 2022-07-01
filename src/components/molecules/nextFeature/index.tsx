@@ -1,4 +1,4 @@
-import { Flex, Text, Stack, Box, Wrap } from '@chakra-ui/react'
+import { Flex, Text, Stack, Box } from '@chakra-ui/react'
 import React, { ReactElement } from 'react'
 import Image from 'next/image'
 
