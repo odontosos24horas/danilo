@@ -1,4 +1,4 @@
-import { Flex, Text, Stack, Box } from '@chakra-ui/react'
+import { Flex, Text, Stack, Box, Wrap } from '@chakra-ui/react'
 import React, { ReactElement } from 'react'
 import Image from 'next/image'
 
@@ -40,8 +40,16 @@ const NextFeature = ({
             </Flex>
           )}
           {image && <Image alt={title} src={image} width={width} height={height} />}
-          {title && <Text fontWeight={600}>{title}</Text>}
-          {text && <Text color={'gray.600'}>{text}</Text>}
+          {title && (
+            <Text fontWeight={500} color={'next-primary'}>
+              {title}
+            </Text>
+          )}
+          {text && (
+            <Text color={'#616161'} whiteSpace={'pre-wrap'}>
+              {text}
+            </Text>
+          )}
         </Stack>
       )}
       {as && (

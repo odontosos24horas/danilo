@@ -4,6 +4,10 @@ import { treatmentsItems } from '../data/treatments'
 
 export default function NextAgreements() {
   return (
-    <NextTemplateAgreements nextTechnologyItems={treatmentsItems} title="Vídeos" numberGrid={2} />
+    <NextTemplateAgreements
+      nextTechnologyItems={treatmentsItems}
+      title="Tratamentos"
+      numberGrid={2}
+    />
   )
 }

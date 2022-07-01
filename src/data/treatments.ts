@@ -1,18 +1,30 @@
 export const treatmentsItems = [
   {
-    image: 'https://www.youtube.com/embed/MrbiaDiYJmA',
-    as: 'iframe'
+    title: 'IMPLANTES CARGA IMEDIATA',
+    text: 'Implantes com carga imediata é um dos mais importantes avanços na reabilitação dentária, proporcionando aos pacientes praticidade, conforto e estética. \n\n Essa técnica é utilizada para permitir a restituição do sorriso mais rapidamente. Assim, o dente é fixado diretamente no implante durante a cirurgia ou em poucos dias.'
   },
   {
-    image: 'https://www.youtube.com/embed/Bwx3ih0W8go',
-    as: 'iframe'
+    title: 'IMPLANTES CARGA IMEDIATA',
+    text: 'Implantes com carga imediata é um dos mais importantes avanços na reabilitação dentária, proporcionando aos pacientes praticidade, conforto e estética. \n\n Essa técnica é utilizada para permitir a restituição do sorriso mais rapidamente. Assim, o dente é fixado diretamente no implante durante a cirurgia ou em poucos dias.'
   },
   {
-    image: 'https://www.youtube.com/embed/sCCa2F5adD4',
-    as: 'iframe'
+    title: 'IMPLANTES CARGA IMEDIATA',
+    text: 'Implantes com carga imediata é um dos mais importantes avanços na reabilitação dentária, proporcionando aos pacientes praticidade, conforto e estética. \n\n Essa técnica é utilizada para permitir a restituição do sorriso mais rapidamente. Assim, o dente é fixado diretamente no implante durante a cirurgia ou em poucos dias.'
   },
   {
-    image: 'https://www.youtube.com/embed/nmOJuoLykBo',
-    as: 'iframe'
+    title: 'IMPLANTES CARGA IMEDIATA',
+    text: 'Implantes com carga imediata é um dos mais importantes avanços na reabilitação dentária, proporcionando aos pacientes praticidade, conforto e estética. \n\n Essa técnica é utilizada para permitir a restituição do sorriso mais rapidamente. Assim, o dente é fixado diretamente no implante durante a cirurgia ou em poucos dias.'
+  },
+  {
+    title: 'IMPLANTES CARGA IMEDIATA',
+    text: 'Implantes com carga imediata é um dos mais importantes avanços na reabilitação dentária, proporcionando aos pacientes praticidade, conforto e estética. \n\n Essa técnica é utilizada para permitir a restituição do sorriso mais rapidamente. Assim, o dente é fixado diretamente no implante durante a cirurgia ou em poucos dias.'
+  },
+  {
+    title: 'IMPLANTES CARGA IMEDIATA',
+    text: 'Implantes com carga imediata é um dos mais importantes avanços na reabilitação dentária, proporcionando aos pacientes praticidade, conforto e estética. \n\n Essa técnica é utilizada para permitir a restituição do sorriso mais rapidamente. Assim, o dente é fixado diretamente no implante durante a cirurgia ou em poucos dias.'
+  },
+  {
+    title: 'IMPLANTES CARGA IMEDIATA',
+    text: 'Implantes com carga imediata é um dos mais importantes avanços na reabilitação dentária, proporcionando aos pacientes praticidade, conforto e estética. \n\n Essa técnica é utilizada para permitir a restituição do sorriso mais rapidamente. Assim, o dente é fixado diretamente no implante durante a cirurgia ou em poucos dias.'
   }
 ]

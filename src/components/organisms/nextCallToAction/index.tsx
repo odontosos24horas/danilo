@@ -76,7 +76,7 @@ const NextCallToAction = ({
             {title}
           </Text>
           {content === 'form' && <NextContactUs />}
-          <Text fontSize={{ base: 'md', lg: 'lg' }} color={textColor}>
+          <Text fontSize={{ base: 'md', lg: 'lg' }} color={textColor} whiteSpace={'pre-wrap'}>
             {text}
           </Text>
           {textButton && (
