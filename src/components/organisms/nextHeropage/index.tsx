@@ -5,7 +5,7 @@ export interface NextHeroPageProps {
 }
 
 export default function NextHeroPage({
-  backgroundImage = '/images/heropage.jpg'
+  backgroundImage = '/images/heropage.jpeg'
 }: NextHeroPageProps) {
   return (
     <Flex
