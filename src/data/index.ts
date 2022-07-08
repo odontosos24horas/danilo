@@ -39,7 +39,7 @@ export const nextCallToActionItems = [
   {
     title: 'Dr. Danilo',
     text: 'Formado em 2000 pela UEMG- Lavras, o Dr. Danilo Antunes ao longo desses anos fez vários cursos de aperfeiçoamento e especialização nas áreas de Implantodontia e Periodontia.\n- 2001 aperfeiçoamento em Implantodontia- CEO-IPSEMG\n- 2002 especialização em Periodontia, finalizada em agosto/2003- CEO-IPSEMG; \n- 2005 pós em Implantodontia pela ABO-MG;\n- 2006 pós em cirurgias avançadas em Implantodontia pela ABO-MG; - 2007 especialização em Implantodontia finalizada em agosto de 2009 pela ABCD_MG;\n- 2010 pós em cirurgia avançada em Implantodontia pelo Núcleo;\n- 2011 Técnica de Implante com cirurgia Guiada( o famoso implante sem corte). Vários cursos de atualização na área de implantodontia ao longo destes anos.\nMembro do ITI desde 2017\n- 2020 Ingressou na Odontologia digital adquirindo scanner intra oral e fresadora\n- 2021 Curso de Cirurgia plástica periodontal com Vanessa Frazão',
-    image: '/images/profile.jpg',
+    image: '/images/danilo.jpeg',
     width: 488,
     height: 566,
     content: 'image',
@@ -48,7 +48,7 @@ export const nextCallToActionItems = [
   {
     title: 'Dr. Rosane',
     text: 'A Dra. Rosane Lage atua no mercado da odontologia desde 2002 quando concluiu a sua graduação.Desta forma ,vem se destacando sempre pela seriedade, dedicação e excelentes resultados alcançados. A fim de diferenciar seus tratamentos e melhorar ainda mais a qualidade do atendimento de seus pacientes a Dra. Rosane Lage, se especializou em endodontia e desde então utiliza o que há de mais moderno na odontologia. E uma delas é a microscopia operatória (uma tecnologia ainda rara) no tratamento endodôntico (canal). Pensando sempre no bem estar do paciente a Dra. Rosane Lage preparou um consultório moderno e bem equipado, planejado para proporcionar uma sensação de conforto e bem estar atendendo aos mais altos padrões de qualidade e excelência.Tudo isso com o objetivo de viabilizar o melhor tratamento odontológico seja qual for a necessidade.',
-    image: '/images/profile.jpg',
+    image: '/images/rosane.jpeg',
     width: 488,
     height: 566,
     content: 'image',
