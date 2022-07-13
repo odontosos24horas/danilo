@@ -25,6 +25,7 @@ const NextTemplateSpecialties = ({ nextCallToActionItems }: NextTemplateAboutUs)
         url={nextCallToActionItems.url}
         content={nextCallToActionItems.content}
         background={nextCallToActionItems.background}
+        specialties={nextCallToActionItems.specialties}
       />
       <Box pt={16}>
         <Grid templateColumns="repeat(7, 1fr)">
@@ -41,7 +42,10 @@ const NextTemplateSpecialties = ({ nextCallToActionItems }: NextTemplateAboutUs)
           </GridItem>
           <GridItem colSpan={[7, 5]}>
             <Container maxW="3xl">
-              <NextGridListWithHeading title={'Como funciona?'} />
+              <NextGridListWithHeading
+                features={nextCallToActionItems.features}
+                title={'Como funciona?'}
+              />
             </Container>
           </GridItem>
         </Grid>

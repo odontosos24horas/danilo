@@ -1,7 +1,7 @@
 import { Box, SimpleGrid, Text, HStack, VStack } from '@chakra-ui/react'
 import Image from 'next/image'
 
-const features = [
+const featuresDefault = [
   {
     id: 1,
     title: '',
@@ -21,17 +21,18 @@ const features = [
     image: '/images/icons/feature_hive.svg'
   }
 ]
-
 export interface NextGridListWithHeadingProps {
   title?: string
   titleColor?: string
   bgGradient?: string
+  features?: Array<Record<string, any>>
 }
 
 export default function NextGridListWithHeading({
   title,
   titleColor,
-  bgGradient = 'linear(to-b, next-secondary, next-primary)'
+  bgGradient = 'linear(to-b, next-secondary, next-primary)',
+  features = featuresDefault
 }: NextGridListWithHeadingProps) {
   return (
     <Box>
@@ -46,7 +47,7 @@ export default function NextGridListWithHeading({
         {title}
       </Text>
       <SimpleGrid spacing={10}>
-        {features.map(feature => (
+        {features?.map(feature => (
           <HStack key={feature.id} align={'top'}>
             <Box px={2} display={['none', 'block']}>
               <Image
