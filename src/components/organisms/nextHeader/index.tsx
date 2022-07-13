@@ -25,13 +25,14 @@ const DesktopSubNav = ({ label, href, subLabel }: NavItem) => {
       href={href}
       role={'group'}
       display={'block'}
+      color={'white'}
       p={2}
       rounded={'md'}
-      _hover={{ bg: 'gray.900' }}
+      _hover={{ bg: 'next-quaternary' }}
     >
       <Stack direction={'row'} align={'center'}>
         <Box>
-          <Text transition={'all .3s ease'} _groupHover={{ color: 'pink.400' }} fontWeight={500}>
+          <Text transition={'all .3s ease'} _groupHover={{ color: 'white' }} fontWeight={500}>
             {label}
           </Text>
           <Text fontSize={'sm'}>{subLabel}</Text>
@@ -45,7 +46,7 @@ const DesktopSubNav = ({ label, href, subLabel }: NavItem) => {
           align={'center'}
           flex={1}
         >
-          <Icon color={'pink.400'} w={5} h={5} as={ChevronRightIcon} />
+          <Icon color={'next-primary'} w={5} h={5} as={ChevronRightIcon} />
         </Flex>
       </Stack>
     </Link>
@@ -63,6 +64,19 @@ const NAV_ITEMS: Array<NavItem> = [
   {
     label: 'A CLÍNICA',
     href: '/'
+  },
+  {
+    label: 'ESPECIALIDADES',
+    children: [
+      {
+        label: 'Dr. Danilo',
+        href: '/especialidades/danilo'
+      },
+      {
+        label: 'Dra. Rosane',
+        href: '/especialidades/rosane'
+      }
+    ]
   },
   {
     label: 'FOTOS',
@@ -89,7 +103,7 @@ const NAV_ITEMS: Array<NavItem> = [
 const DesktopNav = () => {
   const linkColor = 'next-primary'
   const linkHoverColor = 'white'
-  const popoverContentBgColor = 'gray.800'
+  const popoverContentBgColor = 'next-primary'
 
   return (
     <Stack direction={'row'} spacing={0}>
@@ -179,8 +193,9 @@ const MobileNavItem = ({ label, children, href }: NavItem) => {
           mt={2}
           pl={4}
           borderLeft={1}
+          color={'next-primary'}
           borderStyle={'solid'}
-          borderColor={'gray.700'}
+          borderColor={'next-primary'}
           align={'start'}
         >
           {children &&

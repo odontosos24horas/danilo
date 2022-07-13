@@ -57,14 +57,6 @@ export const nextCallToActionItems = [
     background: 'next-gray-dark',
     textButton: 'Ver especialidades da Dra. Rosane',
     url: '/especialidades/rosane'
-  },
-  {
-    title: 'Especialidades',
-    image: '/images/specialties.jpg',
-    width: 669,
-    height: 446,
-    content: 'image',
-    background: 'next-gray-dark'
   }
 ] as unknown as Array<NextCallToActionProps>
 

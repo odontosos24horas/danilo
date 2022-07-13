@@ -5,7 +5,7 @@ import { nextCallToActionItems, nextTechnologyItems } from '../../data'
 const NextHome = () => {
   return (
     <NextTemplateSpecialties
-      nextCallToActionItems={nextCallToActionItems}
+      nextCallToActionItems={nextCallToActionItems[2]}
       nextTechnologyItems={nextTechnologyItems}
     />
   )

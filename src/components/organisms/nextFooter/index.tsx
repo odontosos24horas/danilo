@@ -64,9 +64,8 @@ const NextFooter = () => {
             </Stack>
             <Stack align={'flex-start'}>
               <ListHeader>Menu</ListHeader>
-              <Link href={'/'}>Home</Link>
-              <Link href={'/quemsomos'}>Quem Somos</Link>
-              <Link href={'/especialidades'}>Especialidades</Link>
+              <Link href={'/'}>A Clínica</Link>
+              <Link href={'/fotos'}>Fotos</Link>
               <Link href={'/convenios'}>Convênios</Link>
               <Link href={'/tratamentos'}>Tratamentos</Link>
               <Link href={'/videos'}>Vídeos</Link>
@@ -75,7 +74,8 @@ const NextFooter = () => {
             <Stack align={'flex-start'}>
               <ListHeader>Contatos</ListHeader>
               <Link href={'mailto:odontosos@odontosos.com.br'}>E-mail</Link>
-              <Link href={'https://www.instagram.com/dr.daniloantunes'}>Instagram</Link>
+              <Link href={'https://www.instagram.com/dr.daniloantunes'}>Instagram Dr. Danilo</Link>
+              <Link href={'https://www.instagram.com/dra.rosane.lage'}>Instagram Dr. Rosane</Link>
             </Stack>
             <Stack align={'flex-start'}>
               <Link href={'tel:3133188718'}>

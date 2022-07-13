@@ -9,11 +9,15 @@ export default function NextCarousel() {
   const side = useBreakpointValue({ base: '30%', md: '10px' })
 
   const cards = [
-    '/images/carousel/3.jpeg',
     '/images/carousel/2.jpeg',
+    '/images/carousel/3.jpeg',
     '/images/carousel/1.jpeg',
     '/images/carousel/4.jpeg',
-    '/images/carousel/5.jpeg'
+    '/images/carousel/5.jpeg',
+    '/images/carousel/6.jpeg',
+    '/images/carousel/7.jpeg',
+    '/images/carousel/8.jpeg',
+    '/images/carousel/9.jpeg'
   ]
 
   return (
