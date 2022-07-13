@@ -95,6 +95,10 @@ const NAV_ITEMS: Array<NavItem> = [
     href: '/videos'
   },
   {
+    label: 'CONTATO',
+    href: '/contato'
+  },
+  {
     label: 'URGÊNCIA',
     href: 'https://www.odontosos.com.br/'
   }

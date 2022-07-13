@@ -86,9 +86,6 @@ const NextFooter = () => {
               <Heading color="next-primary" size="md">
                 Dr. Danilo Antunes
               </Heading>
-              <Text color="next-primary" fontSize="sm">
-                Rua Gonçalves Dias, 82 | Sala 902 - Bairro Funcionários - Cep 30140-190
-              </Text>
               <Link href={'tel:25552779'}>
                 <Heading color="next-primary" size="lg">
                   (31) 2555-2779
@@ -98,7 +95,7 @@ const NextFooter = () => {
                 Dra. Rosane Lage Lacerda
               </Heading>
               <Text color="next-primary" fontSize="sm">
-                Rua Gonçalves Dias, 82 | Sala 902 Belo Horizonte- MG
+                Rua Gonçalves Dias, 82 | Sala 902 - Bairro Funcionários - Cep 30140-190
               </Text>
             </Stack>
           </SimpleGrid>
