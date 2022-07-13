@@ -43,7 +43,9 @@ export const nextCallToActionItems = [
     width: 488,
     height: 566,
     content: 'image',
-    background: 'next-gray-dark'
+    background: 'next-gray-dark',
+    textButton: 'Ver especialidades do Dr. Danilo',
+    url: '/especialidades/danilo'
   },
   {
     title: 'Dr. Rosane',
@@ -52,7 +54,9 @@ export const nextCallToActionItems = [
     width: 488,
     height: 566,
     content: 'image',
-    background: 'next-gray-dark'
+    background: 'next-gray-dark',
+    textButton: 'Ver especialidades da Dra. Rosane',
+    url: '/especialidades/rosane'
   },
   {
     title: 'Especialidades',

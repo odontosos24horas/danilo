@@ -1,16 +1,13 @@
 import { Box, Grid, GridItem, Container } from '@chakra-ui/react'
 import React from 'react'
-import { NextFeatureProps } from '../../molecules/nextFeature'
 import NextAccordionImage, { NextAccordionImageProps } from '../../organisms/nextAccordionImage'
 import NextGridListWithHeading from '../../organisms/nextGridListWithHeading'
 import NextLayout from '../nextLayout'
 import Image from 'next/image'
 
 export type NextTemplateAboutUs = {
-  nextFeatureItems: Array<NextFeatureProps>
   nextCallToActionItems: Array<NextAccordionImageProps>
   nextTechnologyItems: Array<Record<string, unknown>>
-  nextTeamItems: Array<Record<string, string>>
 }
 
 const NextTemplateSpecialties = ({ nextCallToActionItems }: NextTemplateAboutUs) => {

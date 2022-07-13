@@ -61,16 +61,12 @@ interface NavItem {
 
 const NAV_ITEMS: Array<NavItem> = [
   {
-    label: 'HOME',
+    label: 'A CLÍNICA',
     href: '/'
   },
   {
-    label: 'QUEM SOMOS',
-    href: '/quemsomos'
-  },
-  {
-    label: 'ESPECIALIDADES',
-    href: '/especialidades'
+    label: 'FOTOS',
+    href: '/fotos'
   },
   {
     label: 'CONVÊNIOS',

@@ -17,7 +17,7 @@ export default function NextCarousel() {
   ]
 
   return (
-    <Box position={'relative'} height={'441px'} width={'662px'} overflow={'hidden'}>
+    <Box position={'relative'} height={['340px', '662px']} width={'100%'} overflow={'hidden'}>
       {/* CSS files for react-slick */}
       <link
         rel="stylesheet"
@@ -67,11 +67,11 @@ export default function NextCarousel() {
         {cards.map((url, index) => (
           <Box
             key={index}
-            height={'441px'}
+            height={['300px', '662px']}
             position="relative"
             backgroundPosition="center"
             backgroundRepeat="no-repeat"
-            backgroundSize="cover"
+            backgroundSize="contain"
             backgroundImage={`url(${url})`}
           />
         ))}

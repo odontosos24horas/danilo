@@ -4,8 +4,7 @@ import NextCallToAction, {
   NextCallToActionProps
 } from '../../organisms/nextCallToAction'
 import NextLayout from '../nextLayout'
-import NextHeroPage from '../../organisms/nextHeropage'
-import { Box } from '@chakra-ui/react'
+import { Box, Center, Heading } from '@chakra-ui/react'
 
 export type NextTemplateAboutUs = {
   nextCallToActionItems: Array<NextCallToActionProps>
@@ -17,8 +16,18 @@ const NextTemplateAboutUs = ({
 }: NextTemplateAboutUs) => {
   return (
     <NextLayout>
-      <NextHeroPage />
-      <Box py={[0, 20]}>
+      <Center>
+        <Heading
+          fontWeight={900}
+          as={'span'}
+          bgGradient="linear(to-b, #EACE8C, #D6BD82)"
+          bgClip="text"
+          fontSize={{ base: '4xl', md: '5xl', lg: '6xl' }}
+        >
+          Fotos
+        </Heading>
+      </Center>
+      <Box>
         <NextCallToAction
           id={'quemsomos'}
           title={nextCallToActionItems[1].title}
@@ -33,32 +42,6 @@ const NextTemplateAboutUs = ({
           rightItemJustify={'end'}
         />
       </Box>
-      <NextCallToAction
-        id={'danilo'}
-        title={nextCallToActionItems[2].title}
-        text={nextCallToActionItems[2].text}
-        image={nextCallToActionItems[2].image}
-        textButton={nextCallToActionItems[2].textButton}
-        directionMd={nextCallToActionItems[2].directionMd}
-        width={nextCallToActionItems[2].width}
-        height={nextCallToActionItems[2].height}
-        url={nextCallToActionItems[2].url}
-        content={nextCallToActionItems[2].content}
-        background={nextCallToActionItems[2].background}
-      />
-      <NextCallToAction
-        id={'rosane'}
-        title={nextCallToActionItems[3].title}
-        text={nextCallToActionItems[3].text}
-        image={nextCallToActionItems[3].image}
-        textButton={nextCallToActionItems[3].textButton}
-        directionMd={nextCallToActionItems[3].directionMd}
-        width={nextCallToActionItems[3].width}
-        height={nextCallToActionItems[3].height}
-        url={nextCallToActionItems[3].url}
-        content={nextCallToActionItems[3].content}
-        background={nextCallToActionItems[3].background}
-      />
     </NextLayout>
   )
 }

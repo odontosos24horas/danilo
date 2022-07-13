@@ -56,52 +56,56 @@ const NextCallToAction = ({
   }, [])
   if (!isFront) return null
   return (
-    <Stack id={id} bg={background} direction={{ base: directionBase, md: directionMd }}>
-      <Flex
-        px={{ base: 10 }}
-        pt={content === 'form' ? 20 : [12, 0]}
-        pb={{ base: 6, md: 0 }}
-        flex={1}
-        align={'center'}
-        justify={'center'}
-      >
-        <Stack spacing={6} w={'full'} maxW={'lg'}>
-          <Text
-            color={titleColor}
-            bgGradient={titleColor ? undefined : bgGradient}
-            bgClip={!titleColor ? 'text' : undefined}
-            fontWeight={700}
-            fontSize={{ base: '3xl', md: '4xl', lg: '5xl' }}
+    <>
+      <Stack id={id} bg={background} direction={{ base: directionBase, md: directionMd }}>
+        {content !== 'carousel' && (
+          <Flex
+            px={{ base: 10 }}
+            pt={content === 'form' ? 20 : [12, 0]}
+            pb={{ base: 6, md: 0 }}
+            flex={1}
+            align={'center'}
+            justify={'center'}
           >
-            {title}
-          </Text>
-          {content === 'form' && <NextContactUs />}
-          <Text fontSize={{ base: 'md', lg: 'lg' }} color={textColor} whiteSpace={'pre-wrap'}>
-            {text}
-          </Text>
-          {textButton && (
-            <Stack direction={{ base: 'column', md: 'row' }} spacing={4}>
-              <Link href={url}>
-                <a>
-                  <NextButton bg={bgButton}>{textButton}</NextButton>
-                </a>
-              </Link>
+            <Stack spacing={6} w={'full'} maxW={'lg'}>
+              <Text
+                color={titleColor}
+                bgGradient={titleColor ? undefined : bgGradient}
+                bgClip={!titleColor ? 'text' : undefined}
+                fontWeight={700}
+                fontSize={{ base: '3xl', md: '4xl', lg: '5xl' }}
+              >
+                {title}
+              </Text>
+              {content === 'form' && <NextContactUs />}
+              <Text fontSize={{ base: 'md', lg: 'lg' }} color={textColor} whiteSpace={'pre-wrap'}>
+                {text}
+              </Text>
+              {textButton && (
+                <Stack direction={{ base: 'column', md: 'row' }} spacing={4}>
+                  <Link href={url}>
+                    <a>
+                      <NextButton bg={bgButton}>{textButton}</NextButton>
+                    </a>
+                  </Link>
+                </Stack>
+              )}
             </Stack>
+          </Flex>
+        )}
+        <Flex flex={1} pt={[0, 12]} justify={rightItemJustify}>
+          {(content === 'image' || content === 'form') && (
+            <Image alt={title} src={image} width={width} height={height} />
           )}
-        </Stack>
-      </Flex>
-      <Flex flex={1} pt={[0, 12]} justify={rightItemJustify}>
-        {(content === 'image' || content === 'form') && (
-          <Image alt={title} src={image} width={width} height={height} />
-        )}
-        {content === 'map' && (
-          <Suspense fallback={() => 'loading'}>
-            <NextMap />
-          </Suspense>
-        )}
-        {content === 'carousel' && <NextCarousel />}
-      </Flex>
-    </Stack>
+          {content === 'map' && (
+            <Suspense fallback={() => 'loading'}>
+              <NextMap />
+            </Suspense>
+          )}
+        </Flex>
+      </Stack>
+      {content === 'carousel' && <NextCarousel />}
+    </>
   )
 }
 
