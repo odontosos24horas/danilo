@@ -9,15 +9,19 @@ export default function NextCarousel() {
   const side = useBreakpointValue({ base: '30%', md: '10px' })
 
   const cards = [
-    '/images/carousel/3.jpeg',
     '/images/carousel/2.jpeg',
+    '/images/carousel/3.jpeg',
     '/images/carousel/1.jpeg',
     '/images/carousel/4.jpeg',
-    '/images/carousel/5.jpeg'
+    '/images/carousel/5.jpeg',
+    '/images/carousel/6.jpeg',
+    '/images/carousel/7.jpeg',
+    '/images/carousel/8.jpeg',
+    '/images/carousel/9.jpeg'
   ]
 
   return (
-    <Box position={'relative'} height={'441px'} width={'662px'} overflow={'hidden'}>
+    <Box position={'relative'} height={['340px', '662px']} width={'100%'} overflow={'hidden'}>
       {/* CSS files for react-slick */}
       <link
         rel="stylesheet"
@@ -67,11 +71,11 @@ export default function NextCarousel() {
         {cards.map((url, index) => (
           <Box
             key={index}
-            height={'441px'}
+            height={['300px', '662px']}
             position="relative"
             backgroundPosition="center"
             backgroundRepeat="no-repeat"
-            backgroundSize="cover"
+            backgroundSize="contain"
             backgroundImage={`url(${url})`}
           />
         ))}

@@ -64,9 +64,8 @@ const NextFooter = () => {
             </Stack>
             <Stack align={'flex-start'}>
               <ListHeader>Menu</ListHeader>
-              <Link href={'/'}>Home</Link>
-              <Link href={'/quemsomos'}>Quem Somos</Link>
-              <Link href={'/especialidades'}>Especialidades</Link>
+              <Link href={'/'}>A Clínica</Link>
+              <Link href={'/fotos'}>Fotos</Link>
               <Link href={'/convenios'}>Convênios</Link>
               <Link href={'/tratamentos'}>Tratamentos</Link>
               <Link href={'/videos'}>Vídeos</Link>
@@ -75,7 +74,8 @@ const NextFooter = () => {
             <Stack align={'flex-start'}>
               <ListHeader>Contatos</ListHeader>
               <Link href={'mailto:odontosos@odontosos.com.br'}>E-mail</Link>
-              <Link href={'https://www.instagram.com/dr.daniloantunes'}>Instagram</Link>
+              <Link href={'https://www.instagram.com/dr.daniloantunes'}>Instagram Dr. Danilo</Link>
+              <Link href={'https://www.instagram.com/dra.rosane.lage'}>Instagram Dr. Rosane</Link>
             </Stack>
             <Stack align={'flex-start'}>
               <Link href={'tel:3133188718'}>
@@ -86,9 +86,6 @@ const NextFooter = () => {
               <Heading color="next-primary" size="md">
                 Dr. Danilo Antunes
               </Heading>
-              <Text color="next-primary" fontSize="sm">
-                Rua Gonçalves Dias, 82 | Sala 902 - Bairro Funcionários - Cep 30140-190
-              </Text>
               <Link href={'tel:25552779'}>
                 <Heading color="next-primary" size="lg">
                   (31) 2555-2779
@@ -98,7 +95,7 @@ const NextFooter = () => {
                 Dra. Rosane Lage Lacerda
               </Heading>
               <Text color="next-primary" fontSize="sm">
-                Rua Gonçalves Dias, 82 | Sala 902 Belo Horizonte- MG
+                Rua Gonçalves Dias, 82 | Sala 902 - Bairro Funcionários - Cep 30140-190
               </Text>
             </Stack>
           </SimpleGrid>

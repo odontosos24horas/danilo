@@ -30,6 +30,8 @@ export interface NextAccordionImageProps {
   content?: 'image' | 'map' | 'form' | 'carousel'
   id?: string
   rightItemJustify?: 'end'
+  features?: Array<Record<string, any>>
+  specialties?: Array<Record<string, any>>
 }
 
 const NextAccordionImage = ({
@@ -44,7 +46,8 @@ const NextAccordionImage = ({
   directionMd = 'row',
   directionBase = 'column',
   content,
-  id
+  id,
+  specialties
 }: NextAccordionImageProps) => {
   const [isFront, setIsFront] = useState(false)
   useEffect(() => {
@@ -76,61 +79,33 @@ const NextAccordionImage = ({
             {title}
           </Text>
           <Accordion defaultIndex={[0]}>
-            <AccordionItem borderTop="0" borderColor="next-primary">
-              <h2>
-                <AccordionButton borderBottom="1px" borderColor="next-primary">
-                  <Box flex="1" textAlign="left">
-                    <Text
-                      color={'next-primary'}
-                      fontWeight={500}
-                      fontSize={{ base: 'md', md: 'lg', lg: 'xl' }}
-                    >
-                      IMPLANTODONTIA
-                    </Text>
-                  </Box>
-                  <AccordionIcon color="next-primary" w={10} h={10} />
-                </AccordionButton>
-              </h2>
-              <AccordionPanel pb={4}>
-                <Text fontSize={{ base: 'md', lg: 'lg' }} color={textColor}>
-                  Implante dentário renova o sorriso e a vida. A falta de um ou mais dentes afeta a
-                  saúde e bem estar de uma pessoa. A dificuldade de mastigação e na fala e a mudança
-                  na aparência são os principais impactos que surgem da falta de um ou mais dentes.
-                  <br />
-                  <br /> A reposição de dentes com implantes dentários é certamente a melhor forma
-                  de de restabelecer a qualidade de vida e autoestima de quem sofre pela ausência de
-                  dentes.
-                  <br />
-                  <br /> Ter um sorriso completo traz ao paciente a sensação de voltar a sorrir
-                  novamente sem medo, melhorando a qualidade de vida bem como autoestima.
-                </Text>
-              </AccordionPanel>
-            </AccordionItem>
-
-            <AccordionItem border="0" borderColor="next-primary">
-              <h2>
-                <AccordionButton borderBottom="1px" borderColor="next-primary">
-                  <Box flex="1" textAlign="left">
-                    <Text
-                      color={'next-primary'}
-                      fontWeight={500}
-                      fontSize={{ base: 'md', md: 'lg', lg: 'xl' }}
-                    >
-                      PERIODONTIA
-                    </Text>
-                  </Box>
-                  <AccordionIcon color="next-primary" w={10} h={10} />
-                </AccordionButton>
-              </h2>
-              <AccordionPanel pb={4}>
-                <Text fontSize={{ base: 'md', lg: 'lg' }} color={textColor}>
-                  É a área da odontologia que estuda e trata as doenças do sistema de suporte dos
-                  dentes. Este aparelho é formado por osso alveolar, ligamento periodontal e
-                  cemento. As principais alterações patológicas do periodonto são chamadas doenças
-                  periodontais, tais como, gengivite e periodontite.
-                </Text>
-              </AccordionPanel>
-            </AccordionItem>
+            {specialties?.map(item => (
+              <AccordionItem borderTop="0" borderColor="next-primary">
+                <h2>
+                  <AccordionButton borderBottom="1px" borderColor="next-primary">
+                    <Box flex="1" textAlign="left">
+                      <Text
+                        color={'next-primary'}
+                        fontWeight={500}
+                        fontSize={{ base: 'md', md: 'lg', lg: 'xl' }}
+                      >
+                        {item.title}
+                      </Text>
+                    </Box>
+                    <AccordionIcon color="next-primary" w={10} h={10} />
+                  </AccordionButton>
+                </h2>
+                <AccordionPanel pb={4}>
+                  <Text
+                    fontSize={{ base: 'md', lg: 'lg' }}
+                    color={textColor}
+                    whiteSpace={'pre-wrap'}
+                  >
+                    {item.text}
+                  </Text>
+                </AccordionPanel>
+              </AccordionItem>
+            ))}
           </Accordion>
         </Stack>
       </Flex>
