@@ -8,7 +8,7 @@
     "clean": "rm -rf node_modules .next yarn.lock package-lock.json && yarn cache clean",
     "build": "next build",
     "start": "next start",
-    "lint": "eslint --fix .",
+    "lint": "eslint src --ext .ts,.tsx",
     "precommit": "yarn lint",
     "commit": "cz",
     "prepush": "git diff HEAD --quiet && git fetch && git pull origin main && yarn precommit && yarn && yarn build",

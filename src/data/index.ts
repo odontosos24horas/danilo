@@ -1,7 +1,6 @@
 import { NextCallToActionProps } from '../components/organisms/nextCallToAction'
 
 const number = '5531997376623'
-
 export const nextSocialNetwork = {
   whatsapp: {
     url: `https://api.whatsapp.com/send?phone=${number}&text=Ol%C3%A1,%20Odonto%20SOS!`
