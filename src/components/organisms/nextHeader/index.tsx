@@ -15,7 +15,8 @@ import {
   PopoverContent,
   useDisclosure,
   Container,
-  Heading
+  Heading,
+  HStack
 } from '@chakra-ui/react'
 import { HamburgerIcon, CloseIcon, ChevronDownIcon, ChevronRightIcon } from '@chakra-ui/icons'
 
@@ -97,10 +98,6 @@ const NAV_ITEMS: Array<NavItem> = [
   {
     label: 'CONTATO',
     href: '/contato'
-  },
-  {
-    label: 'URGÊNCIA',
-    href: 'https://www.odontosos.com.br/'
   }
 ]
 
@@ -110,7 +107,7 @@ const DesktopNav = () => {
   const popoverContentBgColor = 'next-primary'
 
   return (
-    <Stack direction={'row'} spacing={0}>
+    <Stack direction={'row'}>
       {NAV_ITEMS.map(navItem => (
         <Box key={navItem.label}>
           <Popover trigger={'hover'} placement={'bottom-start'}>
@@ -235,50 +232,48 @@ const NextHeader = () => {
   const { isOpen, onToggle } = useDisclosure()
 
   return (
-    <Box>
-      <Container maxW="container.xl">
-        <Flex color={'gray.600'} minH="80px" align={'center'}>
-          <Flex>
-            <NextLink href={'/'}>
-              <a>
-                <Image
-                  src="/images/logos/logo_header.svg"
-                  alt="Logo Danilo Antunes"
-                  width={153}
-                  height={26}
-                  layout="fixed"
-                />
-              </a>
-            </NextLink>
-            <NextLink href={'/'}>
-              <a>
-                <Image
-                  src="/images/logos/logo_rosane.svg"
-                  alt="Logo Dra Rosane Lage Lacerda"
-                  width={153}
-                  height={26}
-                />
-              </a>
-            </NextLink>
-          </Flex>
-          <Flex display={{ base: 'none', md: 'flex' }}>
-            <DesktopNav />
-          </Flex>
-          <Flex flex={{ base: 1 }} display={{ base: 'flex', md: 'none' }}>
-            <IconButton
-              onClick={onToggle}
-              icon={isOpen ? <CloseIcon w={3} h={3} /> : <HamburgerIcon w={5} h={5} />}
-              bg={'transparent'}
-              color={'next-primary'}
-              aria-label={'Toggle Navigation'}
-            />
-          </Flex>
-        </Flex>
-        <Collapse in={isOpen} animateOpacity>
-          <MobileNav />
-        </Collapse>
-      </Container>
-    </Box>
+    <Container maxW="container.xl">
+      <HStack color={'gray.600'} spacing="24px" minH="100px" align={'center'} mt={2}>
+        <Box w={'250px'}>
+          <NextLink href={'/'}>
+            <a>
+              <Image
+                src="/images/logos/logo_header.svg"
+                alt="Logo Danilo Antunes"
+                width={250}
+                height={42}
+                layout="fixed"
+              />
+            </a>
+          </NextLink>
+          <NextLink href={'/'}>
+            <a>
+              <Image
+                src="/images/logos/logo_rosane.svg"
+                alt="Logo Dra Rosane Lage Lacerda"
+                width={250}
+                height={42}
+              />
+            </a>
+          </NextLink>
+        </Box>
+        <Box display={{ base: 'none', md: 'flex' }}>
+          <DesktopNav />
+        </Box>
+        <Box display={{ base: 'flex', md: 'none' }}>
+          <IconButton
+            onClick={onToggle}
+            icon={isOpen ? <CloseIcon w={3} h={3} /> : <HamburgerIcon w={5} h={5} />}
+            bg={'transparent'}
+            color={'next-primary'}
+            aria-label={'Toggle Navigation'}
+          />
+        </Box>
+      </HStack>
+      <Collapse in={isOpen} animateOpacity>
+        <MobileNav />
+      </Collapse>
+    </Container>
   )
 }
 
