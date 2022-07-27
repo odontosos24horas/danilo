@@ -37,6 +37,7 @@ const NextTemplateHome = ({ nextCallToActionItems }: NextTemplateHomeProps) => {
         url={nextCallToActionItems[2].url}
         content={nextCallToActionItems[2].content}
         background={nextCallToActionItems[2].background}
+        directionBase={nextCallToActionItems[2].directionBase}
       />
       <NextCallToAction
         id={'rosane'}

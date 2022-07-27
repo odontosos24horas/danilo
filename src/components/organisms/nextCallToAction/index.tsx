@@ -1,5 +1,5 @@
 import React, { Suspense, useEffect, useState } from 'react'
-import { Flex, Stack, Text } from '@chakra-ui/react'
+import { Box, Flex, Stack, Text } from '@chakra-ui/react'
 import NextButton from '../../atoms/nextButton'
 import Link from 'next/link'
 import Image from 'next/image'
@@ -57,7 +57,12 @@ const NextCallToAction = ({
   if (!isFront) return null
   return (
     <>
-      <Stack id={id} bg={background} direction={{ base: directionBase, md: directionMd }}>
+      <Stack
+        id={id}
+        pb={[0, 16]}
+        bg={background}
+        direction={{ base: directionBase, md: directionMd }}
+      >
         {content !== 'carousel' && (
           <Flex
             px={{ base: 10 }}
@@ -77,6 +82,11 @@ const NextCallToAction = ({
               >
                 {title}
               </Text>
+              {(content === 'image' || content === 'form') && (
+                <Box display={{ md: 'none' }}>
+                  <Image alt={title} src={image} width={width} height={height} />
+                </Box>
+              )}
               {content === 'form' && <NextContactUs />}
               <Text fontSize={{ base: 'md', lg: 'lg' }} color={textColor} whiteSpace={'pre-wrap'}>
                 {text}
@@ -95,7 +105,9 @@ const NextCallToAction = ({
         )}
         <Flex flex={1} pt={[0, 12]} justify={rightItemJustify}>
           {(content === 'image' || content === 'form') && (
-            <Image alt={title} src={image} width={width} height={height} />
+            <Box display={{ base: 'none', md: 'flex' }}>
+              <Image alt={title} src={image} width={width} height={height} />
+            </Box>
           )}
           {content === 'map' && (
             <Suspense fallback={() => 'loading'}>
