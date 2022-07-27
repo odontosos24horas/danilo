@@ -45,6 +45,7 @@ export const nextCallToActionItems = [
     background: 'next-gray-dark',
     textButton: 'Ver especialidades do Dr. Danilo',
     url: '/especialidades/danilo',
+    directionBase: 'row',
     specialties: [
       {
         id: 1,
