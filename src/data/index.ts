@@ -80,7 +80,7 @@ export const nextCallToActionItems = [
     ]
   },
   {
-    title: 'Dr. Rosane',
+    title: 'Dra. Rosane',
     text: 'A Dra. Rosane Lage atua no mercado da odontologia desde 2002 quando concluiu a sua graduação.Desta forma ,vem se destacando sempre pela seriedade, dedicação e excelentes resultados alcançados. A fim de diferenciar seus tratamentos e melhorar ainda mais a qualidade do atendimento de seus pacientes a Dra. Rosane Lage, se especializou em endodontia e desde então utiliza o que há de mais moderno na odontologia. E uma delas é a microscopia operatória (uma tecnologia ainda rara) no tratamento endodôntico (canal). Pensando sempre no bem estar do paciente a Dra. Rosane Lage preparou um consultório moderno e bem equipado, planejado para proporcionar uma sensação de conforto e bem estar atendendo aos mais altos padrões de qualidade e excelência.Tudo isso com o objetivo de viabilizar o melhor tratamento odontológico seja qual for a necessidade.',
     image: '/images/rosane.jpeg',
     width: 488,

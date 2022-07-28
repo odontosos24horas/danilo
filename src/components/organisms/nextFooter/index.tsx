@@ -75,7 +75,7 @@ const NextFooter = () => {
               <ListHeader>Contatos</ListHeader>
               <Link href={'mailto:odontosos@odontosos.com.br'}>E-mail</Link>
               <Link href={'https://www.instagram.com/dr.daniloantunes'}>Instagram Dr. Danilo</Link>
-              <Link href={'https://www.instagram.com/dra.rosane.lage'}>Instagram Dr. Rosane</Link>
+              <Link href={'https://www.instagram.com/dra.rosane.lage'}>Instagram Dra. Rosane</Link>
             </Stack>
             <Stack align={'flex-start'}>
               <Link href={'tel:3133188718'}>
