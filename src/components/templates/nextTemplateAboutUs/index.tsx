@@ -8,7 +8,6 @@ import { Box, Center, Heading } from '@chakra-ui/react'
 
 export type NextTemplateAboutUs = {
   nextCallToActionItems: Array<NextCallToActionProps>
-  nextTechnologyItems: Array<Record<string, unknown>>
 }
 
 const NextTemplateAboutUs = ({

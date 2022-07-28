@@ -6,7 +6,6 @@ import { Center, Heading } from '@chakra-ui/react'
 
 export type NextTemplateHomeProps = {
   nextCallToActionItems: Array<NextCallToActionProps>
-  nextTechnologyItems: Array<Record<string, unknown>>
 }
 
 const NextTemplateHome = ({ nextCallToActionItems }: NextTemplateHomeProps) => {

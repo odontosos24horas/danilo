@@ -1,14 +1,9 @@
 import React from 'react'
 import NextTemplateHome from '../components/templates/nextTemplateHome'
-import { nextCallToActionItems, nextTechnologyItems } from '../data'
+import { nextCallToActionItems } from '../data/home'
 
 const NextHome = () => {
-  return (
-    <NextTemplateHome
-      nextCallToActionItems={nextCallToActionItems}
-      nextTechnologyItems={nextTechnologyItems}
-    />
-  )
+  return <NextTemplateHome nextCallToActionItems={nextCallToActionItems} />
 }
 
 export default NextHome

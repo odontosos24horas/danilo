@@ -43,7 +43,7 @@ const NextHome = () => {
               </Heading>
             </Link>
             <Link href={'https://www.instagram.com/dra.rosane.lage'} color="next-primary">
-              Instagram Dr. Rosane
+              Instagram Dra. Rosane
             </Link>
           </Stack>
         </Box>
