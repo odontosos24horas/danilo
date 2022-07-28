@@ -1,10 +1,10 @@
 import React from 'react'
-import NextTemplateAgreements from '../components/templates/nextTemplateAgreements'
+import NextTemplateTreatments from '../components/templates/nextTemplateTreatments'
 import { treatmentsItems } from '../data/treatments'
 
 export default function NextAgreements() {
   return (
-    <NextTemplateAgreements
+    <NextTemplateTreatments
       nextTechnologyItems={treatmentsItems}
       title="Tratamentos"
       numberGrid={2}
