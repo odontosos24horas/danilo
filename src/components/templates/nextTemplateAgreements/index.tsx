@@ -1,15 +1,16 @@
 import NextLayout from '../nextLayout'
 import NextFeatures from '../../organisms/nextFeatures'
 import NextHeroPage from '../../organisms/nextHeropage'
-import { Container, Text } from '@chakra-ui/react'
+import { Box, Container, Text, VStack } from '@chakra-ui/react'
+import { NextFeatureProps } from '../../molecules/nextFeature'
 
 export type NextTemplateAgreementsProps = {
-  nextTechnologyItems: Array<Record<string, unknown>>
+  agreements: Array<Array<NextFeatureProps>>
   title?: string
   numberGrid?: number
 }
 const NextTemplateAgreements = ({
-  nextTechnologyItems,
+  agreements,
   title = 'Convênios',
   numberGrid = 5
 }: NextTemplateAgreementsProps) => {
@@ -26,7 +27,30 @@ const NextTemplateAgreements = ({
         >
           {title}
         </Text>
-        <NextFeatures items={nextTechnologyItems} numberGrid={numberGrid} />
+        <VStack spacing={6} align="stretch">
+          <Box>
+            <Text
+              bgGradient={'linear(to-b, next-secondary, next-primary)'}
+              bgClip={'text'}
+              fontWeight={700}
+              fontSize={{ base: 'xl', md: '2xl', lg: '3xl' }}
+            >
+              Dr. Danilo
+            </Text>
+            <NextFeatures items={agreements[0]} numberGrid={numberGrid} />
+          </Box>
+          <Box>
+            <Text
+              bgGradient={'linear(to-b, next-secondary, next-primary)'}
+              bgClip={'text'}
+              fontWeight={700}
+              fontSize={{ base: 'xl', md: '2xl', lg: '3xl' }}
+            >
+              Dra. Rosane
+            </Text>
+            <NextFeatures items={agreements[1]} numberGrid={numberGrid} />
+          </Box>
+        </VStack>
       </Container>
     </NextLayout>
   )

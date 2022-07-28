@@ -1,7 +1,7 @@
 import React from 'react'
 import NextTemplateAgreements from '../components/templates/nextTemplateAgreements'
-import { nextTechnologyItems } from '../data'
+import { agreements } from '../data/agreements'
 
 export default function NextAgreements() {
-  return <NextTemplateAgreements nextTechnologyItems={nextTechnologyItems} />
+  return <NextTemplateAgreements agreements={agreements} />
 }

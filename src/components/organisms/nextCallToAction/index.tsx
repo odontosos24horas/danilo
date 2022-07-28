@@ -1,11 +1,10 @@
-import React, { Suspense, useEffect, useState } from 'react'
+import React, { useEffect, useState } from 'react'
 import { Box, Flex, Stack, Text } from '@chakra-ui/react'
 import NextButton from '../../atoms/nextButton'
 import Link from 'next/link'
 import Image from 'next/image'
 import NextContactUs from '../nextContactUs'
 import NextCarousel from '../nextCarousel'
-const NextMap = React.lazy(() => import('../../atoms/nextMap'))
 
 export interface NextCallToActionProps {
   bgButton?: 'next-primary' | 'next-dark' | 'white' | 'dark' | undefined
@@ -108,11 +107,6 @@ const NextCallToAction = ({
             <Box display={{ base: 'none', md: 'flex' }}>
               <Image alt={title} src={image} width={width} height={height} />
             </Box>
-          )}
-          {content === 'map' && (
-            <Suspense fallback={() => 'loading'}>
-              <NextMap />
-            </Suspense>
           )}
         </Flex>
       </Stack>

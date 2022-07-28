@@ -7,7 +7,6 @@ import Image from 'next/image'
 
 export type NextTemplateAboutUs = {
   nextCallToActionItems: NextAccordionImageProps
-  nextTechnologyItems: Array<Record<string, unknown>>
 }
 
 const NextTemplateSpecialties = ({ nextCallToActionItems }: NextTemplateAboutUs) => {

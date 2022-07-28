@@ -1,4 +1,4 @@
-import { NextCallToActionProps } from '../components/organisms/nextCallToAction'
+import { NextCallToActionProps } from '../../components/organisms/nextCallToAction'
 
 const number = '5531997376623'
 export const nextSocialNetwork = {
@@ -117,21 +117,3 @@ export const nextCallToActionItems = [
     ]
   }
 ] as unknown as Array<NextCallToActionProps>
-
-export const nextTechnologyItems = [
-  {
-    image: '/images/logos/convenios/logo_plan_assiste.png',
-    width: 226,
-    height: 72
-  },
-  {
-    image: '/images/logos/convenios/logo_copass.png',
-    width: 116,
-    height: 128
-  },
-  {
-    image: '/images/logos/convenios/logo_ipsm.png',
-    width: 130,
-    height: 137
-  }
-]
