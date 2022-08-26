@@ -55,13 +55,13 @@ export const nextCallToActionItems = [
       {
         id: 2,
         title: 'PERIODONTIA',
-        text: 'A Sedação Inalatória garante o máximo de segurança ao paciente com relação à dor, ao medo e à tensão pré-cirurgia. É uma técnica de sedação segura pois é titulada gradativamente e o paciente ao final, sai do consultório da mesma forma que entrou.No aspecto físico, todos os sentidos do paciente são monitorados durante o procedimento pelo dentista responsável. Em casos de maior risco, tendo sempre a postos equipamento de verificação cardíaca, para monitorar.'
+        text: 'A Periodontia é uma área odontológica responsável pela prevenção e tratamento das doenças que acometem os tecidos de sustentação e proteção dos dentes, dos quais fazem parte o ligamento periodontal, o osso e a gengiva ao redor do elemento dental. É a base para inúmeras especialidades odontológicas.'
       }
     ],
     features: [
       {
         id: 1,
-        title: '',
+        title: 'PRÓTESE FIXA UTILIZANDO O CAD CAM',
         text: 'No procedimento a arcada dentária do paciente é escaneada digitalmente e conforme isso acontece uma imagem 3D é transmitida para o computador. O equipamento reproduz imagens de altíssima precisão, eliminando erros manuais e a necessidade do retrabalho para corrigir erros de moldagem. Todo o processo é muito confortável para o paciente proporcionando uma melhor experiência na consulta e nos resultados! ',
         image: '/images/icons/feature_cube.svg'
       },
@@ -92,7 +92,7 @@ export const nextCallToActionItems = [
     features: [
       {
         id: 1,
-        title: 'Prótese fixa utilizando o CAD CAM',
+        title: 'PRÓTESE FIXA UTILIZANDO O CAD CAM',
         text: 'A tecnologia CAD-CAM surgiu para facilitar o planejamento, o designer e a produção de vários projetos. É um equipamento que permite ao dentista digitalizar, desenhar em detalhes a anatomia das arcadas dentárias conseguindo assim produzir próteses em porcelana em minutos. Com este equipamento, o profissional pode entregar a prótese definitiva em uma sessão. Esse processo acelera o tratamento, com maior custo benefício.',
         image: '/images/icons/feature_cube.svg'
       },
@@ -107,12 +107,14 @@ export const nextCallToActionItems = [
       {
         id: 1,
         title: 'ENDODONTIA',
-        text: 'Endodontia é a especialidade da Odontologia que trata da prevenção, diagnóstico e tratamento das enfermidades da polpa e de suas repercussões sobre os tecidos da região periapical”.\nÉ um campo da Odontologia que trata da morfologia, fisiologia e patologia da polpa dental humana e dos tecidos periapicais”'
+        text: 'Endodontia é a especialidade da Odontologia que trata da prevenção, diagnóstico e tratamento das enfermidades da polpa e de suas repercussões sobre os tecidos da região periapical”.\nÉ um campo da Odontologia que trata da morfologia, fisiologia e patologia da polpa dental humana e dos tecidos periapicais”',
+        image: '/images/icons/feature_cube.svg'
       },
       {
         id: 2,
         title: 'MICROSCOPIA ENDODÔNTICA',
-        text: 'A microscopia endodôntica nada mais é do que uma técnica para realizar tratamento de canal com auxílio de um microscópio. É uma técnica capaz de detectar de forma aprimorada o sistema de canais radiculares e suas variações anatômicas, garantindo maior precisão e segurança durante o tratamento de canal.\nO sucesso do tratamento de canal está diretamente relacionado à limpeza adequada dos canais radiculares podendo ser em uma região extremamente pequena e de difícil de visualização, o que faz a microscopia endodôntica ser essencial na realização do tratamento, pois o microscópio assegura maior precisão, qualidade e segurança ao procedimento.'
+        text: 'A microscopia endodôntica nada mais é do que uma técnica para realizar tratamento de canal com auxílio de um microscópio. É uma técnica capaz de detectar de forma aprimorada o sistema de canais radiculares e suas variações anatômicas, garantindo maior precisão e segurança durante o tratamento de canal.\nO sucesso do tratamento de canal está diretamente relacionado à limpeza adequada dos canais radiculares podendo ser em uma região extremamente pequena e de difícil de visualização, o que faz a microscopia endodôntica ser essencial na realização do tratamento, pois o microscópio assegura maior precisão, qualidade e segurança ao procedimento.',
+        image: '/images/icons/feature_tooth.svg'
       }
     ]
   }

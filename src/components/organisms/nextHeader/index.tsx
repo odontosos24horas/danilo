@@ -247,7 +247,7 @@ const NextHeader = () => {
                 />
               </a>
             </NextLink>
-            <NextLink href={'/'}>
+            {/* <NextLink href={'/'}>
               <a>
                 <Image
                   src="/images/logos/logo_rosane.svg"
@@ -256,7 +256,7 @@ const NextHeader = () => {
                   height={42}
                 />
               </a>
-            </NextLink>
+            </NextLink> */}
           </Box>
           <Box display={{ base: 'none', md: 'flex' }}>
             <DesktopNav />

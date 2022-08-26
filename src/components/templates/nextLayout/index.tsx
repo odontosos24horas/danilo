@@ -14,8 +14,8 @@ type Props = {
 
 const NextLayout = ({
   children,
-  title = 'Implantes dentários BH | Periodontia',
-  description = 'Odonto SOS tem atendimentos 24 horas de urgência odontológica em BH e região metropolitana de Belo Horizonte. Oferece dentistas de plantão 24 horas na região da Savassi em BH.',
+  title = 'Dr. Danilo Antunes',
+  description = 'Dr. Danilo Antunes é um cirurgião dentista especializado em implantes dentários e periodontia. Atende no bairro de Funcionários, em Belo Horizonte',
   nextSocialNetwork = 'https://api.whatsapp.com/send?phone=553197376623&text=Ol%C3%A1,%20Dr.%20Danilo.'
 }: PropsWithChildren<Props>) => {
   return (

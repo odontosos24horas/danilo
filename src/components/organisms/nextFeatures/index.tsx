@@ -4,14 +4,14 @@ import NextFeature, { NextFeatureProps } from '../../molecules/nextFeature'
 
 export interface NextFeaturesProps {
   items: Array<NextFeatureProps>
-  numberGrid?: number
+  numberGrid?: Array<number>
 }
 
-const NextFeatures = ({ items, numberGrid = 5 }: NextFeaturesProps) => {
+const NextFeatures = ({ items, numberGrid = [1, 5] }: NextFeaturesProps) => {
   return (
     <Container maxW="container.lg">
       <Box p={4}>
-        <SimpleGrid columns={{ base: 3, md: numberGrid }} spacing={10}>
+        <SimpleGrid columns={numberGrid} spacing={10}>
           {items?.map((item, index) => (
             <NextFeature
               key={index}
