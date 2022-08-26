@@ -24,6 +24,8 @@ export interface NextCallToActionProps {
   content: 'image' | 'map' | 'form' | 'carousel'
   id: string
   rightItemJustify?: 'end'
+  features?: []
+  specialties?: []
 }
 
 const NextCallToAction = ({

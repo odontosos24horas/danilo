@@ -41,10 +41,7 @@ const NextTemplateSpecialties = ({ nextCallToActionItems }: NextTemplateAboutUs)
           </GridItem>
           <GridItem colSpan={[7, 5]}>
             <Container maxW="3xl">
-              <NextGridListWithHeading
-                features={nextCallToActionItems.features}
-                title={'Como funciona?'}
-              />
+              <NextGridListWithHeading features={nextCallToActionItems.features} />
             </Container>
           </GridItem>
         </Grid>

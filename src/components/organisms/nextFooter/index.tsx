@@ -69,11 +69,10 @@ const NextFooter = () => {
               <Link href={'/convenios'}>Convênios</Link>
               <Link href={'/tratamentos'}>Tratamentos</Link>
               <Link href={'/videos'}>Vídeos</Link>
-              <Link href={'https://odontosos.com.br/'}>Urgência</Link>
             </Stack>
             <Stack align={'flex-start'}>
               <ListHeader>Contatos</ListHeader>
-              <Link href={'mailto:drdaniloantunes@gmail.com'}>E-mail Danilo</Link>
+              <Link href={'mailto:drdaniloantunes@gmail.com'}>E-mail Dr. Danilo</Link>
               <Link href={'https://www.instagram.com/dr.daniloantunes'}>Instagram Dr. Danilo</Link>
               <Link href={'mailto:rosane.lacerda@hotmail.com'}>E-mail Dra. Rosane</Link>
               <Link href={'https://www.instagram.com/dra.rosane.lage'}>Instagram Dra. Rosane</Link>

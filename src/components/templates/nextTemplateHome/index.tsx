@@ -2,17 +2,22 @@ import React from 'react'
 import NextCallToAction, { NextCallToActionProps } from '../../organisms/nextCallToAction'
 import NextHero from '../../organisms/nextHero'
 import NextLayout from '../nextLayout'
-import { Center, Heading } from '@chakra-ui/react'
+import { Container } from '@chakra-ui/react'
+import NextGridListWithHeading from '../../organisms/nextGridListWithHeading'
 
 export type NextTemplateHomeProps = {
   nextCallToActionItems: Array<NextCallToActionProps>
 }
 
 const NextTemplateHome = ({ nextCallToActionItems }: NextTemplateHomeProps) => {
+  console.log(nextCallToActionItems[3])
   return (
     <NextLayout>
       <NextHero />
-      <Center bgColor={'next-gray-dark'}>
+      <Container maxW="5xl" py={8}>
+        <NextGridListWithHeading features={nextCallToActionItems[3].specialties} />
+      </Container>
+      {/* <Center bgColor={'next-gray-dark'}>
         <Heading
           pt={8}
           fontWeight={900}
@@ -23,7 +28,7 @@ const NextTemplateHome = ({ nextCallToActionItems }: NextTemplateHomeProps) => {
         >
           Nossos Dentistas
         </Heading>
-      </Center>
+      </Center> */}
       <NextCallToAction
         id={'danilo'}
         title={nextCallToActionItems[2].title}

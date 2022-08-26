@@ -6,12 +6,12 @@ import { Container, Text } from '@chakra-ui/react'
 export type NextTemplateAgreementsProps = {
   nextTechnologyItems: Array<Record<string, unknown>>
   title?: string
-  numberGrid?: number
+  numberGrid?: Array<number>
 }
 const NextTemplateAgreements = ({
   nextTechnologyItems,
   title = 'Convênios',
-  numberGrid = 5
+  numberGrid = [1, 5]
 }: NextTemplateAgreementsProps) => {
   return (
     <NextLayout>

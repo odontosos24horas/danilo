@@ -7,7 +7,7 @@ export default function NextAgreements() {
     <NextTemplateTreatments
       nextTechnologyItems={treatmentsItems}
       title="Tratamentos"
-      numberGrid={2}
+      numberGrid={[1, 2]}
     />
   )
 }
