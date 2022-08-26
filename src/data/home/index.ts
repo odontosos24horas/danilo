@@ -47,12 +47,12 @@ export const nextCallToActionItems = [
     url: '/especialidades/danilo',
     directionBase: 'row',
     specialties: [
-      // {
-      //   id: 1,
-      //   title: 'IMPLANTODONTIA',
-      //   text: 'Implante dentário renova o sorriso e a vida. A falta de um ou mais dentes afeta a saúde e bem estar de uma pessoa. A dificuldade de mastigação e na fala e a mudança na aparência são os principais impactos que surgem da falta de um ou mais dentes.\nA reposição de dentes com implantes dentários é certamente a melhor forma de de restabelecer a qualidade de vida e autoestima de quem sofre pela ausência de dentes.\nTer um sorriso completo traz ao paciente a sensação de voltar a sorrir novamente sem medo, melhorando a qualidade de vida bem como autoestima.',
-      //   image: '/images/icons/feature_cube.svg'
-      // },
+      {
+        id: 1,
+        title: 'IMPLANTODONTIA',
+        text: 'Implante dentário renova o sorriso e a vida. A falta de um ou mais dentes afeta a saúde e bem estar de uma pessoa. A dificuldade de mastigação e na fala e a mudança na aparência são os principais impactos que surgem da falta de um ou mais dentes.\nA reposição de dentes com implantes dentários é certamente a melhor forma de de restabelecer a qualidade de vida e autoestima de quem sofre pela ausência de dentes.\nTer um sorriso completo traz ao paciente a sensação de voltar a sorrir novamente sem medo, melhorando a qualidade de vida bem como autoestima.',
+        image: '/images/icons/feature_cube.svg'
+      },
       {
         id: 2,
         title: 'PERIODONTIA',
