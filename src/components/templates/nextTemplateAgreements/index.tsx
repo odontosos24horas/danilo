@@ -29,17 +29,14 @@ const NextTemplateAgreements = ({
         </Text>
         <VStack spacing={6} align="stretch">
           <Box>
-            <Text
-              bgGradient={'linear(to-b, next-secondary, next-primary)'}
-              bgClip={'text'}
-              fontWeight={700}
-              fontSize={{ base: 'xl', md: '2xl', lg: '3xl' }}
-            >
-              Dr. Danilo
+            <Text color={'next-gray.600'} fontSize={{ base: 'md', md: 'lg', lg: 'xl' }}>
+              Atendemos particular e temos parcerias com várias empresas para atender seus
+              funcionários da melhor maneira possível. Somos conveniados com planos odontológicos,
+              dentre eles:
             </Text>
             <NextFeatures items={agreements[0]} numberGrid={numberGrid} />
           </Box>
-          <Box>
+          {/* <Box>
             <Text
               bgGradient={'linear(to-b, next-secondary, next-primary)'}
               bgClip={'text'}
@@ -49,7 +46,7 @@ const NextTemplateAgreements = ({
               Dra. Rosane
             </Text>
             <NextFeatures items={agreements[1]} numberGrid={numberGrid} />
-          </Box>
+          </Box> */}
         </VStack>
       </Container>
     </NextLayout>

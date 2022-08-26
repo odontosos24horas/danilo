@@ -106,7 +106,7 @@ export const nextCallToActionItems = [
     specialties: [
       {
         id: 1,
-        title: 'ENDOTONTIA',
+        title: 'ENDODONTIA',
         text: 'Endodontia é a especialidade da Odontologia que trata da prevenção, diagnóstico e tratamento das enfermidades da polpa e de suas repercussões sobre os tecidos da região periapical”.\nÉ um campo da Odontologia que trata da morfologia, fisiologia e patologia da polpa dental humana e dos tecidos periapicais”'
       },
       {

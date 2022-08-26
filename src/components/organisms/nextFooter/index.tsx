@@ -69,7 +69,6 @@ const NextFooter = () => {
               <Link href={'/convenios'}>Convênios</Link>
               <Link href={'/tratamentos'}>Tratamentos</Link>
               <Link href={'/videos'}>Vídeos</Link>
-              <Link href={'https://odontosos.com.br/'}>Urgência</Link>
             </Stack>
             <Stack align={'flex-start'}>
               <ListHeader>Contatos</ListHeader>
