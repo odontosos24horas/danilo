@@ -10,12 +10,11 @@ export type NextTemplateHomeProps = {
 }
 
 const NextTemplateHome = ({ nextCallToActionItems }: NextTemplateHomeProps) => {
-  console.log(nextCallToActionItems[3])
   return (
     <NextLayout>
       <NextHero />
       <Container maxW="5xl" py={8}>
-        <NextGridListWithHeading features={nextCallToActionItems[3].specialties} />
+        <NextGridListWithHeading features={nextCallToActionItems[2].specialties} />
       </Container>
       {/* <Center bgColor={'next-gray-dark'}>
         <Heading
