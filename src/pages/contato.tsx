@@ -37,7 +37,7 @@ const NextHome = () => {
             <Heading color="next-primary" size="md">
               Dra. Rosane Lage Lacerda
             </Heading>
-            <Link href={'tel:25552779'}>
+            <Link href={'tel:025552779'}>
               <Heading color="next-primary" size="md">
                 (31) 2555-2779
               </Heading>
