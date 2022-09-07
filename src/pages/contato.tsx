@@ -22,7 +22,7 @@ const NextHome = () => {
             <Heading color="next-primary" size="md">
               Dr. Danilo Antunes
             </Heading>
-            <Link href={'tel:3133188718'}>
+            <Link href={'tel:03133188718'}>
               <Heading color="next-primary" size="md">
                 (31) 3318-8718
               </Heading>
