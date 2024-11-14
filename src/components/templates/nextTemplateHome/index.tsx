@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from 'react'
+import React, { useEffect } from 'react'
 import NextCallToAction, { NextCallToActionProps } from '../../organisms/nextCallToAction'
 import NextHero from '../../organisms/nextHero'
 import NextLayout from '../nextLayout'
