@@ -16,6 +16,10 @@
     "prepare": "husky install",
     "postinstall": "husky install"
   },
+  "engines": {
+    "node": "16.20.2",
+    "npm": ">=6.0.0"
+  },
   "dependencies": {
     "@chakra-ui/icons": "^1.0.7",
     "@chakra-ui/react": "^1.6.12",
