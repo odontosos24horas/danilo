@@ -1,8 +1,8 @@
-import React from 'react'
+import React, { useEffect } from 'react'
 import NextCallToAction, { NextCallToActionProps } from '../../organisms/nextCallToAction'
 import NextHero from '../../organisms/nextHero'
 import NextLayout from '../nextLayout'
-import { Container } from '@chakra-ui/react'
+import { Box, Container } from '@chakra-ui/react'
 import NextGridListWithHeading from '../../organisms/nextGridListWithHeading'
 
 export type NextTemplateHomeProps = {
@@ -10,6 +10,24 @@ export type NextTemplateHomeProps = {
 }
 
 const NextTemplateHome = ({ nextCallToActionItems }: NextTemplateHomeProps) => {
+  useEffect(() => {
+    process.nextTick(() => {
+      if (globalThis.window) {
+        const script = document.createElement('script')
+        script.innerHTML = `!function($_x,_s,id){
+          var js, fjs=$_x.getElementsByTagName(_s)[0];
+          if(!$_x.getElementById(id)){
+            js = $_x.createElement(_s);
+            js.id = id;
+            js.src = "//platform.docplanner.com/js/widget.js";
+            fjs.parentNode.insertBefore(js,fjs);
+          }
+        }(document,"script","zl-widget-s");`
+        document.body.appendChild(script)
+      }
+    })
+  }, [])
+
   return (
     <NextLayout>
       <NextHero />
@@ -42,6 +60,21 @@ const NextTemplateHome = ({ nextCallToActionItems }: NextTemplateHomeProps) => {
         background={nextCallToActionItems[2].background}
         directionBase={nextCallToActionItems[2].directionBase}
       />
+      <Box bg={'next-gray-dark'}>
+        <a
+          id="zl-url"
+          className="zl-url"
+          href="https://www.doctoralia.com.br/danilo-antunes/dentista/belo-horizonte"
+          rel="nofollow"
+          data-zlw-doctor="danilo-antunes"
+          data-zlw-type="big"
+          data-zlw-opinion="true"
+          data-zlw-hide-branding="true"
+          data-zlw-saas-only="true"
+        >
+          Danilo Antunes - Doctoralia.com.br
+        </a>
+      </Box>
       <NextCallToAction
         id={'rosane'}
         title={nextCallToActionItems[3].title}
