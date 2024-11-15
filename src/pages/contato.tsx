@@ -1,8 +1,25 @@
-import React from 'react'
+import React, { useEffect } from 'react'
 import { Box, Center, Container, Heading, Link, Stack, Text } from '@chakra-ui/react'
 import NextLayout from '../components/templates/nextLayout'
 
 const NextHome = () => {
+  useEffect(() => {
+    process.nextTick(() => {
+      if (globalThis.window) {
+        const script = document.createElement('script')
+        script.innerHTML = `!function($_x,_s,id){
+          var js, fjs=$_x.getElementsByTagName(_s)[0];
+          if(!$_x.getElementById(id)){
+            js = $_x.createElement(_s);
+            js.id = id;
+            js.src = "//platform.docplanner.com/js/widget.js";
+            fjs.parentNode.insertBefore(js,fjs);
+          }
+        }(document,"script","zl-widget-s");`
+        document.body.appendChild(script)
+      }
+    })
+  }, [])
   return (
     <NextLayout>
       <Center>
@@ -46,11 +63,26 @@ const NextHome = () => {
               Instagram Dra. Rosane
             </Link>
           </Stack>
+          <Text color="next-primary" fontSize="sm">
+            Rua Gonçalves Dias, 82 | Sala 902 - Bairro Funcionários - Cep 30140-190
+          </Text>
         </Box>
-        <Text color="next-primary" fontSize="sm">
-          Rua Gonçalves Dias, 82 | Sala 902 - Bairro Funcionários - Cep 30140-190
-        </Text>
       </Container>
+      <Box bg={'next-gray-dark'} py={'12'}>
+        <a
+          id="zl-url"
+          className="zl-url"
+          href="https://www.doctoralia.com.br/danilo-antunes/dentista/belo-horizonte"
+          rel="nofollow"
+          data-zlw-doctor="danilo-antunes"
+          data-zlw-type="big"
+          data-zlw-opinion="true"
+          data-zlw-hide-branding="true"
+          data-zlw-saas-only="true"
+        >
+          Danilo Antunes - Doctoralia.com.br
+        </a>
+      </Box>
     </NextLayout>
   )
 }
