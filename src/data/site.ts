@@ -18,13 +18,16 @@ export const TELEFONE_ROSANE_E164 = '+553125552779'
 export const TELEFONE_ROSANE = '(31) 2555-2779'
 
 /**
- * ⚠️ PENDENTE PEDRO: este número tem 8 dígitos depois do DDD
- * (55 + 31 + 97376623), formato anterior a 2016. Celulares brasileiros têm
- * 9 dígitos desde então, então o link provavelmente não abre conversa
- * nenhuma. Não corrigi por conta própria: chutar um dígito em número de
- * WhatsApp é perder paciente em silêncio.
+ * WhatsApp — CONFIRMADO.
+ *
+ * O site trazia 5531997376623: 8 digitos apos o DDD, formato anterior a
+ * 2014, quando a Anatel acrescentou o nono digito aos celulares do DDD 31.
+ * O link nao abria conversa.
+ *
+ * O numero (31) 99737-6623 esta publicado no perfil da propria clinica no
+ * Doctoralia, e bate exatamente com a regra do nono digito.
  */
-export const WHATSAPP_NUMERO = '553197376623'
+export const WHATSAPP_NUMERO = '5531997376623'
 export const WHATSAPP_URL = `https://api.whatsapp.com/send?phone=${WHATSAPP_NUMERO}&text=${encodeURIComponent(
   'Olá, Dr. Danilo.'
 )}`
@@ -35,7 +38,7 @@ export const ENDERECO = {
   bairro: 'Funcionários',
   cidade: 'Belo Horizonte',
   estado: 'MG',
-  cep: '30140-190',
+  cep: '30140-090',
   pais: 'BR'
 } as const
 
