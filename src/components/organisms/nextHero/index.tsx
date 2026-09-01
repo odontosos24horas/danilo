@@ -13,7 +13,7 @@ export default function SplitScreen() {
       </Flex>
       <Flex p={8} flex={1} align={'center'} justify={'center'}>
         <Stack spacing={6} w={'full'} maxW={'lg'}>
-          <Heading fontSize={{ base: '4xl', md: '5xl', lg: '6xl' }}>
+          <Heading as="h1" fontSize={{ base: '4xl', md: '5xl', lg: '6xl' }}>
             <Text
               fontWeight={900}
               as={'span'}

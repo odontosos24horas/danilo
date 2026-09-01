@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from 'react'
+import React from 'react'
 import { Box, Flex, Stack, Text } from '@chakra-ui/react'
 import NextButton from '../../atoms/nextButton'
 import Link from 'next/link'
@@ -47,15 +47,6 @@ const NextCallToAction = ({
   id,
   rightItemJustify
 }: NextCallToActionProps) => {
-  const [isFront, setIsFront] = useState(false)
-  useEffect(() => {
-    process.nextTick(() => {
-      if (globalThis.window ?? false) {
-        setIsFront(true)
-      }
-    })
-  }, [])
-  if (!isFront) return null
   return (
     <>
       <Stack
@@ -78,6 +69,7 @@ const NextCallToAction = ({
                 color={titleColor}
                 bgGradient={titleColor ? undefined : bgGradient}
                 bgClip={!titleColor ? 'text' : undefined}
+                as="h2"
                 fontWeight={700}
                 fontSize={{ base: '3xl', md: '4xl', lg: '5xl' }}
               >

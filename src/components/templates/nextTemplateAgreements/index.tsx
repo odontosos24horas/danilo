@@ -19,6 +19,7 @@ const NextTemplateAgreements = ({
       <NextHeroPage />
       <Container maxW="container.lg" py={12}>
         <Text
+          as="h1"
           pb={6}
           bgGradient={'linear(to-b, next-secondary, next-primary)'}
           bgClip={'text'}
