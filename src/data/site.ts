@@ -2,11 +2,10 @@
  * Dados da clínica — fonte única de verdade para contatos, endereço,
  * metadados e dados estruturados.
  *
- * ⚠️ PENDENTE PEDRO: confirmar SITE_URL. O repositório não registra o domínio
- * em lugar nenhum e os domínios testados não resolveram. O canonical e o
- * JSON-LD dependem disso estar correto.
+ * Domínio confirmado com o cliente e verificado em produção
+ * (apex redireciona para www com 308, hospedado na Vercel).
  */
-export const SITE_URL = 'https://www.drdaniloantunes.com.br'
+export const SITE_URL = 'https://www.daniloantunesimplantes.com.br'
 
 /** Telefones em E.164. Os rótulos vieram do texto visível do próprio site. */
 export const TELEFONE_CLINICA_E164 = '+553135860900'
