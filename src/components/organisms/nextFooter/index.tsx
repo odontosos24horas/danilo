@@ -1,4 +1,5 @@
 import React, { ReactNode } from 'react'
+import NextAnoAtual from '../../atoms/nextAnoAtual'
 import Image from 'next/image'
 import packageInfo from '../../../../package.json'
 
@@ -41,8 +42,8 @@ const NextFooter = () => {
                 />
               </Box>
               <Text fontSize={'sm'}>
-                © {new Date().getFullYear()} Dr. Danilo Antunes e Dra. Rosane Lage Lacerda. Todos os
-                direitos reservados.
+                © <NextAnoAtual /> Dr. Danilo Antunes e Dra. Rosane Lage Lacerda. Todos os direitos
+                reservados.
               </Text>
               <Text>
                 Desenvolvido por:

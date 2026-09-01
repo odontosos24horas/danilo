@@ -37,17 +37,6 @@ const NextTemplateAgreements = ({
             </Text>
             <NextFeatures items={agreements[0]} numberGrid={numberGrid} />
           </Box>
-          {/* <Box>
-            <Text
-              bgGradient={'linear(to-b, next-secondary, next-primary)'}
-              bgClip={'text'}
-              fontWeight={700}
-              fontSize={{ base: 'xl', md: '2xl', lg: '3xl' }}
-            >
-              Dra. Rosane
-            </Text>
-            <NextFeatures items={agreements[1]} numberGrid={numberGrid} />
-          </Box> */}
         </VStack>
       </Container>
     </NextLayout>
