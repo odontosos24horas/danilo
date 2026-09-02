@@ -1,4 +1,5 @@
 import React, { ReactNode } from 'react'
+import NextAnoAtual from '../../atoms/nextAnoAtual'
 import Image from 'next/image'
 import packageInfo from '../../../../package.json'
 
@@ -28,21 +29,21 @@ const NextFooter = () => {
             <Stack spacing={6}>
               <Box justifyContent={'center'}>
                 <Image
-                  src="/images/logos/logo_header.svg"
+                  src="/images/logos/logo_header.png"
                   alt="Logo Dr Danilo Antunes"
                   width={153}
                   height={29}
                 />
                 <Image
-                  src="/images/logos/logo_rosane.svg"
+                  src="/images/logos/logo_rosane.png"
                   alt="Logo Dra Rosane Lage Lacerda"
                   width={153}
                   height={29}
                 />
               </Box>
               <Text fontSize={'sm'}>
-                © {new Date().getFullYear()} Dr. Danilo Antunes e Dra. Rosane Lage Lacerda. Todos os
-                direitos reservados.
+                © <NextAnoAtual /> Dr. Danilo Antunes e Dra. Rosane Lage Lacerda. Todos os direitos
+                reservados.
               </Text>
               <Text>
                 Desenvolvido por:
@@ -73,12 +74,12 @@ const NextFooter = () => {
             <Stack align={'flex-start'}>
               <ListHeader>Contatos</ListHeader>
               <Link href={'mailto:drdaniloantunes@gmail.com'}>E-mail Dr. Danilo</Link>
-              <Link href={'https://www.instagram.com/dr.daniloantunes'}>Instagram Dr. Danilo</Link>
+              <Link href={'https://www.instagram.com/dr.daniloantunes_'}>Instagram Dr. Danilo</Link>
               <Link href={'mailto:rosane.lacerda@hotmail.com'}>E-mail Dra. Rosane</Link>
               <Link href={'https://www.instagram.com/dra.rosane.lage'}>Instagram Dra. Rosane</Link>
             </Stack>
             <Stack align={'flex-start'}>
-              <Link href={'tel:03133188718'}>
+              <Link href={'tel:+553133188718'}>
                 <Heading color="next-primary" size="lg">
                   (31) 3318-8718
                 </Heading>
@@ -86,7 +87,7 @@ const NextFooter = () => {
               <Heading color="next-primary" size="md">
                 Dr. Danilo Antunes
               </Heading>
-              <Link href={'tel:25552779'}>
+              <Link href={'tel:+553125552779'}>
                 <Heading color="next-primary" size="lg">
                   (31) 2555-2779
                 </Heading>
@@ -95,7 +96,7 @@ const NextFooter = () => {
                 Dra. Rosane Lage Lacerda
               </Heading>
               <Text color="next-primary" fontSize="sm">
-                Rua Gonçalves Dias, 82 | Sala 902 - Bairro Funcionários - Cep 30140-190
+                Rua Gonçalves Dias, 82 | Sala 902 - Bairro Funcionários - Cep 30140-090
               </Text>
             </Stack>
           </SimpleGrid>

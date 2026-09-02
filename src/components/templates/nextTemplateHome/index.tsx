@@ -3,6 +3,7 @@ import NextCallToAction, { NextCallToActionProps } from '../../organisms/nextCal
 import NextHero from '../../organisms/nextHero'
 import NextLayout from '../nextLayout'
 import { Box, Container } from '@chakra-ui/react'
+import NextDoctoralia from '../../atoms/nextDoctoralia'
 import NextGridListWithHeading from '../../organisms/nextGridListWithHeading'
 
 export type NextTemplateHomeProps = {
@@ -88,6 +89,7 @@ const NextTemplateHome = ({ nextCallToActionItems }: NextTemplateHomeProps) => {
         content={nextCallToActionItems[3].content}
         background={nextCallToActionItems[3].background}
       />
+      <NextDoctoralia slug="rosane-lage" nome="Rosane Lage" />
       <NextCallToAction
         id={'odontologia'}
         title={nextCallToActionItems[0].title}
@@ -103,7 +105,6 @@ const NextTemplateHome = ({ nextCallToActionItems }: NextTemplateHomeProps) => {
         url={nextCallToActionItems[0].url}
         content={nextCallToActionItems[0].content}
       />
-      {/* <NextWithBackgroundImage /> */}
     </NextLayout>
   )
 }

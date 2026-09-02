@@ -18,7 +18,7 @@ const NextTemplateAboutUs = ({
       <Center>
         <Heading
           fontWeight={900}
-          as={'span'}
+          as={'h1'}
           bgGradient="linear(to-b, #EACE8C, #D6BD82)"
           bgClip="text"
           fontSize={{ base: '4xl', md: '5xl', lg: '6xl' }}

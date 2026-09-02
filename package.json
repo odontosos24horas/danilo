@@ -4,20 +4,20 @@
   "private": true,
   "license": "MIT",
   "scripts": {
-    "dev": "next dev",
+    "dev": "NODE_OPTIONS=--openssl-legacy-provider next dev",
     "clean": "rm -rf node_modules .next yarn.lock package-lock.json && yarn cache clean",
-    "build": "next build",
-    "start": "next start",
+    "build": "NODE_OPTIONS=--openssl-legacy-provider next build",
+    "start": "NODE_OPTIONS=--openssl-legacy-provider next start",
     "lint": "eslint src --ext .ts,.tsx",
-    "precommit": "yarn lint",
+    "precommit": "pnpm lint",
     "commit": "cz",
-    "prepush": "git diff HEAD --quiet && git fetch && git pull origin main && yarn precommit && yarn && yarn build",
+    "prepush": "git diff HEAD --quiet && git fetch && git pull origin main && pnpm precommit && pnpm install && pnpm build",
     "go": "yarn prepush && yarn dev",
     "prepare": "husky install",
     "postinstall": "husky install"
   },
   "engines": {
-    "node": "16.20.2",
+    "node": ">=18",
     "npm": ">=6.0.0"
   },
   "dependencies": {

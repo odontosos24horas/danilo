@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from 'react'
+import React from 'react'
 import {
   Box,
   Flex,
@@ -49,15 +49,6 @@ const NextAccordionImage = ({
   id,
   specialties
 }: NextAccordionImageProps) => {
-  const [isFront, setIsFront] = useState(false)
-  useEffect(() => {
-    process.nextTick(() => {
-      if (globalThis.window ?? false) {
-        setIsFront(true)
-      }
-    })
-  }, [])
-  if (!isFront) return null
   return (
     <Stack id={id} bg={background} direction={{ base: directionBase, md: directionMd }}>
       <Flex
@@ -70,6 +61,7 @@ const NextAccordionImage = ({
       >
         <Stack spacing={6} w={'full'} maxW={'lg'}>
           <Text
+            as="h1"
             color={titleColor}
             bgGradient={titleColor ? undefined : bgGradient}
             bgClip={!titleColor ? 'text' : undefined}
