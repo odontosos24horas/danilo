@@ -1,5 +1,6 @@
 import { Box, Grid, GridItem, Container } from '@chakra-ui/react'
 import React, { useEffect } from 'react'
+import NextDoctoralia from '../../atoms/nextDoctoralia'
 import NextAccordionImage, { NextAccordionImageProps } from '../../organisms/nextAccordionImage'
 import NextGridListWithHeading from '../../organisms/nextGridListWithHeading'
 import NextLayout from '../nextLayout'
@@ -44,21 +45,10 @@ const NextTemplateSpecialties = ({ nextCallToActionItems }: NextTemplateAboutUs)
         specialties={nextCallToActionItems.specialties}
       />
       {nextCallToActionItems.title === 'Dr. Danilo' && (
-        <Box bg={'next-gray-dark'} py={'12'}>
-          <a
-            id="zl-url"
-            className="zl-url"
-            href="https://www.doctoralia.com.br/danilo-antunes/dentista/belo-horizonte"
-            rel="nofollow"
-            data-zlw-doctor="danilo-antunes"
-            data-zlw-type="big"
-            data-zlw-opinion="true"
-            data-zlw-hide-branding="true"
-            data-zlw-saas-only="true"
-          >
-            Danilo Antunes - Doctoralia.com.br
-          </a>
-        </Box>
+        <NextDoctoralia slug="danilo-antunes" nome="Danilo Antunes" />
+      )}
+      {nextCallToActionItems.title === 'Dra. Rosane' && (
+        <NextDoctoralia slug="rosane-lage" nome="Rosane Lage" />
       )}
       <Box pt={16}>
         <Grid templateColumns="repeat(7, 1fr)">
