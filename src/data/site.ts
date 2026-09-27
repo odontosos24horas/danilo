@@ -53,6 +53,13 @@ export const INSTAGRAM_ROSANE = 'https://www.instagram.com/dra.rosane.lage'
 /** Container do Google Tag Manager. */
 export const GTM_ID = 'GTM-KCT26Q8'
 
+/** Registro profissional, exibido na apresentação, no rodapé e no Schema. */
+export const APRESENTACAO =
+  'Dr. Danilo Antunes — Cirurgião-dentista — CRO-MG 27292 — Especialista em Implantodontia e Periodontia'
+
+/** Imagem de compartilhamento (og:image), 1200x630, em public/. */
+export const OG_IMAGE = '/og-image.jpg'
+
 /** Dados estruturados do consultório. */
 export const jsonLdNegocio = {
   '@context': 'https://schema.org',
@@ -73,9 +80,25 @@ export const jsonLdNegocio = {
   },
   areaServed: { '@type': 'City', name: ENDERECO.cidade },
   medicalSpecialty: ['Dentistry'],
+  image: `${SITE_URL}${OG_IMAGE}`,
   availableService: [
     { '@type': 'MedicalProcedure', name: 'Implantes dentários' },
-    { '@type': 'MedicalProcedure', name: 'Periodontia' }
+    { '@type': 'MedicalProcedure', name: 'Periodontia' },
+    { '@type': 'MedicalProcedure', name: 'Enxerto ósseo' },
+    { '@type': 'MedicalProcedure', name: 'Próteses sobre implantes' }
   ],
+  employee: {
+    '@type': 'Person',
+    name: 'Dr. Danilo Antunes',
+    jobTitle: 'Cirurgião-dentista especialista em Implantodontia e Periodontia',
+    image: `${SITE_URL}/images/danilo.jpeg`,
+    identifier: {
+      '@type': 'PropertyValue',
+      propertyID: 'CRO-MG',
+      value: '27292'
+    },
+    knowsAbout: ['Implantodontia', 'Periodontia'],
+    sameAs: [INSTAGRAM_DANILO]
+  },
   sameAs: [INSTAGRAM_DANILO]
 }

@@ -240,7 +240,7 @@ const NextHeader = () => {
               <a>
                 <Image
                   src="/images/logos/logo_header.png"
-                  alt="Logo Danilo Antunes"
+                  alt="Logo do Dr. Danilo Antunes"
                   width={250}
                   height={42}
                   layout="fixed"
@@ -251,7 +251,7 @@ const NextHeader = () => {
               <a>
                 <Image
                   src="/images/logos/logo_rosane.png"
-                  alt="Logo Dra Rosane Lage Lacerda"
+                  alt="Logo da Dra. Rosane Lage"
                   width={250}
                   height={42}
                 />

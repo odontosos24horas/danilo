@@ -8,16 +8,35 @@ export default function NextCarousel() {
   const top = useBreakpointValue({ base: '90%', md: '50%' })
   const side = useBreakpointValue({ base: '30%', md: '10px' })
 
+  // Fotos do consultório. Imagens de fundo não têm alt: a descrição vai em aria-label.
   const cards = [
-    '/images/carousel/2.jpeg',
-    '/images/carousel/3.jpeg',
-    '/images/carousel/1.jpeg',
-    '/images/carousel/4.jpeg',
-    '/images/carousel/5.jpeg',
-    '/images/carousel/6.jpeg',
-    '/images/carousel/7.jpeg',
-    '/images/carousel/8.jpeg',
-    '/images/carousel/9.jpeg'
+    {
+      url: '/images/carousel/2.jpeg',
+      alt: 'Recepção com balcão de mármore e sala de espera ao fundo'
+    },
+    { url: '/images/carousel/3.jpeg', alt: 'Sala de espera com poltronas rosa e sofá' },
+    {
+      url: '/images/carousel/1.jpeg',
+      alt: 'Sala de estar com sofá, televisão e quadros na parede'
+    },
+    {
+      url: '/images/carousel/4.jpeg',
+      alt: 'Consultório com mesa de atendimento e cadeira odontológica'
+    },
+    { url: '/images/carousel/5.jpeg', alt: 'Sofá da sala de espera com quadros decorativos' },
+    {
+      url: '/images/carousel/6.jpeg',
+      alt: 'Dra. Rosane Lage no consultório, ao lado da cadeira odontológica e do microscópio operatório'
+    },
+    { url: '/images/carousel/7.jpeg', alt: 'Atendimento odontológico com microscópio operatório' },
+    {
+      url: '/images/carousel/8.jpeg',
+      alt: 'Corredor de acesso às salas de atendimento, com portas de vidro'
+    },
+    {
+      url: '/images/carousel/9.jpeg',
+      alt: 'Recepção com os nomes do Dr. Danilo Antunes e da Dra. Rosane Lage na parede'
+    }
   ]
 
   return (
@@ -68,9 +87,11 @@ export default function NextCarousel() {
       </IconButton>
       {/* Slider */}
       <Slider ref={slider => setSlider(slider)}>
-        {cards.map((url, index) => (
+        {cards.map(({ url, alt }, index) => (
           <Box
             key={index}
+            role="img"
+            aria-label={alt}
             height={['300px', '662px']}
             position="relative"
             backgroundPosition="center"

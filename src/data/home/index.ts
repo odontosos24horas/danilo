@@ -1,44 +1,32 @@
 import { NextCallToActionProps } from '../../components/organisms/nextCallToAction'
 
-const number = '5531997376623'
-export const nextSocialNetwork = {
-  whatsapp: {
-    url: `https://api.whatsapp.com/send?phone=${number}&text=Ol%C3%A1,%20Odonto%20SOS!`
-  }
-}
-
-export const nextHeroItem = {
-  words: 'TECNOLOGIA | DESIGN | MARKETING',
-  title: 'Transforme suas ideias em negócios de sucesso',
-  text: 'Tenha nosso time ao seu lado para fazer seus planos virarem realidade. Foque onde precisa enquanto nossos especialistas cuidam de tudo para o seu negócio evoluir como você sempre quis.',
-  textButton: 'Quero revolucionar minha empresa',
-  url: `${nextSocialNetwork.whatsapp.url}`
-}
-
 export const nextCallToActionItems = [
   {
     title: 'Odontologia Digital',
     titleColor: 'next-tertiary',
-    text: 'O Sistema Cerec pode solucionar sua situação clínica em apenas 1 dia. Esse sistema oferece precisão e rapidez em trabalhos com Prótese Dentária em porcelana(coroas e facetas) eliminando etapas do processo tradicional da confecção como moldagens e até mesmo a utilização de provisórios.',
+    text: 'Com o sistema Cerec, em muitos casos é possível concluir próteses em cerâmica (coroas e facetas) em uma única sessão. O escaneamento digital substitui a moldagem convencional e dispensa etapas do processo tradicional, como o uso de provisórios.',
     textColor: 'white',
     background: 'next-primary',
     image: '/images/home/teeth.svg',
+    imageAlt: 'Ilustração de dentes em cerâmica',
     width: 450,
     height: 442,
     content: 'image'
   },
   {
     title: 'Quem somos',
-    text: 'Com um consultório amplo e agradável, localizado em um dos pontos nobres de Belo Horizonte, realizamos atendimentos especializados em Implantodontia e Periodontia através de tratamentos personalizados, com a qualidade que você merece. Aqui você se sentirá seguro de que todos os processos de higienização e esterilização de equipamentos são realizados adequadamente, além do cumprimento de todos os cuidados necessários para lhe proporcionar tranquilidade e conforto e a segurança de um tratamento muito bem feito. Seja muito bem-vindo (a) ao nosso site e conheça nele um pouco sobre o que fazemos.',
+    text: 'Em um consultório amplo e confortável no bairro Funcionários, em Belo Horizonte, o Dr. Danilo Antunes atende em Implantodontia e Periodontia, e a Dra. Rosane Lage em Endodontia com microscopia operatória. Cada tratamento é planejado de forma individual, com protocolos rigorosos de higienização e esterilização de instrumentos e equipamentos, para que você se sinta seguro e bem acolhido em todas as etapas. Seja bem-vindo(a) ao nosso site e conheça um pouco do nosso trabalho.',
     image: '/images/home/urgencias.jpg',
+    imageAlt: 'Recepção do consultório',
     width: 720,
     height: 535,
     content: 'carousel'
   },
   {
     title: 'Dr. Danilo',
-    text: 'Formado em 2000 pela UEMG- Lavras, o Dr. Danilo Antunes ao longo desses anos fez vários cursos de aperfeiçoamento e especialização nas áreas de Implantodontia e Periodontia.\n- 2001 aperfeiçoamento em Implantodontia- CEO-IPSEMG\n- 2002 especialização em Periodontia, finalizada em agosto/2003- CEO-IPSEMG; \n- 2005 pós em Implantodontia pela ABO-MG;\n- 2006 pós em cirurgias avançadas em Implantodontia pela ABO-MG; - 2007 especialização em Implantodontia finalizada em agosto de 2009 pela ABCD_MG;\n- 2010 pós em cirurgia avançada em Implantodontia pelo Núcleo;\n- 2011 Técnica de Implante com cirurgia Guiada( o famoso implante sem corte). Vários cursos de atualização na área de implantodontia ao longo destes anos.\nMembro do ITI desde 2017\n- 2020 Ingressou na Odontologia digital adquirindo scanner intra oral e fresadora\n- 2021 Curso de Cirurgia plástica periodontal com Vanessa Frazão',
+    text: 'Dr. Danilo Antunes — Cirurgião-dentista — CRO-MG 27292 — Especialista em Implantodontia e Periodontia.\n\nFormado em 2000 pela UEMG - Lavras, o Dr. Danilo Antunes fez, ao longo dos anos, diversos cursos de aperfeiçoamento e especialização em Implantodontia e Periodontia:\n- 2001: aperfeiçoamento em Implantodontia - CEO-IPSEMG;\n- 2002: especialização em Periodontia, concluída em agosto de 2003 - CEO-IPSEMG;\n- 2005: pós-graduação em Implantodontia - ABO-MG;\n- 2006: pós-graduação em cirurgias avançadas em Implantodontia - ABO-MG;\n- 2007: especialização em Implantodontia, concluída em agosto de 2009 - ABCD-MG;\n- 2010: pós-graduação em cirurgia avançada em Implantodontia - Núcleo;\n- 2011: técnica de implante com cirurgia guiada (conhecida como implante sem corte);\n- 2017: membro do ITI (International Team for Implantology);\n- 2020: início na odontologia digital, com scanner intraoral e fresadora;\n- 2021: curso de cirurgia plástica periodontal com Vanessa Frazão.\nAlém disso, participa regularmente de cursos de atualização em Implantodontia.',
     image: '/images/danilo.jpeg',
+    imageAlt: 'Dr. Danilo Antunes sentado à mesa do consultório',
     width: 488,
     height: 566,
     content: 'image',
@@ -50,41 +38,42 @@ export const nextCallToActionItems = [
       {
         id: 1,
         title: 'IMPLANTODONTIA',
-        text: 'Implante dentário renova o sorriso e a vida. A falta de um ou mais dentes afeta a saúde e bem estar de uma pessoa. A dificuldade de mastigação e na fala e a mudança na aparência são os principais impactos que surgem da falta de um ou mais dentes.\nA reposição de dentes com implantes dentários é certamente a melhor forma de de restabelecer a qualidade de vida e autoestima de quem sofre pela ausência de dentes.\nTer um sorriso completo traz ao paciente a sensação de voltar a sorrir novamente sem medo, melhorando a qualidade de vida bem como autoestima.',
+        text: 'A falta de um ou mais dentes afeta a saúde e o bem-estar. Dificuldade para mastigar e falar e mudanças na aparência estão entre os principais impactos da perda dentária.\nO implante dentário é uma das formas mais eficazes de repor dentes perdidos, devolvendo função mastigatória, estética e segurança para sorrir. A indicação depende de uma avaliação individual, que considera a saúde geral, a quantidade de osso e a condição da gengiva.',
         image: '/images/icons/feature_cube.svg'
       },
       {
         id: 2,
         title: 'PERIODONTIA',
-        text: 'A Periodontia é uma área odontológica responsável pela prevenção e tratamento das doenças que acometem os tecidos de sustentação e proteção dos dentes, dos quais fazem parte o ligamento periodontal, o osso e a gengiva ao redor do elemento dental. É a base para inúmeras especialidades odontológicas.',
+        text: 'A Periodontia é uma área odontológica responsável pela prevenção e tratamento das doenças que acometem os tecidos de sustentação e proteção dos dentes, dos quais fazem parte o ligamento periodontal, o osso e a gengiva ao redor do elemento dental. Gengiva e osso saudáveis são a base para o sucesso de outros tratamentos, incluindo os implantes.',
         image: '/images/icons/feature_tooth.svg'
       }
     ],
     features: [
       {
         id: 1,
-        title: 'PRÓTESE FIXA UTILIZANDO O CAD CAM',
-        text: 'No procedimento a arcada dentária do paciente é escaneada digitalmente e conforme isso acontece uma imagem 3D é transmitida para o computador. O equipamento reproduz imagens de altíssima precisão, eliminando erros manuais e a necessidade do retrabalho para corrigir erros de moldagem. Todo o processo é muito confortável para o paciente proporcionando uma melhor experiência na consulta e nos resultados! ',
+        title: 'PRÓTESE FIXA UTILIZANDO O CAD/CAM',
+        text: 'A arcada dentária é escaneada digitalmente e uma imagem 3D é enviada ao computador, onde a prótese é planejada e depois fresada. O escaneamento substitui a moldagem convencional em muitos casos, reduz etapas e torna a consulta mais confortável para o paciente.',
         image: '/images/icons/feature_cube.svg'
       },
       {
         id: 2,
-        title: 'SEDAÇÃO INALATÓRIA',
-        text: 'A Sedação Inalatória garante o máximo de segurança ao paciente com relação à dor, ao medo e à tensão pré-cirurgia. É uma técnica de sedação segura pois é titulada gradativamente e o paciente ao final, sai do consultório da mesma forma que entrou.No aspecto físico, todos os sentidos do paciente são monitorados durante o procedimento pelo dentista responsável. Em casos de maior risco, tendo sempre a postos equipamento de verificação cardíaca, para monitorar.',
+        title: 'CIRURGIA GUIADA',
+        text: 'Com base em tomografia e escaneamento digital, a posição dos implantes é planejada no computador antes da cirurgia e transferida para a boca por meio de um guia. Em casos selecionados, permite instalar implantes sem abrir a gengiva (o chamado implante sem corte).',
         image: '/images/icons/feature_tooth.svg'
       },
       {
         id: 3,
-        title: 'TRANSPLANTE CELULAR ODONTOLÓGICO',
-        text: 'O Transplante celular odontológico é um método que potencializa enxertos ósseos, tornando-os mais simplificados. Isso permite a diminuição da invasão cirúrgica, a redução do tempo de espera para a instalação de implantes, traz previsibilidade aos resultados e oferece segurança sobre as reações imunológicas.',
+        title: 'RECONSTRUÇÃO ÓSSEA E GENGIVAL',
+        text: 'Quando falta osso ou gengiva para receber um implante, técnicas como enxerto ósseo, levantamento de seio maxilar e enxerto gengival podem recriar a base necessária. A indicação é definida após avaliação clínica e exames de imagem.',
         image: '/images/icons/feature_hive.svg'
       }
     ]
   },
   {
     title: 'Dra. Rosane',
-    text: 'A Dra. Rosane Lage atua no mercado da odontologia desde 2002 quando concluiu a sua graduação.Desta forma ,vem se destacando sempre pela seriedade, dedicação e excelentes resultados alcançados. A fim de diferenciar seus tratamentos e melhorar ainda mais a qualidade do atendimento de seus pacientes a Dra. Rosane Lage, se especializou em endodontia e desde então utiliza o que há de mais moderno na odontologia. E uma delas é a microscopia operatória (uma tecnologia ainda rara) no tratamento endodôntico (canal). Pensando sempre no bem estar do paciente a Dra. Rosane Lage preparou um consultório moderno e bem equipado, planejado para proporcionar uma sensação de conforto e bem estar atendendo aos mais altos padrões de qualidade e excelência.Tudo isso com o objetivo de viabilizar o melhor tratamento odontológico seja qual for a necessidade.',
+    text: 'Dra. Rosane Lage — Cirurgiã-dentista — CRO-MG 29.518 — Especialista em Endodontia.\n\nA Dra. Rosane Lage atua na odontologia desde 2002, quando concluiu a graduação. Especializou-se em Endodontia e utiliza a microscopia operatória no tratamento de canal, recurso que amplia e ilumina o interior do dente e contribui para um tratamento mais preciso.\n\nSeu consultório foi planejado para oferecer conforto e segurança ao paciente, com atendimento cuidadoso em todas as etapas, do diagnóstico ao acompanhamento.',
     image: '/images/rosane.jpeg',
+    imageAlt: 'Dra. Rosane Lage no consultório, ao lado da cadeira odontológica',
     width: 488,
     height: 566,
     content: 'image',
@@ -94,28 +83,34 @@ export const nextCallToActionItems = [
     features: [
       {
         id: 1,
-        title: 'PRÓTESE FIXA UTILIZANDO O CAD CAM',
-        text: 'A tecnologia CAD-CAM surgiu para facilitar o planejamento, o designer e a produção de vários projetos. É um equipamento que permite ao dentista digitalizar, desenhar em detalhes a anatomia das arcadas dentárias conseguindo assim produzir próteses em porcelana em minutos. Com este equipamento, o profissional pode entregar a prótese definitiva em uma sessão. Esse processo acelera o tratamento, com maior custo benefício.',
-        image: '/images/icons/feature_cube.svg'
+        title: 'RETRATAMENTO DE CANAL',
+        text: 'Quando um dente já tratado volta a apresentar dor, inchaço ou lesão na radiografia, o tratamento pode ser refeito: o material antigo é removido, os canais são novamente limpos e desinfetados e o dente é selado outra vez.',
+        image: '/images/icons/feature_tooth.svg'
       },
       {
         id: 2,
-        title: 'Sedação inalatória com óxido nitroso',
-        text: ' Um procedimento muito indicado para pessoas com medo de ir ao dentista, ansiedade e procedimentos longos para proporcionar um maior relaxamento. Ele proporciona um maior conforto durante a consulta. A Sedação Inalatória garante o máximo de segurança ao paciente com relação à dor e ao medo. É uma técnica de sedação segura pois é titulada gradativamente e o paciente ao final, saí do consultório da mesma forma que entrou. No aspecto físico, todos os sentidos do paciente são monitorados durante o procedimento pelo dentista responsável. Em casos de maior risco, tendo sempre a postos equipamento de verificação cardíaca, para monitorar. ',
-        image: '/images/icons/feature_tooth.svg'
+        title: 'DIAGNÓSTICO DA DOR DE DENTE',
+        text: 'Exame clínico, testes de sensibilidade e exames de imagem ajudam a identificar se a dor tem origem na polpa, na raiz ou em outra estrutura. Um diagnóstico correto evita tratamentos desnecessários.',
+        image: '/images/icons/feature_cube.svg'
+      },
+      {
+        id: 3,
+        title: 'PRESERVAÇÃO DO DENTE NATURAL',
+        text: 'Sempre que possível, a endodontia busca manter o dente natural. Cada caso é avaliado individualmente para indicar se o dente pode ser tratado e preservado com segurança.',
+        image: '/images/icons/feature_hive.svg'
       }
     ],
     specialties: [
       {
         id: 1,
         title: 'ENDODONTIA',
-        text: 'Endodontia é a especialidade da Odontologia que trata da prevenção, diagnóstico e tratamento das enfermidades da polpa e de suas repercussões sobre os tecidos da região periapical”.\nÉ um campo da Odontologia que trata da morfologia, fisiologia e patologia da polpa dental humana e dos tecidos periapicais”',
+        text: 'Endodontia é a especialidade da Odontologia que cuida da prevenção, do diagnóstico e do tratamento das doenças da polpa dentária (o tecido interno do dente, conhecido como nervo) e de suas repercussões nos tecidos ao redor da raiz.\nO tratamento endodôntico mais conhecido é o tratamento de canal, indicado quando a polpa está inflamada ou infectada, por cárie profunda, trauma ou outras causas.',
         image: '/images/icons/feature_cube.svg'
       },
       {
         id: 2,
         title: 'MICROSCOPIA ENDODÔNTICA',
-        text: 'A microscopia endodôntica nada mais é do que uma técnica para realizar tratamento de canal com auxílio de um microscópio. É uma técnica capaz de detectar de forma aprimorada o sistema de canais radiculares e suas variações anatômicas, garantindo maior precisão e segurança durante o tratamento de canal.\nO sucesso do tratamento de canal está diretamente relacionado à limpeza adequada dos canais radiculares podendo ser em uma região extremamente pequena e de difícil de visualização, o que faz a microscopia endodôntica ser essencial na realização do tratamento, pois o microscópio assegura maior precisão, qualidade e segurança ao procedimento.',
+        text: 'A microscopia endodôntica é a realização do tratamento de canal com o auxílio de um microscópio operatório, que amplia a imagem em várias vezes e ilumina diretamente o interior do dente.\n\nPor que isso importa: os canais da raiz são estreitos, podem ser curvos, calcificados ou em número maior que o habitual. Com a visão ampliada, é possível localizar canais que passariam despercebidos, identificar trincas e realizar a limpeza e o selamento com mais precisão.\n\nQuando é mais indicada: dentes com anatomia complexa, canais calcificados, retratamentos de canal e casos de dor persistente sem causa aparente. A indicação é definida após avaliação clínica e exames de imagem.',
         image: '/images/icons/feature_tooth.svg'
       }
     ]

@@ -7,7 +7,8 @@ const colors = {
     400: '#E5E5E5',
     600: '#616161'
   },
-  'next-gray-dark': '#F2F2F2'
+  'next-gray-dark': '#F2F2F2',
+  'next-light': '#FFFFFF'
 }
 
 export default colors

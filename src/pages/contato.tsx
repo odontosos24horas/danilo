@@ -1,6 +1,7 @@
 import React, { useEffect } from 'react'
 import { Box, Center, Container, Heading, Link, Stack, Text } from '@chakra-ui/react'
 import NextLayout from '../components/templates/nextLayout'
+import { SEO } from '../data/seo'
 
 const NextHome = () => {
   useEffect(() => {
@@ -21,7 +22,7 @@ const NextHome = () => {
     })
   }, [])
   return (
-    <NextLayout>
+    <NextLayout {...SEO.contato}>
       <Center>
         <Heading
           fontWeight={900}
