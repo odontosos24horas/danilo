@@ -5,12 +5,14 @@ import NextLayout from '../nextLayout'
 import { Box, Container } from '@chakra-ui/react'
 import NextDoctoralia from '../../atoms/nextDoctoralia'
 import NextGridListWithHeading from '../../organisms/nextGridListWithHeading'
+import { SeoMeta } from '../../../data/seo'
 
 export type NextTemplateHomeProps = {
+  seo?: SeoMeta
   nextCallToActionItems: Array<NextCallToActionProps>
 }
 
-const NextTemplateHome = ({ nextCallToActionItems }: NextTemplateHomeProps) => {
+const NextTemplateHome = ({ nextCallToActionItems, seo }: NextTemplateHomeProps) => {
   useEffect(() => {
     process.nextTick(() => {
       if (globalThis.window) {
@@ -30,7 +32,7 @@ const NextTemplateHome = ({ nextCallToActionItems }: NextTemplateHomeProps) => {
   }, [])
 
   return (
-    <NextLayout>
+    <NextLayout {...seo}>
       <NextHero />
       <Container maxW="5xl" py={8}>
         <NextGridListWithHeading features={nextCallToActionItems[2].specialties} />
@@ -52,6 +54,7 @@ const NextTemplateHome = ({ nextCallToActionItems }: NextTemplateHomeProps) => {
         title={nextCallToActionItems[2].title}
         text={nextCallToActionItems[2].text}
         image={nextCallToActionItems[2].image}
+        imageAlt={nextCallToActionItems[2].imageAlt}
         textButton={nextCallToActionItems[2].textButton}
         directionMd={nextCallToActionItems[2].directionMd}
         width={nextCallToActionItems[2].width}
@@ -81,6 +84,7 @@ const NextTemplateHome = ({ nextCallToActionItems }: NextTemplateHomeProps) => {
         title={nextCallToActionItems[3].title}
         text={nextCallToActionItems[3].text}
         image={nextCallToActionItems[3].image}
+        imageAlt={nextCallToActionItems[3].imageAlt}
         textButton={nextCallToActionItems[3].textButton}
         directionMd={nextCallToActionItems[3].directionMd}
         width={nextCallToActionItems[3].width}
@@ -98,6 +102,7 @@ const NextTemplateHome = ({ nextCallToActionItems }: NextTemplateHomeProps) => {
         textColor={nextCallToActionItems[0].textColor}
         background={nextCallToActionItems[0].background}
         image={nextCallToActionItems[0].image}
+        imageAlt={nextCallToActionItems[0].imageAlt}
         textButton={nextCallToActionItems[0].textButton}
         directionMd={nextCallToActionItems[0].directionMd}
         width={nextCallToActionItems[0].width}

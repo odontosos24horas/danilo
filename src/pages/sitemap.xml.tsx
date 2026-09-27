@@ -1,5 +1,6 @@
 import { GetServerSideProps } from 'next'
 import { SITE_URL } from '../data/site'
+import { treatmentPages } from '../data/treatmentPages'
 
 /**
  * Sitemap gerado a partir de SITE_URL, não hardcoded.
@@ -16,7 +17,9 @@ const ROTAS = [
   '/videos',
   '/contato',
   '/especialidades/danilo',
-  '/especialidades/rosane'
+  '/especialidades/rosane',
+  '/politica-de-privacidade',
+  ...treatmentPages.map(page => `/tratamentos/${page.slug}`)
 ]
 
 export const getServerSideProps: GetServerSideProps = async ({ res }) => {

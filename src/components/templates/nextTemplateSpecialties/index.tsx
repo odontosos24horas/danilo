@@ -5,12 +5,14 @@ import NextAccordionImage, { NextAccordionImageProps } from '../../organisms/nex
 import NextGridListWithHeading from '../../organisms/nextGridListWithHeading'
 import NextLayout from '../nextLayout'
 import Image from 'next/image'
+import { SeoMeta } from '../../../data/seo'
 
 export type NextTemplateAboutUs = {
+  seo?: SeoMeta
   nextCallToActionItems: NextAccordionImageProps
 }
 
-const NextTemplateSpecialties = ({ nextCallToActionItems }: NextTemplateAboutUs) => {
+const NextTemplateSpecialties = ({ nextCallToActionItems, seo }: NextTemplateAboutUs) => {
   useEffect(() => {
     process.nextTick(() => {
       if (globalThis.window) {
@@ -29,12 +31,13 @@ const NextTemplateSpecialties = ({ nextCallToActionItems }: NextTemplateAboutUs)
     })
   }, [])
   return (
-    <NextLayout>
+    <NextLayout {...seo}>
       <NextAccordionImage
         id={'specialties'}
         title={nextCallToActionItems.title}
         text={nextCallToActionItems.text}
         image={nextCallToActionItems.image}
+        imageAlt={nextCallToActionItems.imageAlt}
         textButton={nextCallToActionItems.textButton}
         directionMd={nextCallToActionItems.directionMd}
         width={nextCallToActionItems.width}
@@ -55,7 +58,7 @@ const NextTemplateSpecialties = ({ nextCallToActionItems }: NextTemplateAboutUs)
           <GridItem colSpan={2} display={['none', 'block']}>
             <Box>
               <Image
-                alt={'Sorriso'}
+                alt={'Mulher sorrindo e mostrando os dentes'}
                 src={'/images/sorriso.jpg'}
                 width={551}
                 height={1014}
